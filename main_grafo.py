@@ -318,14 +318,14 @@ def _ruta_csv_unificado():
 def main():
     # === 1) Cargar artículos del CSV unificado ===
     csv_path = _ruta_csv_unificado()
-    print(f"📥 Cargando artículos desde: {csv_path}")
+    print(f"Cargando artículos desde: {csv_path}")
     articulos = cargar_articulos_desde_unificado(csv_path)
     print(f"   → Registros leídos: {len(articulos)}")
 
     # === 2) Construir grafo dirigido y ponderado ===
     #     umbral_similitud: elevarlo ↓ crea menos aristas (más precisas).
     #     max_salientes_por_nodo: tope de aristas salientes por nodo (control densidad).
-    print("🧱 Construyendo grafo (dirigido, ponderado)...")
+    print("Construyendo grafo (dirigido, ponderado)...")
     G = construir_grafo(
         articulos,
         umbral_similitud=0.35,
@@ -361,11 +361,11 @@ def main():
             for nid in camino:
                 print("      •", G.nodos[nid]["title"][:120])
     else:
-        print("\nℹ️ No se encontraron ejemplos de origen/destino por fragmentos de título "
+        print("\nℹ No se encontraron ejemplos de origen/destino por fragmentos de título "
               "(edita 'ejemplo_origen' y 'ejemplo_destino' en el main).")
 
     # === 4) SCC: Componentes fuertemente conexas ===
-    print("\n🔎 Calculando Componentes Fuertemente Conexas (SCC) con Kosaraju...")
+    print("\n Calculando Componentes Fuertemente Conexas (SCC) con Kosaraju...")
     sccs = kosaraju_scc(G)
     print(f"   → SCC encontradas: {len(sccs)}")
     # Mostrar las 3 más grandes (o menos si no hay tantas)
@@ -377,7 +377,7 @@ def main():
         if len(comp) > 5:
             print("      ...")
 
-    print("\n✅ Listo: grafo construido, Dijkstra y SCC ejecutados.")
+    print("\n Listo: grafo construido, Dijkstra y SCC ejecutados.")
 
 
 if __name__ == "__main__":
