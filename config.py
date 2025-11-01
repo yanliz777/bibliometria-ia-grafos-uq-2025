@@ -12,8 +12,8 @@ DOWNLOAD_DIR_SCIENCEDIRECT = r"C:\Users\USER\Desktop\proyecto-final-algoritmos\s
 URL_LOGIN = "https://library.uniquindio.edu.co/databases"
 
 # Credenciales UQ
-USUARIO = "correo"
-CONTRASENA = "******"
+USUARIO = "yfgomezc@uqvirtual.edu.co"
+CONTRASENA = "jUpiter@52412"
 
 # URL ScienceDirect vía CRAI
 SCIENCEDIRECT_URL = "https://www-sciencedirect-com.crai.referencistas.com/"

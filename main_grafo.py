@@ -16,7 +16,7 @@ import os
 import re
 import unicodedata
 import heapq
-from collections import defaultdict, deque
+from collections import defaultdict
 
 import pandas as pd
 import config
@@ -51,16 +51,14 @@ def jaccard(a: set, b: set) -> float:
     return inter / union if union else 0.0
 
 def _split_authors(s: str) -> list:
-    """
-    Autores llegan como 'A1; A2; A3'. Los normalizamos y devolvemos lista.
-    """
+    """Autores llegan como 'A1; A2; A3'. Los normalizamos y devolvemos lista."""
     if not s:
         return []
     parts = [p.strip() for p in re.split(r"[;,]", s) if p.strip()]
     return [_norm_text(p) for p in parts if p]
 
 def _split_keywords(s: str) -> list:
-    """Palabras clave separadas por ';' u otras comas."""
+    """Palabras clave separadas por ';', ',' o '|'."""
     if not s:
         return []
     parts = [p.strip() for p in re.split(r"[;,\|]", s) if p.strip()]
@@ -89,7 +87,7 @@ def similitud_articulos(a: dict, b: dict) -> float:
     kw_b = set(_split_keywords(b.get("keywords", "")))
     sim_kw = jaccard(kw_a, kw_b)
 
-    # Mezcla lineal simple (puedes ajustar pesos si hace falta)
+    # Mezcla lineal
     return 0.5 * sim_title + 0.3 * sim_auth + 0.2 * sim_kw
 
 
@@ -98,9 +96,9 @@ def similitud_articulos(a: dict, b: dict) -> float:
 # ------------------------------------------------------------
 class GrafoDirigido:
     """
-    Implementamos un grafo dirigido con lista de adyacencia.
-    - 'nodos' es un diccionario id->dict con metadata del artículo.
-    - 'adj' es un dict: u -> lista de (v, peso)
+    Grafo dirigido con lista de adyacencia.
+    - 'nodos': dict id->dict con metadata del artículo.
+    - 'adj'  : dict id_u -> list[(id_v, peso)]
     """
 
     def __init__(self):
@@ -112,10 +110,7 @@ class GrafoDirigido:
         self.nodos[node_id] = data
 
     def agregar_arista(self, u, v, peso=1.0):
-        """
-        Agrega arista dirigida u -> v con un 'peso' (float).
-        Nota: el enunciado pide conservar dirección y peso.
-        """
+        """Agrega arista dirigida u -> v con un 'peso' (float)."""
         self.adj[u].append((v, peso))
 
     def vecinos(self, u):
@@ -132,15 +127,13 @@ class GrafoDirigido:
 def cargar_articulos_desde_unificado(path_csv: str) -> list:
     """
     Lee el CSV generado en el Requerimiento 1 y lo pasa a una lista de dicts.
-    Columnas esperadas (ya las generamos): title, authors, keywords, year, doi, ...
+    Columnas esperadas: title, authors, keywords, year, doi, url, ...
     """
     if not os.path.isfile(path_csv):
         raise FileNotFoundError(f"No encontré el CSV unificado en: {path_csv}")
 
     df = pd.read_csv(path_csv, dtype=str).fillna("")
-    # Estructura simple por fila:
-    rows = df.to_dict(orient="records")
-    return rows
+    return df.to_dict(orient="records")
 
 def construir_grafo(articulos: list,
                     umbral_similitud=0.35,
@@ -150,14 +143,13 @@ def construir_grafo(articulos: list,
       - Un nodo por artículo (id = índice en la lista).
       - Aristas dirigidas inferidas por similitud:
             si sim(a,b) >= umbral => a -> b con peso = 1 - sim.
-      - Para evitar grafo denso, limitamos a 'max_salientes_por_nodo'
-        las mejores coincidencias por nodo (opcional, ayuda a rendimiento).
+      - Se limita a 'max_salientes_por_nodo' mejores coincidencias por nodo
+        para controlar densidad.
     """
     G = GrafoDirigido()
 
-    # 1) Crear nodos
+    # 1) Nodos
     for idx, art in enumerate(articulos):
-        # Guardamos solo lo necesario (puedes ampliar)
         G.agregar_nodo(idx, {
             "title": art.get("title", ""),
             "authors": art.get("authors", ""),
@@ -167,12 +159,10 @@ def construir_grafo(articulos: list,
             "url": art.get("url", "")
         })
 
-    # 2) Crear aristas por similitud (O(n^2) en versión simple)
-    #    Para conjuntos medianos (100–500) es razonable. Si sube mucho, optimizamos luego.
+    # 2) Aristas por similitud (O(n^2) simple)
     n = len(articulos)
     for i in range(n):
         a = articulos[i]
-        # acumulamos candidatos (j, sim) para este i y luego elegimos los mejores
         candidatos = []
         for j in range(n):
             if i == j:
@@ -182,11 +172,11 @@ def construir_grafo(articulos: list,
             if sim >= umbral_similitud:
                 candidatos.append((j, sim))
 
-        # Ordenar por similitud desc y tomar top-K
+        # Mejores K
         candidatos.sort(key=lambda x: x[1], reverse=True)
         candidatos = candidatos[:max_salientes_por_nodo]
 
-        # Agregar aristas con peso = 1 - sim
+        # Peso = 1 - similitud
         for j, sim in candidatos:
             peso = 1.0 - sim
             G.agregar_arista(i, j, peso=peso)
@@ -287,7 +277,7 @@ def kosaraju_scc(G: GrafoDirigido):
 
 
 # ------------------------------------------------------------
-# 6) Utilidades para buscar por título (para pruebas)
+# 6) Búsqueda por título (para elegir nodos de ejemplo)
 # ------------------------------------------------------------
 def buscar_por_titulo(G: GrafoDirigido, fragmento: str, k=5):
     """
@@ -306,12 +296,83 @@ def buscar_por_titulo(G: GrafoDirigido, fragmento: str, k=5):
 
 
 # ------------------------------------------------------------
-# 7) MAIN: construir, preguntar cosas y demostrar funciones
+# 6.1) IMPRESIONES EN CONSOLA (vistas del grafo)
+# ------------------------------------------------------------
+def imprimir_lista_adyacencia(titulos, adj, max_nodos=10, max_vecinos=10):
+    """
+    Muestra la lista de adyacencia:
+      [u] Título_u
+         └─→ [v] Título_v  (peso=w)
+    """
+    n = len(titulos)
+    tope = min(max_nodos, n)
+    print("\n Lista de adyacencia (recorte):")
+    for u in range(tope):
+        vecinos = adj.get(u, [])
+        print(f"[{u:>3}] {titulos[u][:90]}")
+        if not vecinos:
+            print("     (sin salientes)")
+            continue
+        for v, w in vecinos[:max_vecinos]:
+            print(f"     └─→ [{v:>3}] {titulos[v][:70]}  (peso={w:.3f})")
+        if len(vecinos) > max_vecinos:
+            print(f"     … {len(vecinos) - max_vecinos} aristas más desde este nodo")
+
+def imprimir_aristas(titulos, adj, max_aristas=60):
+    """
+    Lista aristas como: [u] → [v] w=...
+    Limitado a max_aristas para no inundar la consola.
+    """
+    total = sum(len(vs) for vs in adj.values())
+    print("\n Aristas (recorte):")
+    count = 0
+    for u, vecinos in adj.items():
+        for v, w in vecinos:
+            print(f"[{u:>3}] → [{v:>3}]  w={w:.3f}  |  {titulos[u][:42]} → {titulos[v][:42]}")
+            count += 1
+            if count >= max_aristas:
+                if total > max_aristas:
+                    print(f"… ({total - max_aristas} aristas más)")
+                return
+
+def imprimir_subgrafo_en_torno(titulos, adj, nodo_centro, max_vecinos=12):
+    """
+    Muestra el “ego-graph” de un nodo: sus salientes y quiénes lo apuntan.
+    Útil para inspección puntual.
+    """
+    print(f"\n Subgrafo en torno a [{nodo_centro}] {titulos[nodo_centro]}")
+    salientes = adj.get(nodo_centro, [])
+    entrantes = []
+    for u, vecinos in adj.items():
+        for v, w in vecinos:
+            if v == nodo_centro:
+                entrantes.append((u, w))
+    print("  → Salientes:")
+    if salientes:
+        for v, w in salientes[:max_vecinos]:
+            print(f"     [{nodo_centro}] → [{v}] (w={w:.3f})  {titulos[v][:70]}")
+        if len(salientes) > max_vecinos:
+            print(f"     … {len(salientes) - max_vecinos} más")
+    else:
+        print("     (ninguno)")
+
+    print("  ← Entrantes:")
+    if entrantes:
+        for u, w in entrantes[:max_vecinos]:
+            print(f"     [{u}] → [{nodo_centro}] (w={w:.3f})  {titulos[u][:70]}")
+        if len(entrantes) > max_vecinos:
+            print(f"     … {len(entrantes) - max_vecinos} más")
+    else:
+        print("     (ninguno)")
+
+
+# ------------------------------------------------------------
+# 7) MAIN: construir, mostrar vistas y ejecutar Dijkstra + SCC
 # ------------------------------------------------------------
 def _ruta_csv_unificado():
     base = getattr(config, "OUTPUT_DIR_BIBLIO", "")
     if not base:
-        # fallback inocuo: escritorio/salidas
+        # fallback: Escritorio/salidas
         base = os.path.join(os.path.expanduser("~"), "Desktop", "salidas")
     return os.path.join(base, "unificado_ai_generativa.csv")
 
@@ -323,30 +384,35 @@ def main():
     print(f"   → Registros leídos: {len(articulos)}")
 
     # === 2) Construir grafo dirigido y ponderado ===
-    #     umbral_similitud: elevarlo ↓ crea menos aristas (más precisas).
-    #     max_salientes_por_nodo: tope de aristas salientes por nodo (control densidad).
     print("Construyendo grafo (dirigido, ponderado)...")
     G = construir_grafo(
         articulos,
-        umbral_similitud=0.35,
-        max_salientes_por_nodo=5
+        umbral_similitud=0.35,     # ajusta si quieres más/menos aristas
+        max_salientes_por_nodo=5   # controla la densidad
     )
     print(f"   → Nodos: {len(G.nodos)}")
     total_aristas = sum(len(G.vecinos(u)) for u in G.nodos_ids())
     print(f"   → Aristas: {total_aristas}")
 
-    # === 3) Dijkstra: ejemplo de camino mínimo entre dos artículos ===
-    #     Puedes editar LOS TÍTULOS a buscar para elegir origen y destino.
+    # === 2.1) Vistas en consola del grafo ===
+    titulos = [G.nodos[i]["title"] for i in sorted(G.nodos.keys())]
+    adj = G.adj
+    imprimir_lista_adyacencia(titulos, adj, max_nodos=15, max_vecinos=8)
+    imprimir_aristas(titulos, adj, max_aristas=80)
+    # (Opcional) inspeccionar el nodo 0:
+    if len(titulos) > 0:
+        imprimir_subgrafo_en_torno(titulos, adj, nodo_centro=0, max_vecinos=12)
+
+    # === 3) Dijkstra: camino mínimo entre dos artículos (ejemplo básico) ===
     ejemplo_origen = "artificial intelligence"
     ejemplo_destino = "education"
-
     encontrados_origen = buscar_por_titulo(G, ejemplo_origen, k=1)
     encontrados_dest  = buscar_por_titulo(G, ejemplo_destino, k=1)
 
+    print("\n Dijkstra: camino más corto entre:")
     if encontrados_origen and encontrados_dest:
         s = encontrados_origen[0][0]
         t = encontrados_dest[0][0]
-        print(f"\n🚦 Dijkstra: camino más corto entre:")
         print(f"   ORIGEN  [{s}]: {G.nodos[s]['title'][:90]}")
         print(f"   DESTINO [{t}]: {G.nodos[t]['title'][:90]}")
 
@@ -361,18 +427,17 @@ def main():
             for nid in camino:
                 print("      •", G.nodos[nid]["title"][:120])
     else:
-        print("\nℹ No se encontraron ejemplos de origen/destino por fragmentos de título "
-              "(edita 'ejemplo_origen' y 'ejemplo_destino' en el main).")
+        print("   → No se encontraron nodos para los fragmentos elegidos "
+              "(edita 'ejemplo_origen' y 'ejemplo_destino').")
 
     # === 4) SCC: Componentes fuertemente conexas ===
     print("\n Calculando Componentes Fuertemente Conexas (SCC) con Kosaraju...")
     sccs = kosaraju_scc(G)
     print(f"   → SCC encontradas: {len(sccs)}")
-    # Mostrar las 3 más grandes (o menos si no hay tantas)
     sccs_ordenadas = sorted(sccs, key=len, reverse=True)[:3]
     for idx, comp in enumerate(sccs_ordenadas, start=1):
         print(f"   • SCC #{idx} (tamaño={len(comp)}):")
-        for nid in comp[:5]:  # muestra primeros 5 títulos de cada SCC
+        for nid in comp[:5]:
             print("      -", G.nodos[nid]["title"][:120])
         if len(comp) > 5:
             print("      ...")
