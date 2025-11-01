@@ -13,7 +13,7 @@ URL_LOGIN = "https://library.uniquindio.edu.co/databases"
 
 # Credenciales UQ
 USUARIO = "yfgomezc@uqvirtual.edu.co"
-CONTRASENA = "****"
+CONTRASENA = "jUpiter@52412"
 
 # URL ScienceDirect vía CRAI
 SCIENCEDIRECT_URL = "https://www-sciencedirect-com.crai.referencistas.com/"
