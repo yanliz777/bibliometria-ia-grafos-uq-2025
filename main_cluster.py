@@ -67,8 +67,8 @@ def main():
         print(f"• cos(abstract_0, abstract_1) = {cos_demo:.4f}\n")
 
     # 3) Similitud coseno y DISTANCIA
-    S = matriz_similitud_coseno(X)              # SIMILITUD = X * X^T (multiplicación matricial)
-    D = matriz_distancia_desde_similitud(S)     # DISTANCIA = 1 - S
+    S = matriz_similitud_coseno(X)
+    D = matriz_distancia_desde_similitud(S)
 
     # 4) Clustering (3 variantes mínimas). Ward opcional.
     metodos = ["single", "complete", "average"]
@@ -97,12 +97,11 @@ def main():
             "silhouette_mejor": m["silhouette_mejor"]
         })
 
-        # Seleccionar mejor por silhouette
         sm = m.get("silhouette_mejor")
         if sm is not None and sm > mejor["silhouette_mejor"]:
             mejor.update({"metodo": metodo, "silhouette_mejor": sm, "k_mejor": m["k_mejor"]})
 
-        # Guardar JSON detallado por método (trazabilidad)
+        # Guardar JSON detallado
         ruta_json = os.path.join(OUT_DIR, f"req4_metricas_{metodo}.json")
         with open(ruta_json, "w", encoding="utf-8") as f:
             json.dump(m, f, ensure_ascii=False, indent=2)
@@ -126,33 +125,66 @@ def main():
     else:
         ruta_asig = None
 
-    # 8) Salida explicativa en consola
+    # ============================
+    # 8️⃣ Exportar clusters de términos (para Req.5)
+    # ============================
+    if ruta_asig:
+        print("\nAsignando clusters a términos (para grafo de coocurrencia)...")
+        df_asig = pd.read_csv(ruta_asig)
+        ruta_clusters_terminos = os.path.join(OUT_DIR, "req4_clusters_terminos.csv")
+        exportar_clusters_a_terminos(df_asig, RUTA_CSV_UNIFICADO, ruta_clusters_terminos)
+
+    # ============================
+    # 9️⃣ Resumen final
+    # ============================
     print("\n# Lectura de resultados (Requerimiento 4)")
-    print("• Cada dendrograma muestra cómo los abstracts se van uniendo desde los más similares")
-    print("  (distancia baja) hasta formar un solo grupo (altura mayor).")
-    print("• Comparamos variantes de enlace: single (encadena), complete (grupos compactos),")
-    print("  average (promedio; término medio estable) y Ward (minimiza varianza con euclídea).")
-    print("\n# Métricas (coherencia)")
     print(df_metricas.to_string(index=False))
     if mejor["metodo"] is not None:
         print(f"\n► Método más coherente (silhouette): {mejor['metodo']}  |  "
               f"silhouette={mejor['silhouette_mejor']:.3f}  |  k={mejor['k_mejor']}")
         if ruta_asig:
             print(f"   • Asignaciones guardadas en: {ruta_asig}")
+            print(f"   • Clusters de términos guardados en: {ruta_clusters_terminos}")
     print(f"\nArtefactos generados:")
     for metodo in metodos:
         print(f"  • Dendrograma: {os.path.join(OUT_DIR, f'dendrograma_{metodo}.png')}")
         print(f"  • Métricas JSON: {os.path.join(OUT_DIR, f'req4_metricas_{metodo}.json')}")
     print(f"  • Resumen métricas CSV: {ruta_metricas_csv}")
+    print("\n✅ Proceso completado correctamente.")
 
-    print("\nCómo usar el dendrograma:")
-    print("  - Si 'cortas' horizontalmente a una altura, obtienes k clusters.")
-    print("  - A alturas bajas: muchos grupos MUY similares.")
-    print("  - A alturas altas: pocos grupos más diversos.")
-    print("\nInterpretación rápida:")
-    print("  - Revisa si los títulos dentro de un mismo cluster comparten tema (p. ej., ética/privacidad,")
-    print("    prompting en educación, evaluación de aprendizajes con GenAI). Ese juicio cualitativo +")
-    print("    las métricas (silhouette/cofenética) sustenta qué método agrupa más coherentemente.\n")
+def exportar_clusters_a_terminos(df_asignaciones, ruta_csv_unificado, ruta_salida):
+    """
+    Relaciona términos con clusters, usando en qué documentos (abstracts)
+    aparece cada término.
+    Guarda un CSV: termino, cluster_id
+    """
+    import re
+
+    df_corpus = pd.read_csv(ruta_csv_unificado)
+    if "abstract" not in df_corpus.columns:
+        print("⚠ No se encontró columna 'abstract' en el corpus, no se puede mapear términos.")
+        return
+
+    abstracts = df_corpus["abstract"].astype(str).tolist()
+    terminos = []  # se llenará a partir de Req.3, pero por ahora usaremos unigramas frecuentes
+    for txt in abstracts:
+        terminos.extend(re.findall(r"\b[a-zA-Z]{4,}\b", txt.lower()))
+    terminos = list(set(terminos))
+
+    term_cluster = {}
+    for term in terminos:
+        presentes = df_corpus[df_corpus["abstract"].str.contains(term, case=False, na=False)].index.tolist()
+        if presentes:
+            # cluster más frecuente entre los docs donde aparece el término
+            clusters = df_asignaciones.loc[df_asignaciones["doc_idx"].isin(presentes), "cluster"].tolist()
+            if clusters:
+                cluster_mas_comun = max(set(clusters), key=clusters.count)
+                term_cluster[term] = cluster_mas_comun
+
+    df_out = pd.DataFrame(list(term_cluster.items()), columns=["termino", "cluster_id"])
+    df_out.to_csv(ruta_salida, index=False, encoding="utf-8-sig")
+    print(f"✓ Clusters de términos exportados a: {ruta_salida}")
+
 
 if __name__ == "__main__":
     main()

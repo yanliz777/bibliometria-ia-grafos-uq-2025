@@ -223,8 +223,8 @@ def _sd_next(driver, timeout=20):
 
 def run_pipeline(
     query="generative artificial intelligence",
-    paginas_sage=5,
-    paginas_sd=5,
+    paginas_sage=30,
+    paginas_sd=30,
     sd_per_page=100
 ):
     # -------- SAGE --------

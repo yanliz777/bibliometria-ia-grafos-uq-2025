@@ -1,4 +1,4 @@
-# main_grafo.py
+# grafo_req1.py
 # ============================================================
 # Requerimiento (GRAFOS) — EXACTAMENTE lo pedido:
 # 1) Construcción automática de un grafo de citaciones dirigido, con pesos.
@@ -780,6 +780,6 @@ def guardar_grafo_interactivo(G, ruta_html, max_nodos=80):
 
 # —— Entry point (punto de entrada) ——
 if __name__ == "__main__":
-    # Este bloque se ejecuta solo si corres:  python main_grafo.py
+    # Este bloque se ejecuta solo si corres:  python grafo_req1.py
     # Si importas este archivo desde otro módulo, no se ejecuta main().
     main()
