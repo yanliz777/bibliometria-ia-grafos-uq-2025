@@ -12,8 +12,9 @@ import os
 import pandas as pd
 
 # Rutas (ajústalas si usas otras)
-RUTA_CSV_UNIFICADO = r"C:\Users\USER\Desktop\proyecto-final-algoritmos\salidas\unificado_ai_generativa.csv"
-DIR_SALIDAS = r"C:\Users\USER\Desktop\proyecto-final-algoritmos\salidas"
+RUTA_CSV_UNIFICADO = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas/unificado_ai_generativa.csv"
+DIR_SALIDAS = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas"
+DIR_VISUAL= "/home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025/utils"
 
 # Embeddings (opcional)
 USAR_IA = True
