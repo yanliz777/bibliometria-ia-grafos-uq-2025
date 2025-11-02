@@ -33,8 +33,8 @@ from utils.cluster_texto import (
 )
 
 # ---------- CONFIGURA RUTAS AQUÍ ----------
-RUTA_CSV_UNIFICADO = r"C:\Users\USER\Desktop\proyecto-final-algoritmos\salidas\unificado_ai_generativa.csv"
-OUT_DIR = r"C:\Users\USER\Desktop\proyecto-final-algoritmos\salidas"
+RUTA_CSV_UNIFICADO = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas/unificado_ai_generativa.csv"
+OUT_DIR = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas"
 
 # ¿Incluir Ward? (usa distancia euclídea sobre TF-IDF)
 INCLUIR_WARD = True
