@@ -1,7 +1,7 @@
 """
-grafo_coocurrencia_req5.py
 
-Requerimiento 5: Construcción y análisis del grafo de coocurrencia entre términos.
+
+Requerimiento 2: Construcción y análisis del grafo de coocurrencia entre términos.
 Lee automáticamente los términos de las salidas del Req. 3 y 4, y construye un grafo
 no dirigido a partir de los abstracts del corpus.
 
@@ -163,7 +163,8 @@ class CooccurrenceGraph:
 # PROCESO AUTOMÁTICO (LEE SALIDAS DEL REQ. 3 Y 4)
 # ============================================================
 if __name__ == "__main__":
-    print("=== Requerimiento 5: Grafo de Coocurrencia ===")
+    print("=== Requerimiento 2"
+          ": Grafo de Coocurrencia ===")
 
     # --- Ruta de archivos ---
     DIR = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas"
@@ -209,11 +210,16 @@ if __name__ == "__main__":
     cg.filtrar_aristas_principales(top_k=40)  # ajusta a 20, 30, 50 según quieras más o menos densidad
 
     # --- Guardar visualizaciones ---
-    png_path = os.path.join(DIR, "grafo_coocurrencia_top.png")
-    html_path = os.path.join(DIR, "grafo_coocurrencia_top.html")
+    output_dir = "/home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025/seguimiento2/requerimiento2"
+    os.makedirs(output_dir, exist_ok=True)  # Crea la carpeta si no existe
+
+    png_path = os.path.join(output_dir, "grafo_coocurrencia_top.png")
+    html_path = os.path.join(output_dir, "grafo_coocurrencia_top.html")
+
     cg.save_graph_png(png_path, show_weights=True)
     cg.save_graph_html(html_path)
 
     print(f"\n✅ Grafo reducido a las {len(cg.G.edges())} aristas principales")
     print(f"✅ Imagen PNG guardada en: {png_path}")
     print(f"✅ Grafo interactivo HTML guardado en: {html_path}")
+
