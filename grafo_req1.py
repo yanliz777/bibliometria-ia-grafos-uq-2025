@@ -1,4 +1,4 @@
-# main_grafo.py
+# grafo_req1.py
 # ============================================================
 # Requerimiento (GRAFOS) — EXACTAMENTE lo pedido:
 # 1) Construcción automática de un grafo de citaciones dirigido, con pesos.
@@ -18,12 +18,15 @@ import re              # Expresiones regulares para limpiar/partir texto
 import unicodedata     # Normalización Unicode (quitar tildes)
 import heapq           # Cola de prioridad (min-heap) para Dijkstra
 from collections import defaultdict  # Diccionario con valor por defecto (listas para la adyacencia)
+from pyvis.network import Network
 
 # —— Dependencias de terceros ——
 import pandas as pd    # Lectura del CSV (DataFrame → lista de diccionarios)
 
 # —— Tu archivo de configuración (rutas) ——
 import config
+import networkx as nx
+import matplotlib.pyplot as plt
 
 # ------------------------------------------------------------
 # 1) Normalización y tokenización (para similitud)
@@ -185,8 +188,8 @@ def cargar_articulos_desde_unificado(path_csv: str) -> list:
     return df.to_dict(orient="records")
 
 def construir_grafo(articulos: list,
-                    umbral_similitud=0.35,
-                    max_salientes_por_nodo=5) -> GrafoDirigido:
+                    umbral_similitud=0.25,
+                    max_salientes_por_nodo=15) -> GrafoDirigido:
     """
     Crea el grafo dirigido y ponderado a partir de la lista de artículos.
     Pasos:
@@ -456,6 +459,73 @@ def _ruta_csv_unificado():
         base = os.path.join(os.path.expanduser("~"), "Desktop", "salidas")
     return os.path.join(base, "unificado_ai_generativa.csv")
 
+
+def analizar_conectividad(G):
+    import math
+
+    print("\n=== Análisis de conectividad ===")
+
+    # Contar nodos con al menos una conexión
+    nodos_conectados = [n for n, v in G.adj.items() if len(v) > 0 or any(n in [x for x, _ in G.adj[m]] for m in G.adj)]
+    print(f" → Nodos con al menos una conexión: {len(nodos_conectados)} / {len(G.nodos)}")
+
+    # Detectar componentes fuertemente conectados (solo si grafo es dirigido)
+    componentes = []
+    visitados = set()
+
+    def dfs(u, comp):
+        visitados.add(u)
+        comp.append(u)
+        for v, _ in G.adj.get(u, []):
+            if v not in visitados:
+                dfs(v, comp)
+
+    for n in G.nodos:
+        if n not in visitados:
+            comp = []
+            dfs(n, comp)
+            if len(comp) > 1:
+                componentes.append(comp)
+
+    print(f" → Componentes con más de un nodo: {len(componentes)}")
+    for i, comp in enumerate(componentes[:5], 1):
+        print(f"    Componente {i}: {len(comp)} nodos")
+
+    # Intentar caminos mínimos entre algunos pares conectados
+    print("\n=== Caminos mínimos (Dijkstra) ===")
+    pares = []
+    for u in G.adj:
+        for v, _ in G.adj[u]:
+            pares.append((u, v))
+    if not pares:
+        print(" ⚠️ No hay pares conectados.")
+        return
+
+    from heapq import heappush, heappop
+
+    def dijkstra(origen):
+        dist = {n: math.inf for n in G.nodos}
+        dist[origen] = 0
+        pq = [(0, origen)]
+        while pq:
+            d, u = heappop(pq)
+            if d > dist[u]:
+                continue
+            for v, w in G.adj.get(u, []):
+                if dist[v] > dist[u] + (1 - w):  # pesos inversos a similitud
+                    dist[v] = dist[u] + (1 - w)
+                    heappush(pq, (dist[v], v))
+        return dist
+
+    origen = pares[0][0]
+    distancias = dijkstra(origen)
+    alcanzables = [n for n, d in distancias.items() if d < math.inf and n != origen]
+
+    print(f" → Desde '{G.nodos[origen]['title'][:40]}…' se alcanzan {len(alcanzables)} nodos.")
+    if alcanzables:
+        destino = alcanzables[0]
+        print(f"   Ejemplo: camino mínimo a '{G.nodos[destino]['title'][:40]}…' con costo {distancias[destino]:.3f}")
+
 def main():
     # === 1) Cargar artículos del CSV unificado ===
     csv_path = _ruta_csv_unificado()
@@ -464,41 +534,54 @@ def main():
     print(f"   → Registros leídos: {len(articulos)}")
 
     # === 2) Construir grafo dirigido y ponderado ===
-    print("Construyendo grafo (dirigido, ponderado)...")
+    print("\nConstruyendo grafo (dirigido, ponderado)...")
     G = construir_grafo(
         articulos,
-        umbral_similitud=0.35,     # ↓ sube para menos aristas (más estrictas), ↑ baja para más conexiones
-        max_salientes_por_nodo=5   # controla cuántas salientes puede tener cada nodo (densidad)
+        umbral_similitud=0.35,
+        max_salientes_por_nodo=5
     )
     print(f"   → Nodos: {len(G.nodos)}")
     total_aristas = sum(len(G.vecinos(u)) for u in G.nodos_ids())
     print(f"   → Aristas: {total_aristas}")
 
-    # === 2.1) Vistas en consola del grafo ===
-    # 'titulos' es una lista indexada por id de nodo para imprimir más fácil
+    # === 2.1) Visualizaciones del grafo ===
+
+    ## 2.1.1) Vista rápida en consola
+    print("\nVista parcial del grafo (lista de adyacencia y aristas):")
     titulos = [G.nodos[i]["title"] for i in sorted(G.nodos.keys())]
     adj = G.adj
     imprimir_lista_adyacencia(titulos, adj, max_nodos=15, max_vecinos=8)
     imprimir_aristas(titulos, adj, max_aristas=80)
-    # (Opcional) inspeccionar el nodo 0 si existe
+
+    ## 2.1.2) Guardar visualización PNG
+    ruta_img = "/home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025/seguimiento2/Requerimiento1/grafo_citaciones.png"
+    guardar_visualizacion_grafo(G, ruta_img, max_nodos=80)
+
+    ## 2.1.3) Guardar versión interactiva HTML
+    ruta_html = "/home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025/seguimiento2/Requerimiento1/grafo_citaciones_interactivo.html"
+    guardar_grafo_interactivo(G, ruta_html, max_nodos=80)
+
+    ## 2.1.4) Subgrafo de ejemplo (nodo 0)
     if len(titulos) > 0:
         imprimir_subgrafo_en_torno(titulos, adj, nodo_centro=0, max_vecinos=12)
 
     # === 3) Dijkstra: camino mínimo entre dos artículos (ejemplo) ===
-    # Elegimos dos títulos por fragmentos para no depender de índices exactos.
+    print("\nBuscando camino más corto con Dijkstra...")
+
     ejemplo_origen = "artificial intelligence"
     ejemplo_destino = "education"
+
     encontrados_origen = buscar_por_titulo(G, ejemplo_origen, k=1)
     encontrados_dest  = buscar_por_titulo(G, ejemplo_destino, k=1)
 
-    print("\n Dijkstra: camino más corto entre:")
+    print("\nDijkstra: camino más corto entre:")
     if encontrados_origen and encontrados_dest:
         s = encontrados_origen[0][0]  # id del nodo origen
         t = encontrados_dest[0][0]    # id del nodo destino
         print(f"   ORIGEN  [{s}]: {G.nodos[s]['title'][:90]}")
         print(f"   DESTINO [{t}]: {G.nodos[t]['title'][:90]}")
 
-        # Ejecutamos Dijkstra desde s
+        # Ejecutar Dijkstra
         dist, prev = dijkstra(G, s)
         if dist[t] == float("inf"):
             print("   → No hay camino dirigido (∞).")
@@ -513,24 +596,190 @@ def main():
         print("   → No se encontraron nodos para los fragmentos elegidos "
               "(edita 'ejemplo_origen' y 'ejemplo_destino').")
 
-    # === 4) SCC: Componentes fuertemente conexas ===
-    print("\n Calculando Componentes Fuertemente Conexas (SCC) con Kosaraju...")
+    # === 4) SCC: Componentes Fuertemente Conexas (Kosaraju) ===
+    print("\nCalculando Componentes Fuertemente Conexas (SCC) con Kosaraju...")
     sccs = kosaraju_scc(G)
     print(f"   → SCC encontradas: {len(sccs)}")
-    # Mostramos las 3 SCC más grandes (o menos si hay pocas)
+
+    # Mostrar las 3 SCC más grandes
     sccs_ordenadas = sorted(sccs, key=len, reverse=True)[:3]
     for idx, comp in enumerate(sccs_ordenadas, start=1):
         print(f"   • SCC #{idx} (tamaño={len(comp)}):")
-        for nid in comp[:5]:  # vemos los primeros 5 títulos para no saturar consola
+        for nid in comp[:5]:
             print("      -", G.nodos[nid]["title"][:120])
         if len(comp) > 5:
             print("      ...")
 
-    print("\n Listo: grafo construido, Dijkstra y SCC ejecutados.")
+    print("\n✅ Listo: grafo construido, visualizado, Dijkstra y SCC ejecutados.")
+
+def analizar_conectividad(G):
+    import math
+
+    print("\n=== Análisis de conectividad ===")
+
+    # Contar nodos con al menos una conexión
+    nodos_conectados = [n for n, v in G.adj.items() if len(v) > 0 or any(n in [x for x, _ in G.adj[m]] for m in G.adj)]
+    print(f" → Nodos con al menos una conexión: {len(nodos_conectados)} / {len(G.nodos)}")
+
+    # Detectar componentes fuertemente conectados (solo si grafo es dirigido)
+    componentes = []
+    visitados = set()
+
+    def dfs(u, comp):
+        visitados.add(u)
+        comp.append(u)
+        for v, _ in G.adj.get(u, []):
+            if v not in visitados:
+                dfs(v, comp)
+
+    for n in G.nodos:
+        if n not in visitados:
+            comp = []
+            dfs(n, comp)
+            if len(comp) > 1:
+                componentes.append(comp)
+
+    print(f" → Componentes con más de un nodo: {len(componentes)}")
+    for i, comp in enumerate(componentes[:5], 1):
+        print(f"    Componente {i}: {len(comp)} nodos")
+
+    # Intentar caminos mínimos entre algunos pares conectados
+    print("\n=== Caminos mínimos (Dijkstra) ===")
+    pares = []
+    for u in G.adj:
+        for v, _ in G.adj[u]:
+            pares.append((u, v))
+    if not pares:
+        print(" ⚠️ No hay pares conectados.")
+        return
+
+    from heapq import heappush, heappop
+
+    def dijkstra(origen):
+        dist = {n: math.inf for n in G.nodos}
+        dist[origen] = 0
+        pq = [(0, origen)]
+        while pq:
+            d, u = heappop(pq)
+            if d > dist[u]:
+                continue
+            for v, w in G.adj.get(u, []):
+                if dist[v] > dist[u] + (1 - w):  # pesos inversos a similitud
+                    dist[v] = dist[u] + (1 - w)
+                    heappush(pq, (dist[v], v))
+        return dist
+
+    origen = pares[0][0]
+    distancias = dijkstra(origen)
+    alcanzables = [n for n, d in distancias.items() if d < math.inf and n != origen]
+
+    print(f" → Desde '{G.nodos[origen]['title'][:40]}…' se alcanzan {len(alcanzables)} nodos.")
+    if alcanzables:
+        destino = alcanzables[0]
+        print(f"   Ejemplo: camino mínimo a '{G.nodos[destino]['title'][:40]}…' con costo {distancias[destino]:.3f}")
+
+def guardar_visualizacion_grafo(G, ruta_salida, max_nodos=80):
+    import matplotlib.pyplot as plt
+    import networkx as nx
+
+    # --- Construir conjunto de nodos conectados ---
+    nodos_conectados = {u for u, v in G.adj.items() if len(v) > 0}
+    for u in G.adj:
+        for v, _ in G.adj[u]:
+            nodos_conectados.add(v)
+
+    # --- Construir subgrafo con los nodos conectados ---
+    subG = GrafoDirigido()
+    for u in nodos_conectados:
+        if u in G.adj:
+            if u not in subG.nodos:
+                subG.agregar_nodo(u, G.nodos[u])
+            for v, w in G.adj[u]:
+                if v in nodos_conectados:
+                    if v not in subG.nodos:
+                        subG.agregar_nodo(v, G.nodos[v])
+                    subG.agregar_arista(u, v, w)
+
+    print(f"   → Nodos conectados (subgrafo): {len(subG.nodos)}")
+    print(f"   → Aristas en subgrafo: {sum(len(subG.vecinos(u)) for u in subG.nodos_ids())}")
+
+    # --- Convertir a grafo de NetworkX ---
+    nxG = nx.DiGraph()
+    for u in subG.nodos:
+        nxG.add_node(u, title=subG.nodos[u]["title"])
+    for u in subG.adj:
+        for v, w in subG.adj[u]:
+            nxG.add_edge(u, v, weight=w)
+
+    # --- Layout y dibujo ---
+    plt.figure(figsize=(12, 10))
+    pos = nx.spring_layout(nxG, k=0.35, seed=42)
+    pesos = [d["weight"] for _, _, d in nxG.edges(data=True)]
+
+    nx.draw_networkx_nodes(nxG, pos, node_size=100, node_color="skyblue", alpha=0.9)
+    nx.draw_networkx_edges(nxG, pos, width=[3 * w for w in pesos], alpha=0.6, arrowsize=10)
+    nx.draw_networkx_labels(
+        nxG, pos,
+        labels={n: subG.nodos[n]["title"][:25] for n in nxG.nodes()},
+        font_size=7
+    )
+
+    plt.axis("off")
+    plt.tight_layout()
+    plt.savefig(ruta_salida, dpi=300)
+    plt.close()
+    print(f"✅ Imagen del subgrafo guardada en: {ruta_salida}")
+
+
+def guardar_grafo_interactivo(G, ruta_html, max_nodos=80):
+    from pyvis.network import Network
+
+    # --- Subgrafo con nodos conectados ---
+    nodos_conectados = {u for u, v in G.adj.items() if len(v) > 0}
+    for u in G.adj:
+        for v, _ in G.adj[u]:
+            nodos_conectados.add(v)
+
+    subG = GrafoDirigido()
+    for u in nodos_conectados:
+        if u in G.adj:
+            if u not in subG.nodos:
+                subG.agregar_nodo(u, G.nodos[u])
+            for v, w in G.adj[u]:
+                if v in nodos_conectados:
+                    if v not in subG.nodos:
+                        subG.agregar_nodo(v, G.nodos[v])
+                    subG.agregar_arista(u, v, w)
+
+    print(f"   → Nodos conectados (subgrafo interactivo): {len(subG.nodos)}")
+    print(f"   → Aristas: {sum(len(subG.vecinos(u)) for u in subG.nodos_ids())}")
+
+    # --- Crear red interactiva ---
+    net = Network(height="750px", width="100%", directed=True, notebook=False)
+    net.force_atlas_2based()  # mejor layout
+
+    # --- Agregar nodos ---
+    for nid, data in subG.nodos.items():
+        net.add_node(
+            nid,
+            label=data["title"][:50],
+            title=data["title"],
+            color="skyblue"
+        )
+
+    # --- Agregar aristas ---
+    for u in subG.adj:
+        for v, w in subG.adj[u]:
+            net.add_edge(u, v, value=w, title=f"Similitud: {w:.3f}")
+
+    # --- Guardar HTML (sin abrir navegador) ---
+    net.write_html(ruta_html, open_browser=False)
+    print(f"✅ Grafo interactivo (subgrafo conectado) guardado en: {ruta_html}")
+
 
 
 # —— Entry point (punto de entrada) ——
 if __name__ == "__main__":
-    # Este bloque se ejecuta solo si corres:  python main_grafo.py
+    # Este bloque se ejecuta solo si corres:  python grafo_req1.py
     # Si importas este archivo desde otro módulo, no se ejecuta main().
     main()

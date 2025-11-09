@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "skyblue", "id": 513, "label": "Editorial: Generative artificial intelligence as a", "shape": "dot", "title": "Editorial: Generative artificial intelligence as a plagiarism problem"}, {"color": "skyblue", "id": 527, "label": "Generative artificial intelligence in publishing -", "shape": "dot", "title": "Generative artificial intelligence in publishing - Reflection and discussion"}, {"color": "skyblue", "id": 259, "label": "Letter Regarding: Generative Artificial Intelligen", "shape": "dot", "title": "Letter Regarding: Generative Artificial Intelligence in Academic Surgery: Ethical Implications and Transformative Potential"}, {"color": "skyblue", "id": 293, "label": "Response Regarding: Generative Artificial Intellig", "shape": "dot", "title": "Response Regarding: Generative Artificial Intelligence in Academic Surgery: Ethical Implications and Transformative Potential"}, {"color": "skyblue", "id": 191, "label": "Generative Artificial Intelligence in Academic Sur", "shape": "dot", "title": "Generative Artificial Intelligence in Academic Surgery: Ethical Implications and Transformative Potential"}, {"color": "skyblue", "id": 520, "label": "Generative artificial intelligence and academia: I", "shape": "dot", "title": "Generative artificial intelligence and academia: Implication for research, teaching and service"}, {"color": "skyblue", "id": 172, "label": "Generative artificial intelligence and learning: A", "shape": "dot", "title": "Generative artificial intelligence and learning: At the dawn of Idiocracy?"}, {"color": "skyblue", "id": 270, "label": "MT14 Role of Generative Artificial Intelligence in", "shape": "dot", "title": "MT14 Role of Generative Artificial Intelligence in Assisting Systematic Review Process in Health Research: A Systematic Review"}, {"color": "skyblue", "id": 294, "label": "Role of Generative Artificial Intelligence in Assi", "shape": "dot", "title": "Role of Generative Artificial Intelligence in Assisting Systematic Review Process in Health Research: A Systematic Review"}, {"color": "skyblue", "id": 400, "label": "Future directions of generative artificial intelli", "shape": "dot", "title": "Future directions of generative artificial intelligence in ophthalmology and vision science"}, {"color": "skyblue", "id": 204, "label": "Generative artificial intelligence in ophthalmolog", "shape": "dot", "title": "Generative artificial intelligence in ophthalmology"}, {"color": "skyblue", "id": 528, "label": "Generative Artificial Intelligence in the Hospital", "shape": "dot", "title": "Generative Artificial Intelligence in the Hospitality and Tourism Industry: Developing a Framework for Future Research"}, {"color": "skyblue", "id": 543, "label": "The implications of generative artificial intellig", "shape": "dot", "title": "The implications of generative artificial intelligence in academic research and higher education in tourism and hospitality"}, {"color": "skyblue", "id": 529, "label": "Generative artificial intelligence in the metavers", "shape": "dot", "title": "Generative artificial intelligence in the metaverse era"}, {"color": "skyblue", "id": 379, "label": "Cybersecurity in the generative artificial intelli", "shape": "dot", "title": "Cybersecurity in the generative artificial intelligence era"}, {"color": "skyblue", "id": 419, "label": "Generative Artificial Intelligence in Dental Licen", "shape": "dot", "title": "Generative Artificial Intelligence in Dental Licensing Examinations: Comment"}, {"color": "skyblue", "id": 426, "label": "Generative artificial intelligence in ophthalmolog", "shape": "dot", "title": "Generative artificial intelligence in ophthalmology: Correspondence"}, {"color": "skyblue", "id": 378, "label": "Correspondence: Generative artificial intelligence", "shape": "dot", "title": "Correspondence: Generative artificial intelligence in healthcare"}, {"color": "skyblue", "id": 467, "label": "Performance of Generative Artificial Intelligence ", "shape": "dot", "title": "Performance of Generative Artificial Intelligence in Dental Licensing Examinations"}, {"color": "skyblue", "id": 297, "label": "Self-driving labs: The new frontier for GenAI-driv", "shape": "dot", "title": "Self-driving labs: The new frontier for GenAI-driven marketing research"}, {"color": "skyblue", "id": 243, "label": "Illusion, dilution, or loss: psychological ownersh", "shape": "dot", "title": "Illusion, dilution, or loss: psychological ownership and GenAI"}, {"color": "skyblue", "id": 171, "label": "Generative artificial intelligence and internation", "shape": "dot", "title": "Generative artificial intelligence and internationalization green innovation: Roles of supply chain innovations and AI regulation for SMEs"}, {"color": "skyblue", "id": 440, "label": "Green entrepreneurship success in the age of gener", "shape": "dot", "title": "Green entrepreneurship success in the age of generative artificial intelligence: The interplay of technology adoption, knowledge management, and government support"}, {"color": "skyblue", "id": 48, "label": "A Taxonomy of Generative Artificial Intelligence i", "shape": "dot", "title": "A Taxonomy of Generative Artificial Intelligence in Health Economics and Outcomes Research: An ISPOR Working Group Report"}, {"color": "skyblue", "id": 187, "label": "Generative Artificial Intelligence for Health Tech", "shape": "dot", "title": "Generative Artificial Intelligence for Health Technology Assessment: Opportunities, Challenges, and Policy Considerations: An ISPOR Working Group Report"}, {"color": "skyblue", "id": 307, "label": "T.06.3 APPLICATIONS OF GENERATIVE ARTIFICIAL INTEL", "shape": "dot", "title": "T.06.3 APPLICATIONS OF GENERATIVE ARTIFICIAL INTELLIGENCE IN INFLAMMATORY BOWEL DISEASE: A SYSTEMATIC REVIEW"}, {"color": "skyblue", "id": 68, "label": "Applications of generative artificial intelligence", "shape": "dot", "title": "Applications of generative artificial intelligence in inflammatory bowel disease: A systematic review"}, {"color": "skyblue", "id": 53, "label": "Adaptive Treatment of Metastatic Prostate Cancer U", "shape": "dot", "title": "Adaptive Treatment of Metastatic Prostate Cancer Using Generative Artificial Intelligence"}, {"color": "skyblue", "id": 359, "label": "Adaptive Cancer Therapy in the Age of Generative A", "shape": "dot", "title": "Adaptive Cancer Therapy in the Age of Generative Artificial Intelligence"}, {"color": "skyblue", "id": 197, "label": "Generative artificial intelligence in diabetes hea", "shape": "dot", "title": "Generative artificial intelligence in diabetes healthcare"}, {"color": "skyblue", "id": 455, "label": "Letter to the editor \u201cA review of top cardiology a", "shape": "dot", "title": "Letter to the editor \u201cA review of top cardiology and cardiovascular medicine journal guidelines regarding the use of generative artificial intelligence tools in scientific writing\u201d"}, {"color": "skyblue", "id": 356, "label": "A review of top cardiology and cardiovascular medi", "shape": "dot", "title": "A review of top cardiology and cardiovascular medicine journal guidelines regarding the use of generative artificial intelligence tools in scientific writing"}, {"color": "skyblue", "id": 465, "label": "P.6.1 CREATING VIRTUAL PATIENTS WITH A GENERATIVE ", "shape": "dot", "title": "P.6.1 CREATING VIRTUAL PATIENTS WITH A GENERATIVE ARTIFICIAL INTELLIGENCE ALGORITHM FOR CLINICAL STUDIES"}, {"color": "skyblue", "id": 466, "label": "P.6.4 DEVELOPMENT OF A GENERATIVE ARTIFICIAL INTEL", "shape": "dot", "title": "P.6.4 DEVELOPMENT OF A GENERATIVE ARTIFICIAL INTELLIGENCE ALGORITHM FOR THE REGENERATION OF VIRTUAL VOLUNTEERS IN BIOEQUIVALENCE STUDIES"}, {"color": "skyblue", "id": 343, "label": "Utilization and perception of generative artificia", "shape": "dot", "title": "Utilization and perception of generative artificial intelligence by medical students in residency applications"}, {"color": "skyblue", "id": 380, "label": "Decoding medical educators\u2019 perceptions on generat", "shape": "dot", "title": "Decoding medical educators\u2019 perceptions on generative artificial intelligence in medical education"}, {"color": "skyblue", "id": 490, "label": "The Impact of Generative Artificial Intelligence i", "shape": "dot", "title": "The Impact of Generative Artificial Intelligence in Scientific Content Synthesis for Authors"}, {"color": "skyblue", "id": 491, "label": "The Impact of Generative Artificial Intelligence o", "shape": "dot", "title": "The Impact of Generative Artificial Intelligence on Research Integrity in Scholarly Publishing"}, {"color": "skyblue", "id": 492, "label": "The Impact of Generative Artificial Intelligence o", "shape": "dot", "title": "The Impact of Generative Artificial Intelligence on the External Review of Scientific Manuscripts and Editorial Peer Review Processes"}, {"color": "skyblue", "id": 238, "label": "How do people react to political bias in generativ", "shape": "dot", "title": "How do people react to political bias in generative artificial intelligence (AI)?"}, {"color": "skyblue", "id": 374, "label": "Co-creating art with generative artificial intelli", "shape": "dot", "title": "Co-creating art with generative artificial intelligence: Implications for artworks and artists"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": 513, "title": "Similitud: 0.535", "to": 527, "value": 0.5346153846153846}, {"arrows": "to", "from": 259, "title": "Similitud: 0.571", "to": 293, "value": 0.5714285714285714}, {"arrows": "to", "from": 259, "title": "Similitud: 0.577", "to": 191, "value": 0.5769230769230769}, {"arrows": "to", "from": 520, "title": "Similitud: 0.650", "to": 172, "value": 0.65}, {"arrows": "to", "from": 270, "title": "Similitud: 0.369", "to": 294, "value": 0.36904761904761907}, {"arrows": "to", "from": 527, "title": "Similitud: 0.535", "to": 513, "value": 0.5346153846153846}, {"arrows": "to", "from": 400, "title": "Similitud: 0.385", "to": 204, "value": 0.38522727272727275}, {"arrows": "to", "from": 528, "title": "Similitud: 0.595", "to": 543, "value": 0.595}, {"arrows": "to", "from": 529, "title": "Similitud: 0.625", "to": 379, "value": 0.625}, {"arrows": "to", "from": 543, "title": "Similitud: 0.595", "to": 528, "value": 0.595}, {"arrows": "to", "from": 419, "title": "Similitud: 0.500", "to": 426, "value": 0.5}, {"arrows": "to", "from": 419, "title": "Similitud: 0.620", "to": 378, "value": 0.62}, {"arrows": "to", "from": 419, "title": "Similitud: 0.650", "to": 467, "value": 0.65}, {"arrows": "to", "from": 293, "title": "Similitud: 0.277", "to": 191, "value": 0.27692307692307694}, {"arrows": "to", "from": 293, "title": "Similitud: 0.571", "to": 259, "value": 0.5714285714285714}, {"arrows": "to", "from": 294, "title": "Similitud: 0.369", "to": 270, "value": 0.36904761904761907}, {"arrows": "to", "from": 297, "title": "Similitud: 0.644", "to": 243, "value": 0.6436507936507936}, {"arrows": "to", "from": 426, "title": "Similitud: 0.463", "to": 378, "value": 0.46285714285714286}, {"arrows": "to", "from": 426, "title": "Similitud: 0.500", "to": 419, "value": 0.5}, {"arrows": "to", "from": 426, "title": "Similitud: 0.583", "to": 204, "value": 0.5833333333333333}, {"arrows": "to", "from": 171, "title": "Similitud: 0.575", "to": 440, "value": 0.5746753246753247}, {"arrows": "to", "from": 172, "title": "Similitud: 0.650", "to": 520, "value": 0.65}, {"arrows": "to", "from": 48, "title": "Similitud: 0.448", "to": 187, "value": 0.44796918767507}, {"arrows": "to", "from": 307, "title": "Similitud: 0.500", "to": 68, "value": 0.5}, {"arrows": "to", "from": 53, "title": "Similitud: 0.486", "to": 359, "value": 0.48571428571428577}, {"arrows": "to", "from": 440, "title": "Similitud: 0.575", "to": 171, "value": 0.5746753246753247}, {"arrows": "to", "from": 187, "title": "Similitud: 0.448", "to": 48, "value": 0.44796918767507}, {"arrows": "to", "from": 191, "title": "Similitud: 0.277", "to": 293, "value": 0.27692307692307694}, {"arrows": "to", "from": 191, "title": "Similitud: 0.577", "to": 259, "value": 0.5769230769230769}, {"arrows": "to", "from": 68, "title": "Similitud: 0.500", "to": 307, "value": 0.5}, {"arrows": "to", "from": 197, "title": "Similitud: 0.603", "to": 378, "value": 0.6028571428571429}, {"arrows": "to", "from": 455, "title": "Similitud: 0.565", "to": 356, "value": 0.5652173913043479}, {"arrows": "to", "from": 204, "title": "Similitud: 0.385", "to": 400, "value": 0.38522727272727275}, {"arrows": "to", "from": 204, "title": "Similitud: 0.583", "to": 426, "value": 0.5833333333333333}, {"arrows": "to", "from": 465, "title": "Similitud: 0.483", "to": 466, "value": 0.4826086956521739}, {"arrows": "to", "from": 466, "title": "Similitud: 0.483", "to": 465, "value": 0.4826086956521739}, {"arrows": "to", "from": 467, "title": "Similitud: 0.650", "to": 419, "value": 0.65}, {"arrows": "to", "from": 343, "title": "Similitud: 0.561", "to": 380, "value": 0.5611111111111111}, {"arrows": "to", "from": 356, "title": "Similitud: 0.565", "to": 455, "value": 0.5652173913043479}, {"arrows": "to", "from": 359, "title": "Similitud: 0.486", "to": 53, "value": 0.48571428571428577}, {"arrows": "to", "from": 490, "title": "Similitud: 0.644", "to": 491, "value": 0.6441176470588236}, {"arrows": "to", "from": 491, "title": "Similitud: 0.525", "to": 492, "value": 0.525}, {"arrows": "to", "from": 491, "title": "Similitud: 0.644", "to": 490, "value": 0.6441176470588236}, {"arrows": "to", "from": 492, "title": "Similitud: 0.525", "to": 491, "value": 0.525}, {"arrows": "to", "from": 238, "title": "Similitud: 0.629", "to": 374, "value": 0.6285714285714286}, {"arrows": "to", "from": 243, "title": "Similitud: 0.644", "to": 297, "value": 0.6436507936507936}, {"arrows": "to", "from": 374, "title": "Similitud: 0.629", "to": 238, "value": 0.6285714285714286}, {"arrows": "to", "from": 378, "title": "Similitud: 0.463", "to": 426, "value": 0.46285714285714286}, {"arrows": "to", "from": 378, "title": "Similitud: 0.603", "to": 197, "value": 0.6028571428571429}, {"arrows": "to", "from": 378, "title": "Similitud: 0.620", "to": 419, "value": 0.62}, {"arrows": "to", "from": 379, "title": "Similitud: 0.625", "to": 529, "value": 0.625}, {"arrows": "to", "from": 380, "title": "Similitud: 0.561", "to": 343, "value": 0.5611111111111111}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

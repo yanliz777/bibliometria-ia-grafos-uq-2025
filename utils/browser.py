@@ -13,6 +13,10 @@ def crear_navegador(ruta_driver, carpeta_descargas):
     Crea un navegador Chrome usando Selenium Manager (sin Service/driver manual).
     El parámetro ruta_driver se mantiene por compatibilidad, pero NO se usa.
     """
+    # 🔧 Asegurar que las rutas sean strings (evita errores de serialización)
+    carpeta_descargas = str(carpeta_descargas)
+    ruta_driver = str(ruta_driver)
+
     os.makedirs(carpeta_descargas, exist_ok=True)
 
     opciones = Options()
@@ -30,8 +34,7 @@ def crear_navegador(ruta_driver, carpeta_descargas):
     opciones.add_argument("--no-default-browser-check")
     opciones.add_argument("--disable-sync")
 
-    # ✅ Usar Selenium Manager (deja que Selenium encuentre/descargue el driver correcto)
-    # Antes: service = Service(ruta_driver); webdriver.Chrome(service=service, options=opciones)
+    # ✅ Usar Selenium Manager para resolver el driver automáticamente
     return webdriver.Chrome(options=opciones)
 
 def cerrar_banners(driver):
