@@ -1,4 +1,4 @@
-# main_similarity.py
+# req2_analisis_similitud_textual.py
 # ----------------------------------------------------
 # Selecciona "dos o más artículos" del CSV unificado,
 # extrae el campo abstract y calcula:
@@ -6,6 +6,31 @@
 #   2 IA: MiniLM (inglés) y MiniLM multilingüe
 # Guarda una tabla de pares con puntajes + reporte legible.
 # ----------------------------------------------------
+
+"""
+req2_analisis_similitud.py
+------------------------------------------------------------
+Objetivo (Requerimiento 2)
+------------------------------------------------------------
+Implementar y ejecutar un análisis comparativo de similitud textual
+entre dos o más artículos seleccionados a partir del CSV unificado.
+Debe calcularse:
+  - 4 algoritmos clásicos: Levenshtein (distancia/normalizada),
+    Jaccard (sobre bigramas), Dice (sobre bigramas), Coseno sobre TF-IDF.
+  - 2 algoritmos basados en representaciones neuronales (embeddings):
+    all-MiniLM-L6-v2 (inglés) y paraphrase-multilingual-MiniLM-L12-v2 (multilingüe).
+
+El resultado debe almacenarse como:
+  - CSV con pares y puntuaciones (`similitud_pairs.csv`)
+  - README en Markdown (`similitud_pairs_README.md`) con resumen y top pares
+  - Salida legible por consola.
+
+Requerimientos de documentación:
+  - Cada función incluye docstrings.
+  - El README y la impresión en consola explican cómo interpretar valores.
+  - Se entrega una explicación matemática y algorítmica detallada (anexo).
+
+"""
 
 import os
 import itertools
@@ -39,8 +64,21 @@ from utils.text_similarity import (
     embedding_cosine_similarity
 )
 
+
 def _leer_dataset(ruta: str) -> pd.DataFrame:
-    """Lee el CSV y garantiza que exista la columna 'abstract'."""
+    """
+    Lee el CSV unificado y garantiza la existencia de la columna 'abstract'.
+
+    Args:
+        ruta (str): Ruta absoluta o relativa al CSV unificado.
+
+    Returns:
+        pd.DataFrame: DataFrame resultante con columna 'abstract'.
+
+    Raises:
+        FileNotFoundError: Si el archivo no existe en la ruta dada.
+        ValueError: Si no se encuentra la columna 'abstract' (ni en variantes).
+    """
     if not os.path.isfile(ruta):
         raise FileNotFoundError(f"No existe el CSV unificado en: {ruta}")
     df = pd.read_csv(ruta, encoding="utf-8")
@@ -53,20 +91,58 @@ def _leer_dataset(ruta: str) -> pd.DataFrame:
             raise ValueError("El CSV no tiene columna 'abstract'.")
     return df
 
+
 def _tomar_texto(df: pd.DataFrame, idx: int) -> str:
-    """Devuelve abstract; si está vacío, usa title como respaldo."""
+    """
+    Devuelve el texto a comparar para una fila dada.
+
+    Lógica:
+      - Prioriza 'abstract'.
+      - Si 'abstract' está vacío o ausente para la fila, utiliza 'title' como respaldo.
+
+    Args:
+        df (pd.DataFrame): DataFrame con los registros bibliográficos.
+        idx (int): Índice de la fila a extraer.
+
+    Returns:
+        str: Texto a utilizar en las comparaciones.
+    """
     row = df.iloc[idx]
     abs_txt = str(row.get("abstract", "") or "")
     if not abs_txt.strip():
         abs_txt = str(row.get("title", "") or "")
     return abs_txt
 
+
 def _pairwise_indices(indices):
-    """Genera todas las combinaciones de pares (i,j) con i<j."""
+    """
+    Genera todas las combinaciones posibles de pares (i, j) con i < j.
+
+    Args:
+        indices (iterable): Lista o iterable con índices seleccionados.
+
+    Returns:
+        list of tuple: Lista con tuplas (i, j).
+    """
     return list(itertools.combinations(indices, 2))
 
+
 def _interpretar(score: float) -> str:
-    """Regla simple de interpretación para mostrar al usuario."""
+    """
+    Interpretación cualitativa simple de un score entre 0 y 1.
+
+    Umbrales usados:
+      - >= 0.70 : "muy alta"
+      - >= 0.40 : "moderada"
+      - >= 0.10 : "baja"
+      - <  0.10 : "muy baja"
+
+    Args:
+        score (float | None): Puntaje entre 0 y 1 o None.
+
+    Returns:
+        str: Etiqueta interpretativa.
+    """
     if score is None:
         return "N/D"
     if score >= 0.70: return "muy alta"
@@ -74,7 +150,20 @@ def _interpretar(score: float) -> str:
     if score >= 0.10: return "baja"
     return "muy baja"
 
+
 def main():
+    """
+    Punto central de ejecución:
+      1. Carga dataset.
+      2. Valida selección (>=2 artículos).
+      3. Construye pares y calcula similitudes clásicas + IA (opcional).
+      4. Genera CSV con resultados y README en Markdown.
+      5. Imprime resumen legible en consola.
+
+    Observaciones:
+      - No modifica ni borra el CSV fuente.
+      - Si embeddings no están disponibles, los campos IA quedan en N/D.
+    """
     os.makedirs(OUT_DIR, exist_ok=True)
 
     # 1) Leer data
@@ -202,6 +291,7 @@ def main():
         if "st_multi" in out.columns: cols.append("st_multi")
         print("\nVista rápida de resultados:")
         print(out[cols].to_string(index=False))
+
 
 if __name__ == "__main__":
     main()

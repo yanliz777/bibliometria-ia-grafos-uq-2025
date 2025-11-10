@@ -7,7 +7,7 @@
 #   (4) Exportar imágenes a un único PDF (ReportLab)
 #
 # * Mantiene la MISMA API que ya te funcionó (leer_dataset, contar_por_pais_primer_autor, etc.)
-# * Añade artefactos extra sin romper main_req5.py:
+# * Añade artefactos extra sin romper req5_visualizacion.py:
 #     - req5_paises.csv, req5_paises_debug.csv
 #     - req5_top_terminos.csv, req5_contadores.json
 # ======================================================================================

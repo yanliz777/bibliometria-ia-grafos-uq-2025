@@ -1,29 +1,73 @@
-# main_pipeline.py
-# Orquestra todo: SAGE -> ScienceDirect -> Unificación en un solo run.
+"""
+req1_automatizacion_descarga.py
+----------------------------------------------------
+AUTOMATIZACIÓN DE PROCESO DE DESCARGA Y UNIFICACIÓN DE DATOS ACADÉMICOS
+
+Requerimiento 1. Automatización de proceso de descarga de datos.
+-----------------------------------------------------------------
+Este script implementa la automatización completa del proceso de:
+    1. Acceso y autenticación a dos bases de datos académicas (SAGE Journals y ScienceDirect)
+       mediante inicio de sesión institucional con Google SSO.
+    2. Ejecución de búsquedas automáticas de artículos según una consulta (query).
+    3. Descarga masiva de resultados bibliográficos en formato RIS desde cada fuente.
+    4. Unificación automática de los resultados descargados, eliminando duplicados por DOI o título.
+    5. Generación de dos archivos finales:
+         - Archivo unificado (sin duplicados) con toda la información consolidada.
+         - Archivo de duplicados eliminados, con trazabilidad de los registros repetidos.
+
+El proceso cubre todo el flujo “búsqueda → descarga → limpieza → unificación”, sin intervención manual.
+Está diseñado para ejecutarse en entornos académicos con acceso institucional a través de proxys CRAI.
+
+Autor: [Yan Gomez, Camilo Mejia]
+Versión: 1.0
+Fecha: 2025-11-09
+Lenguaje: Python 3
+Dependencias: Selenium, Configuración local (config.py), módulos utils/*
+"""
 
 import os
 import time
 from datetime import datetime
 
+# Módulo de configuración (credenciales, rutas de descarga, paths de ChromeDriver, etc.)
 import config
 
+# Utilidades personalizadas (browser automation, login, exportación y manejo RIS)
 from utils.browser import crear_navegador, cerrar_banners
 from utils.sso_google import login_con_google
 import utils.sage as sage
 import utils.sciencedirect as sd
 from utils.ris_merge import load_ris_from_dirs, merge_records, export_outputs
 
-# Selenium helpers para los fallbacks locales (por si tus utils no traen ciertas funciones)
+# Librerías Selenium usadas en los fallbacks locales
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementClickInterceptedException
 
 
-# ---------------- Fallbacks locales SOLO si no existen en utils.sciencedirect ----------------
+# ===============================================================
+# SECCIÓN 1. FUNCIONES DE FALLBACK PARA SCIENCEDIRECT
+# ---------------------------------------------------------------
+# Estas funciones se utilizan solo si el módulo utils.sciencedirect
+# no contiene implementaciones equivalentes.
+# ===============================================================
 
 def _sd_resultados_listos(driver, timeout=25):
-    """Heurística: hay select-all o botón export + hay resultados en la SRP."""
+    """
+    Verifica que la página de resultados (SRP) de ScienceDirect esté lista.
+
+    Parámetros:
+        driver : objeto WebDriver activo.
+        timeout : tiempo máximo de espera en segundos.
+
+    Retorna:
+        None. (Lanza excepción si los elementos no están disponibles).
+
+    Descripción:
+        Esta función comprueba mediante heurísticas que los componentes
+        principales (botón "Select All", botón "Export" y la lista de resultados)
+        estén cargados antes de continuar la automatización.
+    """
     def listo(d):
         try:
             sel_all = bool(d.find_elements(By.CSS_SELECTOR, '#select-all-results'))
@@ -34,10 +78,22 @@ def _sd_resultados_listos(driver, timeout=25):
             return False
     WebDriverWait(driver, timeout).until(listo)
 
+
 def _sd_set_per_page_manual(driver, per_page=100, timeout=20):
-    """Clic en el link del paginador 'ResultsPerPage' (25/50/100) si existe."""
+    """
+    Configura manualmente la cantidad de resultados por página (25, 50 o 100).
+
+    Parámetros:
+        driver : objeto WebDriver.
+        per_page : número de resultados por página.
+        timeout : tiempo máximo de espera.
+
+    Retorna:
+        True si se aplicó o ya estaba configurado el valor deseado.
+    """
     _sd_resultados_listos(driver, timeout=timeout)
-    # ¿ya activo?
+
+    # Verifica si ya está activo el valor deseado.
     try:
         active = driver.find_element(By.CSS_SELECTOR, 'ol.ResultsPerPage span.active-per-page')
         if (active.text or "").strip() == str(per_page):
@@ -45,7 +101,7 @@ def _sd_set_per_page_manual(driver, per_page=100, timeout=20):
     except Exception:
         pass
 
-    # buscar enlace con el número
+    # Busca el enlace correspondiente al número deseado.
     links = driver.find_elements(By.CSS_SELECTOR, 'ol.ResultsPerPage a.anchor')
     target = None
     for a in links:
@@ -53,8 +109,9 @@ def _sd_set_per_page_manual(driver, per_page=100, timeout=20):
             target = a
             break
     if not target:
-        return True  # si no hay link, asumimos que ya está aplicado
+        return True  # Si no hay enlace disponible, se asume que ya está aplicado.
 
+    # Desplaza hacia el elemento y hace clic para aplicar el cambio.
     href_before = driver.current_url
     try:
         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", target)
@@ -65,6 +122,7 @@ def _sd_set_per_page_manual(driver, per_page=100, timeout=20):
     except ElementClickInterceptedException:
         driver.execute_script("arguments[0].click();", target)
 
+    # Espera a que la página recargue con el nuevo valor.
     def listo(d):
         try:
             a = d.find_element(By.CSS_SELECTOR, 'ol.ResultsPerPage span.active-per-page')
@@ -76,8 +134,18 @@ def _sd_set_per_page_manual(driver, per_page=100, timeout=20):
     time.sleep(0.4)
     return True
 
+
 def _sd_marcar_select_all(driver, timeout=12):
-    """Marca 'Select all articles' con distintos intentos (input, label, JS)."""
+    """
+    Marca la casilla 'Select all articles' en los resultados de ScienceDirect.
+
+    Parámetros:
+        driver : objeto WebDriver.
+        timeout : tiempo máximo de espera.
+
+    Retorna:
+        None (lanza TimeoutException si no puede marcarse).
+    """
     try:
         driver.execute_script("window.scrollTo(0, 0);")
         time.sleep(0.2)
@@ -101,9 +169,10 @@ def _sd_marcar_select_all(driver, timeout=12):
             continue
 
     if not inp and not lbl:
-        raise TimeoutException("No encontré el checkbox ni su label para 'Select all articles'.")
+        raise TimeoutException("No se encontró el checkbox ni el label de 'Select all articles'.")
 
     def _checked():
+        """Verifica si la casilla ya está marcada."""
         try:
             if inp and inp.is_selected():
                 return True
@@ -113,13 +182,13 @@ def _sd_marcar_select_all(driver, timeout=12):
         except Exception:
             return False
 
+    # Intenta marcar con distintos métodos (click directo, JS, label)
     if not _checked() and inp:
         try:
             inp.click()
             time.sleep(0.25)
         except ElementClickInterceptedException:
             driver.execute_script("arguments[0].click();", inp)
-            time.sleep(0.25)
 
     if not _checked() and lbl:
         try:
@@ -127,7 +196,6 @@ def _sd_marcar_select_all(driver, timeout=12):
             time.sleep(0.25)
         except ElementClickInterceptedException:
             driver.execute_script("arguments[0].click();", lbl)
-            time.sleep(0.25)
 
     if not _checked() and inp:
         driver.execute_script("""
@@ -140,15 +208,28 @@ def _sd_marcar_select_all(driver, timeout=12):
         time.sleep(0.25)
 
     if not _checked():
-        raise TimeoutException("No pude marcar 'Select all articles'.")
+        raise TimeoutException("No fue posible marcar 'Select all articles'.")
+
 
 def _sd_export_ris_pagina(driver, carpeta_descargas, consulta_slug="generative-artificial-intelligence", etiqueta="p1", timeout=25):
-    """Exporta RIS de la página actual (fallback si no usamos sd.exportar_ris_pagina_actual_sd)."""
+    """
+    Exporta los resultados de la página actual en formato RIS.
+
+    Parámetros:
+        driver : WebDriver activo.
+        carpeta_descargas : directorio donde se almacenará el archivo RIS.
+        consulta_slug : nombre simplificado de la consulta (para nombrar archivo).
+        etiqueta : identificador de página (ejemplo: p1, p2...).
+        timeout : tiempo máximo de espera.
+
+    Retorna:
+        Ruta del archivo RIS descargado.
+    """
     _sd_resultados_listos(driver, timeout=timeout)
     _sd_marcar_select_all(driver)
 
-    # habilitado export
     def _export_habilitado(d):
+        """Verifica si el botón de exportación está disponible."""
         try:
             b = d.find_element(By.CSS_SELECTOR, 'button[data-aa-button="srp-export-multi-expand"]')
             aria = (b.get_attribute("aria-disabled") or "").lower()
@@ -156,27 +237,29 @@ def _sd_export_ris_pagina(driver, carpeta_descargas, consulta_slug="generative-a
             return (aria == "false") or (aria == "") and (disabled is None)
         except Exception:
             return False
+
     try:
         WebDriverWait(driver, 10).until(_export_habilitado)
     except TimeoutException:
         pass
 
-    # abrir export
+    # Inicia el proceso de exportación
     btn = driver.find_element(By.CSS_SELECTOR, 'button[data-aa-button="srp-export-multi-expand"]')
     try:
         btn.click()
     except ElementClickInterceptedException:
         driver.execute_script("arguments[0].click();", btn)
+
     time.sleep(0.3)
 
-    # RIS
+    # Selecciona formato RIS
     ris = driver.find_element(By.CSS_SELECTOR, 'button[data-aa-button="srp-export-multi-ris"]')
     try:
         ris.click()
     except ElementClickInterceptedException:
         driver.execute_script("arguments[0].click();", ris)
 
-    # esperar .ris usando el helper de utils.browser (ya lo usa utils.sciencedirect)
+    # Espera la descarga
     from utils.browser import esperar_descarga_por_extension, renombrar_si_es_necesario
     ruta = esperar_descarga_por_extension(carpeta_descargas, extension=".ris", timeout=90)
     fecha = datetime.now().strftime("%Y%m%d_%H%M")
@@ -185,8 +268,18 @@ def _sd_export_ris_pagina(driver, carpeta_descargas, consulta_slug="generative-a
     print(f"✅ SD {etiqueta}: descargado -> {final_path}")
     return final_path
 
+
 def _sd_next(driver, timeout=20):
-    """Clic en 'next' en SRP (fallback)."""
+    """
+    Avanza a la siguiente página de resultados en ScienceDirect.
+
+    Parámetros:
+        driver : objeto WebDriver.
+        timeout : tiempo máximo de espera.
+
+    Retorna:
+        True si se avanza correctamente, False si no hay más páginas.
+    """
     candidatos = [
         (By.CSS_SELECTOR, 'li.pagination-link.next-link a.anchor[data-aa-name="srp-next-page"]'),
         (By.CSS_SELECTOR, 'a.anchor[data-aa-name="srp-next-page"]'),
@@ -201,6 +294,7 @@ def _sd_next(driver, timeout=20):
             continue
     if not nxt:
         return False
+
     url_before = driver.current_url
     try:
         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", nxt)
@@ -215,11 +309,16 @@ def _sd_next(driver, timeout=20):
         WebDriverWait(driver, timeout).until(lambda d: d.current_url != url_before)
     except TimeoutException:
         _sd_resultados_listos(driver, timeout=timeout)
+
     time.sleep(0.4)
     return True
 
 
-# ---------------- Pipeline ----------------
+# ===============================================================
+# SECCIÓN 2. PIPELINE PRINCIPAL
+# ---------------------------------------------------------------
+# Orquesta todo el flujo: SAGE → ScienceDirect → Unificación
+# ===============================================================
 
 def run_pipeline(
     query="generative artificial intelligence",
@@ -227,6 +326,21 @@ def run_pipeline(
     paginas_sd=30,
     sd_per_page=100
 ):
+    """
+    Ejecuta el pipeline completo de descarga y unificación.
+
+    Parámetros:
+        query : término de búsqueda a utilizar en ambas bases.
+        paginas_sage : número de páginas a exportar desde SAGE Journals.
+        paginas_sd : número de páginas a exportar desde ScienceDirect.
+        sd_per_page : número de resultados por página en ScienceDirect.
+
+    Descripción:
+        1. Abre navegador y accede a SAGE → descarga resultados.
+        2. Abre navegador y accede a ScienceDirect → descarga resultados.
+        3. Unifica archivos .RIS y elimina duplicados.
+        4. Genera archivo final con registros únicos y otro con duplicados.
+    """
     # -------- SAGE --------
     driver = crear_navegador(config.CHROMEDRIVER_PATH, config.DOWNLOAD_DIR_SAGE)
     try:
@@ -266,17 +380,17 @@ def run_pipeline(
         )
         cerrar_banners(driver)
 
-        # abrir home + buscar
+        # Realiza búsqueda y configuración de resultados
         sd.abrir_home_sciencedirect(driver, URL_SD, config.DOWNLOAD_DIR_SCIENCEDIRECT)
         sd.buscar_en_sciencedirect(driver, query, config.DOWNLOAD_DIR_SCIENCEDIRECT)
 
-        # forzar 100 por página: si el módulo lo trae, úsalo; si no, fallback local
+        # Define número de resultados por página
         if hasattr(sd, "fijar_resultados_por_pagina"):
             sd.fijar_resultados_por_pagina(driver, per_page=sd_per_page, carpeta_descargas=config.DOWNLOAD_DIR_SCIENCEDIRECT)
         else:
             _sd_set_per_page_manual(driver, per_page=sd_per_page)
 
-        # paginar y descargar
+        # Descarga resultados de varias páginas
         if hasattr(sd, "descargar_varias_paginas_sd"):
             sd.descargar_varias_paginas_sd(
                 driver,
@@ -286,7 +400,7 @@ def run_pipeline(
                 etiqueta_prefijo="p"
             )
         else:
-            # Fallback: descargar página actual + next x (paginas_sd-1)
+            # Fallback local: exporta página actual y avanza
             for i in range(1, paginas_sd + 1):
                 _sd_export_ris_pagina(
                     driver,
@@ -317,14 +431,21 @@ def run_pipeline(
     out_dir = getattr(config, "OUTPUT_DIR_BIBLIO", os.path.join(os.path.expanduser("~"), "Desktop", "salidas"))
     os.makedirs(out_dir, exist_ok=True)
     export_outputs(unificados, duplicados, out_dir, base_name="unificado_ai_generativa")
+
     print("\n✅ Pipeline completo. Archivos en:", out_dir)
 
 
+# ===============================================================
+# SECCIÓN 3. PUNTO DE ENTRADA PRINCIPAL
+# ===============================================================
 if __name__ == "__main__":
-    # Ajusta aquí cuántas páginas quieres de cada fuente:
+    """
+    Punto de entrada principal del programa.
+    Permite ajustar parámetros de ejecución del pipeline.
+    """
     run_pipeline(
         query='generative artificial intelligence',
-        paginas_sage=5,   # SAGE: páginas
-        paginas_sd=5,     # ScienceDirect: páginas
-        sd_per_page=100   # SD: resultados por página (25/50/100)
+        paginas_sage=5,   # Cantidad de páginas a descargar en SAGE
+        paginas_sd=5,     # Cantidad de páginas a descargar en ScienceDirect
+        sd_per_page=100   # Resultados por página (25/50/100)
     )
