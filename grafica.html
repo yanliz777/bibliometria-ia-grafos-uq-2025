@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bibliometría IA Generativa</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f5f6fa; margin: 0; }
+header { background: white; border-bottom: 1px solid #ccc; padding: 1em 2em; }
+.container { display: flex; gap: 1em; margin: 2em; }
+.panel, .logs { background: white; padding: 1em; border-radius: 10px; flex: 1; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+button { background: #007bff; color: white; border: none; padding: .5em 1em; border-radius: 5px; cursor: pointer; }
+button:disabled { background: gray; cursor: not-allowed; }
+.log { font-family: monospace; margin-bottom: 4px; }
+.log.info { color: #007bff; }
+.log.success { color: green; }
+.log.error { color: red; }
+</style>
+</head>
+<body>
+
+<header>
+  <h2>📊 Bibliometría IA Generativa</h2>
+  <p>Universidad del Quindío - 2025</p>
+</header>
+
+<div class="container">
+  <div class="panel">
+    <h3>Requerimientos</h3>
+    <button onclick="ejecutar('req2')">Ejecutar Similitud Textual</button>
+    <button onclick="ejecutar('req3')">Ejecutar Análisis de Términos</button>
+    <button onclick="ejecutar('req4')">Ejecutar Clustering</button>
+    <button onclick="ejecutar('req5')">Ejecutar Visualizaciones</button>
+  </div>
+  
+  <div class="logs">
+    <h3>Registro de actividad</h3>
+    <div id="logs" style="max-height:400px; overflow:auto; background:#fafafa; padding:10px; border-radius:5px;"></div>
+  </div>
+</div>
+
+<script>
+function addLog(msg, tipo='info') {
+  const logDiv = document.getElementById('logs');
+  const p = document.createElement('div');
+  p.className = `log ${tipo}`;
+  p.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+  logDiv.appendChild(p);
+  logDiv.scrollTop = logDiv.scrollHeight;
+}
+
+async function ejecutar(req) {
+  addLog(`== Iniciando ${req} ==`, 'info');
+  const boton = event.target;
+  boton.disabled = true;
+
+  const logsSimulados = {
+    req2: ['Calculando similitud...', 'Generando CSV...', '✅ Finalizado'],
+    req3: ['Analizando términos...', 'Exportando resultados...', '✅ Finalizado'],
+    req4: ['Ejecutando clustering...', 'Generando dendrogramas...', '✅ Finalizado'],
+    req5: ['Creando visualizaciones...', 'Generando PDF...', '✅ Finalizado']
+  };
+
+  for (const l of logsSimulados[req]) {
+    await new Promise(r => setTimeout(r, 1000));
+    addLog(l, l.startsWith('✅') ? 'success' : 'info');
+  }
+
+  boton.disabled = false;
+}
+</script>
+
+</body>
+</html>

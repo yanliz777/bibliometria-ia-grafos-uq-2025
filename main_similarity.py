@@ -13,10 +13,10 @@ import pandas as pd
 import config
 
 # Ajusta la ruta a tu CSV unificado:
-RUTA_CSV_UNIFICADO = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas/unificado_ai_generativa.csv"
+RUTA_CSV_UNIFICADO = r"datos/salidas/unificado_ai_generativa.csv"
 
 # Carpeta de resultados
-OUT_DIR = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas"
+OUT_DIR = r"datos/salidas/salidas"
 
 # <- AQUÍ "SELECCIONAS" TUS ARTÍCULOS (por índice de fila en el CSV).
 #    Deben ser 2 o más. Ejemplos:

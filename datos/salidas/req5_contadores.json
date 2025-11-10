@@ -1,0 +1,88 @@
+{
+  "docs_total": 546,
+  "revistas_total": 345,
+  "top_revista": "Computers and Education: Artificial Intelligence",
+  "top_revista_count": 14,
+  "top_terms_list": [
+    {
+      "term": "artificial intelligence",
+      "weight_norm": 1.0
+    },
+    {
+      "term": "generative artificial",
+      "weight_norm": 0.7320359281437125
+    },
+    {
+      "term": "genai",
+      "weight_norm": 0.6047904191616766
+    },
+    {
+      "term": "generative ai",
+      "weight_norm": 0.4101796407185629
+    },
+    {
+      "term": "research",
+      "weight_norm": 0.3937125748502994
+    },
+    {
+      "term": "ai",
+      "weight_norm": 0.3458083832335329
+    },
+    {
+      "term": "study",
+      "weight_norm": 0.2949101796407186
+    },
+    {
+      "term": "design",
+      "weight_norm": 0.27694610778443113
+    },
+    {
+      "term": "model",
+      "weight_norm": 0.27694610778443113
+    },
+    {
+      "term": "gai",
+      "weight_norm": 0.2694610778443114
+    },
+    {
+      "term": "data",
+      "weight_norm": 0.2634730538922156
+    },
+    {
+      "term": "chatgpt",
+      "weight_norm": 0.25299401197604793
+    },
+    {
+      "term": "student",
+      "weight_norm": 0.24251497005988024
+    },
+    {
+      "term": "potential",
+      "weight_norm": 0.22904191616766467
+    },
+    {
+      "term": "application",
+      "weight_norm": 0.218562874251497
+    },
+    {
+      "term": "human",
+      "weight_norm": 0.20359281437125748
+    },
+    {
+      "term": "language model",
+      "weight_norm": 0.20059880239520958
+    },
+    {
+      "term": "challenge",
+      "weight_norm": 0.19760479041916168
+    },
+    {
+      "term": "technology",
+      "weight_norm": 0.19311377245508982
+    },
+    {
+      "term": "based",
+      "weight_norm": 0.18712574850299402
+    }
+  ]
+}

@@ -1,38 +1,70 @@
-from utils.browser import crear_navegador, cerrar_banners
-from utils.sso_google import login_con_google
-from utils.sage import buscar_en_sage, exportar_ris_paginando
-import config
+from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi.responses import FileResponse
+from pydantic import BaseModel
+import subprocess, shlex, uuid, os
+from pathlib import Path
+from datetime import datetime
 
-if __name__ == "__main__":
-    driver = crear_navegador(config.CHROMEDRIVER_PATH, config.DOWNLOAD_DIR_SAGE)
-    try:
-        URL_REVISTA = "https://journals-sagepub-com.crai.referencistas.com/"
-        DOMINIO_OBJETIVO = "journals-sagepub-com"
+app = FastAPI(title="Mini Job Runner")
 
-        login_con_google(
-            driver=driver,
-            url_revista=URL_REVISTA,
-            correo_institucional=config.USUARIO,
-            contrasena=config.CONTRASENA,
-            carpeta_descargas=config.DOWNLOAD_DIR_SAGE,
-            dominio_objetivo=DOMINIO_OBJETIVO
-        )
+# Carpeta donde se guardan resultados y logs
+BASE_DIR = Path(os.environ.get("OUT_BASE", "/data"))
+BASE_DIR.mkdir(parents=True, exist_ok=True)
 
-        cerrar_banners(driver)
+class RunReq(BaseModel):
+    script: str
+    args: list[str] | None = None
 
-        QUERY = "generative artificial intelligence"
-        buscar_en_sage(driver, QUERY, config.DOWNLOAD_DIR_SAGE)
+@app.post("/run")
+def run(req: RunReq, bg: BackgroundTasks):
+    scripts = {
+        "similarity": "main_similarity.py",
+        "terminos": "main_terminos_es.py",
+        "cluster": "main_cluster.py",
+        "req5": "main_req5.py",
+    }
+    if req.script not in scripts:
+        raise HTTPException(400, f"Script no permitido: {req.script}")
 
-        # === Exportar múltiples páginas (ajusta max_paginas a 5–10 según lo que quieras) ===
-        exportar_ris_paginando(
-            driver,
-            carpeta_descargas=config.DOWNLOAD_DIR_SAGE,
-            consulta_slug="generative-artificial-intelligence",
-            max_paginas=5  # 10 páginas ≈ 100 artículos si pageSize=10
-        )
+    task_id = str(uuid.uuid4())[:8]
+    out_dir = BASE_DIR / task_id
+    out_dir.mkdir(parents=True, exist_ok=True)
+    log_path = out_dir / "run.log"
 
-        print("URL actual:", driver.current_url)
-        print("Título:", driver.title)
+    cmd = f"python3 scripts/{scripts[req.script]} " + " ".join(shlex.quote(a) for a in (req.args or []))
 
-    finally:
-        driver.quit()
+    def run_bg():
+        with open(log_path, "w") as lf:
+            lf.write(f"Inicio: {datetime.utcnow().isoformat()}\nComando: {cmd}\n\n")
+            lf.flush()
+            proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            for line in proc.stdout:
+                lf.write(line)
+                lf.flush()
+            proc.wait()
+            lf.write(f"\nFinalizado con código {proc.returncode}\n")
+
+    bg.add_task(run_bg)
+    return {"task_id": task_id, "log_url": f"/logs/{task_id}", "files_url": f"/files/{task_id}"}
+
+@app.get("/logs/{task_id}")
+def get_log(task_id: str):
+    path = BASE_DIR / task_id / "run.log"
+    if not path.exists():
+        raise HTTPException(404, "Log no encontrado (aún corriendo o ID incorrecto)")
+    return FileResponse(path)
+
+@app.get("/files/{task_id}")
+def list_files(task_id: str):
+    task_dir = BASE_DIR / task_id
+    if not task_dir.exists():
+        raise HTTPException(404, "Tarea no encontrada")
+    files = [str(p.relative_to(BASE_DIR / task_id)) for p in task_dir.rglob("*") if p.is_file()]
+    return {"task_id": task_id, "files": files}
+
+@app.get("/files/{task_id}/{file_path:path}")
+def get_file(task_id: str, file_path: str):
+    path = BASE_DIR / task_id / file_path
+    if not path.exists():
+        raise HTTPException(404, "Archivo no encontrado")
+    return FileResponse(path)

@@ -1,0 +1,4 @@
+﻿i,j,title_i,title_j,levenshtein,jaccard_bi,dice_bi,cosine_tfidf,st_en,st_multi
+0,1,A generative artificial intelligence-enhanced multiagent approach to empowering collaborative problem solving across dif,A systematic literature review on designing self-regulated learning using generative artificial intelligence and its fut,0.2078,0.0141,0.0277,0.2765,0.591,0.6007
+0,2,A generative artificial intelligence-enhanced multiagent approach to empowering collaborative problem solving across dif,Authenticity and academic integrity in Generative Artificial Intelligence (GenAI) use among undergraduate nursing studen,0.0056,0.0,0.0,0.0,0.0315,0.0116
+1,2,A systematic literature review on designing self-regulated learning using generative artificial intelligence and its fut,Authenticity and academic integrity in Generative Artificial Intelligence (GenAI) use among undergraduate nursing studen,0.0051,0.0,0.0,0.0,0.101,0.0487

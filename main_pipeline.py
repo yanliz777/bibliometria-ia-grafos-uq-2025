@@ -2,6 +2,8 @@
 # Orquestra todo: SAGE -> ScienceDirect -> Unificación en un solo run.
 
 import os
+print("✅ main_pipeline.py iniciado")
+
 import time
 from datetime import datetime
 
@@ -314,17 +316,9 @@ def run_pipeline(
     print(f"\n🧮 Unificando y deduplicando por DOI/Título (total leídos: {len(registros)}) ...")
     unificados, duplicados = merge_records(registros)
 
-    out_dir = getattr(config, "OUTPUT_DIR_BIBLIO", os.path.join(os.path.expanduser("~"), "Desktop", "salidas"))
+    # ✅ Guardar directamente en la raíz del proyecto
+    out_dir = config.OUTPUT_DIR_BIBLIO
     os.makedirs(out_dir, exist_ok=True)
+
     export_outputs(unificados, duplicados, out_dir, base_name="unificado_ai_generativa")
     print("\n✅ Pipeline completo. Archivos en:", out_dir)
-
-
-if __name__ == "__main__":
-    # Ajusta aquí cuántas páginas quieres de cada fuente:
-    run_pipeline(
-        query='generative artificial intelligence',
-        paginas_sage=5,   # SAGE: páginas
-        paginas_sd=5,     # ScienceDirect: páginas
-        sd_per_page=100   # SD: resultados por página (25/50/100)
-    )

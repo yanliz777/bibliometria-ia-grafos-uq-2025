@@ -1,0 +1,192 @@
+
+================ EJECUCIÓN INICIADA ================
+Fecha: 2025-11-09 11:07:32
+Python: 3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]
+Working dir: /home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025
+
+===== START r1 :: 2025-11-09 11:07:32 =====
+CMD: /home/ycmejia/Escritorio/SEMESTRE NOVENO/algoritmos-automatizaci-n/venv/bin/python main_pipeline.py
+--- STDOUT ---
+✅ main_pipeline.py iniciado
+
+r1 OK en 0.6s
+===== END r1 =====
+
+===== START r2 :: 2025-11-09 11:07:33 =====
+CMD: /home/ycmejia/Escritorio/SEMESTRE NOVENO/algoritmos-automatizaci-n/venv/bin/python main_similarity.py
+--- STDOUT ---
+
+# Resumen legible (cómo leer los números)
+• Escala de 0 a 1 (↑ es más similar). Umbrales: ≥0.70 muy alta, 0.40–0.69 moderada, 0.10–0.39 baja, <0.10 muy baja.
+• Métricas: levenshtein (caracteres), jaccard_bi/dice_bi (bigramas), cosine_tfidf (vocabulario), st_en/st_multi (IA).
+
+Top 3 pares por similitud (IA - inglés (st_en)):
+- (0, 1) st_en=0.591 → moderada | TF-IDF=0.277
+    · A generative artificial intelligence-enhanced multiagent app…
+    · A systematic literature review on designing self-regulated l…
+- (1, 2) st_en=0.101 → baja | TF-IDF=0.000
+    · A systematic literature review on designing self-regulated l…
+    · Authenticity and academic integrity in Generative Artificial…
+- (0, 2) st_en=0.0315 → muy baja | TF-IDF=0.000
+    · A generative artificial intelligence-enhanced multiagent app…
+    · Authenticity and academic integrity in Generative Artificial…
+
+ Reporte claro generado: datos/salidas/salidas/similitud_pairs_README.md
+ Listo. Pares analizados: 3
+➡ Resultados guardados en: datos/salidas/salidas/similitud_pairs.csv
+
+Vista rápida de resultados:
+ i  j                                                                                                                  title_i                                                                                                                  title_j  levenshtein  jaccard_bi  dice_bi  cosine_tfidf  st_en  st_multi
+ 0  1 A generative artificial intelligence-enhanced multiagent approach to empowering collaborative problem solving across dif A systematic literature review on designing self-regulated learning using generative artificial intelligence and its fut       0.2078      0.0141   0.0277        0.2765 0.5910    0.6007
+ 0  2 A generative artificial intelligence-enhanced multiagent approach to empowering collaborative problem solving across dif Authenticity and academic integrity in Generative Artificial Intelligence (GenAI) use among undergraduate nursing studen       0.0056      0.0000   0.0000        0.0000 0.0315    0.0116
+ 1  2 A systematic literature review on designing self-regulated learning using generative artificial intelligence and its fut Authenticity and academic integrity in Generative Artificial Intelligence (GenAI) use among undergraduate nursing studen       0.0051      0.0000   0.0000        0.0000 0.1010    0.0487
+
+r2 OK en 14.1s
+===== END r2 =====
+
+===== START r3 :: 2025-11-09 11:07:47 =====
+CMD: /home/ycmejia/Escritorio/SEMESTRE NOVENO/algoritmos-automatizaci-n/venv/bin/python main_terminos_es.py
+--- STDOUT ---
+
+# Requerimiento 3 — Salida explicativa
+Objetivo: contar la frecuencia de las palabras asociadas (semillas) en los ABSTRACTS,
+descubrir hasta 15 nuevos términos característicos del corpus y evaluar su precisión semántica.
+
+Corpus: 546 abstracts analizados.
+
+1) Frecuencia de semillas (Top 10 por total_count):
+ - privacy: total=29, docs=25, rel/abs=0.053
+ - transparency: total=18, docs=15, rel/abs=0.033
+ - machine learning: total=17, docs=16, rel/abs=0.031
+ - ai literacy: total=13, docs=9, rel/abs=0.024
+ - ethics: total=12, docs=10, rel/abs=0.022
+ - training data: total=9, docs=7, rel/abs=0.016
+ - generative models: total=9, docs=6, rel/abs=0.016
+ - personalization: total=8, docs=7, rel/abs=0.015
+ - prompting: total=6, docs=6, rel/abs=0.011
+ - co-creation: total=6, docs=3, rel/abs=0.011
+
+2) Nuevos términos (TF-IDF) y precisión:
+ - background: tfidf=45.671, docs=51, sim→semillas=0.240, precisa=no
+ - generative: tfidf=24.489, docs=408, sim→semillas=0.330, precisa=no
+ - genai: tfidf=22.919, docs=115, sim→semillas=0.169, precisa=no
+ - purpose: tfidf=22.382, docs=32, sim→semillas=0.245, precisa=no
+ - artificial: tfidf=21.356, docs=386, sim→semillas=0.288, precisa=no
+ - intelligence: tfidf=21.226, docs=387, sim→semillas=0.320, precisa=no
+ - generative artificial: tfidf=21.037, docs=359, sim→semillas=0.302, precisa=no
+ - artificial intelligence: tfidf=21.001, docs=386, sim→semillas=0.404, precisa=no
+ - ai: tfidf=20.630, docs=188, sim→semillas=0.400, precisa=no
+ - abstract: tfidf=13.842, docs=18, sim→semillas=0.253, precisa=no
+ - gai: tfidf=11.128, docs=50, sim→semillas=0.177, precisa=no
+ - research: tfidf=10.930, docs=144, sim→semillas=0.294, precisa=no
+ - data: tfidf=10.222, docs=122, sim→semillas=0.316, precisa=no
+ - use: tfidf=10.029, docs=126, sim→semillas=0.221, precisa=no
+ - introduction: tfidf=9.692, docs=17, sim→semillas=0.286, precisa=no
+
+Precisión global (similitud ≥ 0.50): 0.0%
+
+Archivos generados:
+ • CSV frecuencias semillas: datos/salidas/req3_frecuencias_semillas.csv
+ • CSV nuevos términos:      datos/salidas/req3_nuevos_terminos.csv
+ • PNG frecuencias semillas: datos/salidas/req3_frecuencias_semillas.png
+ • PNG nuevos términos:      datos/salidas/req3_nuevos_terminos.png
+
+Cómo leer:
+ - total_count: veces que la semilla aparece en todos los abstracts.
+ - doc_freq: en cuántos abstracts aparece.
+ - score_tfidf: importancia/peso del término en el corpus.
+ - sim→semillas: cercanía semántica del término a la categoría; “precisa” = 'sí' si supera el umbral.
+
+--- STDERR ---
+/home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025/utils/analisis_frecuencias_es.py:209: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels(df[col_x], rotation=45, ha="right")
+/home/ycmejia/Escritorio/Grafos/bibliometria-ia-grafos-uq-2025/utils/analisis_frecuencias_es.py:209: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels(df[col_x], rotation=45, ha="right")
+
+r3 OK en 9.2s
+===== END r3 =====
+
+===== START r4 :: 2025-11-09 11:07:56 =====
+CMD: /home/ycmejia/Escritorio/SEMESTRE NOVENO/algoritmos-automatizaci-n/venv/bin/python main_cluster.py
+--- STDOUT ---
+
+# Requerimiento 4 — Agrupamiento jerárquico con dendrogramas
+Objetivo: representar la SIMILITUD entre abstracts y observar cómo se fusionan en grupos
+mediante un árbol (dendrograma). Se compara la coherencia de tres variantes de enlace.
+
+Corpus cargado: 546 abstracts.
+
+Demostración (producto punto de TF-IDF normalizado = coseno):
+• cos(abstract_0, abstract_1) = 0.0929
+
+✓ Dendrograma guardado: datos/salidas/dendrograma_single.png
+✓ Dendrograma guardado: datos/salidas/dendrograma_complete.png
+✓ Dendrograma guardado: datos/salidas/dendrograma_average.png
+✓ Dendrograma guardado: datos/salidas/dendrograma_ward.png
+
+Asignando clusters a términos (para grafo de coocurrencia)...
+✓ Clusters de términos exportados a: datos/salidas/req4_clusters_terminos.csv
+
+# Lectura de resultados (Requerimiento 4)
+  metodo  cophenetic_correlation  k_mejor  silhouette_mejor
+  single                0.909507      2.0          0.011454
+complete                0.981912      NaN               NaN
+ average                0.987035      8.0          0.140025
+    ward                0.204699      8.0          0.200936
+
+► Método más coherente (silhouette): ward  |  silhouette=0.201  |  k=8
+   • Asignaciones guardadas en: datos/salidas/req4_asignaciones_ward.csv
+   • Clusters de términos guardados en: datos/salidas/req4_clusters_terminos.csv
+
+Artefactos generados:
+  • Dendrograma: datos/salidas/dendrograma_single.png
+  • Métricas JSON: datos/salidas/req4_metricas_single.json
+  • Dendrograma: datos/salidas/dendrograma_complete.png
+  • Métricas JSON: datos/salidas/req4_metricas_complete.json
+  • Dendrograma: datos/salidas/dendrograma_average.png
+  • Métricas JSON: datos/salidas/req4_metricas_average.json
+  • Dendrograma: datos/salidas/dendrograma_ward.png
+  • Métricas JSON: datos/salidas/req4_metricas_ward.json
+  • Resumen métricas CSV: datos/salidas/req4_metricas.csv
+
+✅ Proceso completado correctamente.
+
+r4 OK en 58.7s
+===== END r4 =====
+
+===== START r5 :: 2025-11-09 11:08:55 =====
+CMD: /home/ycmejia/Escritorio/SEMESTRE NOVENO/algoritmos-automatizaci-n/venv/bin/python main_req5.py
+--- STDOUT ---
+
+# Requerimiento 5 — Análisis visual de la producción científica
+Objetivo: (1) mapa de calor por país del primer autor, (2) nube de palabras dinámica (abstracts+keywords), (3) línea temporal por año y revista; y exportar todo a PDF.
+
+• CSV cargado con 546 registros.
+✓ Mapa de calor por país (primer autor) guardado en: datos/salidas/req5_mapa_paises.png
+   (También se guarda req5_paises.csv en la misma carpeta)
+✓ Nube de palabras (abstracts+keywords) guardada en: datos/salidas/req5_nube_palabras.png
+   Artefactos para verificación de dinamismo:
+   • req5_top_terminos.csv  • req5_contadores.json
+   Top 10 términos (aprox.):
+   - artificial intelligence: 1000
+   - generative artificial: 732
+   - genai: 604
+   - generative ai: 410
+   - research: 393
+   - ai: 345
+   - study: 294
+   - design: 276
+   - model: 276
+   - gai: 269
+✓ Línea temporal (stacked area) guardada en: datos/salidas/req5_timeline_revistas.png
+
+📄 PDF consolidado generado en: datos/salidas/req5_report.pdf
+
+# Cómo leer los artefactos
+1) Mapa de calor: países con color más intenso = más publicaciones con PRIMER autor en ese país.
+2) Nube (DINÁMICA): al agregar/eliminar estudios, cambian req5_top_terminos.csv y req5_contadores.json.
+3) Línea temporal: área apilada por AÑO y REVISTA (top + Others) para ver tendencias.
+4) PDF: documento único con las tres figuras para el informe.
+
+r5 OK en 11.2s
+===== END r5 =====

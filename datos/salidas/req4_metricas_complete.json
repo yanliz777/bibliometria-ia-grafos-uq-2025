@@ -1,0 +1,15 @@
+{
+  "metodo": "complete",
+  "cophenetic_correlation": 0.9819123866361901,
+  "silhouette": {
+    "2": NaN,
+    "3": NaN,
+    "4": NaN,
+    "5": NaN,
+    "6": NaN,
+    "7": NaN,
+    "8": NaN
+  },
+  "k_mejor": null,
+  "silhouette_mejor": null
+}

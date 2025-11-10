@@ -24,8 +24,8 @@ from utils.viz_req5 import (
 )
 
 # ==== CONFIGURA AQUÍ ====
-RUTA_CSV_UNIFICADO = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas/unificado_ai_generativa.csv"
-OUT_DIR = "/home/ycmejia/Escritorio/PROYECTO ALGORITMOS/salidas"
+RUTA_CSV_UNIFICADO = r"datos/salidas/unificado_ai_generativa.csv"
+OUT_DIR = r"datos/salidas"
 N_TOP_REVISTAS = 8
 # ========================
 

@@ -1,0 +1,2463 @@
+TY  - JOUR
+T1  - Generative Artificial Intelligence in Business Higher Education:
+AU  - Huo, Xuenan
+AU  - Siau, Keng Leng
+JO  - Journal of Global Information Management
+VL  - 32
+IS  - 1
+PY  - 2024
+DA  - 2024/01/01/
+SN  - 1062-7375
+DO  - https://doi.org/10.4018/JGIM.364093
+UR  - https://www.sciencedirect.com/science/article/pii/S1062737524000416
+KW  - Generative Artificial Intelligence
+KW  - Agentic Artificial Intelligence
+KW  - Artificial General Intelligence
+KW  - Focus Group Study
+KW  - Qualitative Research
+KW  - Business Higher Education
+AB  - ABSTRACT
+This research investigates the opportunities and challenges of integrating generative artificial intelligence (GenAI) into business higher education, drawing insights from an asynchronous focus group research study with doctoral students who serve dual roles as both learners and educators. Key opportunities identified through thematic analysis include knowledge acquisition, intelligent co-ideation, supportive augmentation, and personalized learning. Challenges identified include AI trustworthiness, cognitive dependency, human value, policy and instruction, assessment integrity, and identity management. This study clarifies GenAI’s specific role in business education and provides practical insights for effectively integrating GenAI to enhance learning outcomes and address emerging challenges. An analysis theory on the opportunities and challenges of GenAI on business higher education is developed and described in the paper. The potential impact of Agentic Artificial Intelligence (autonomous AI agents) and Artificial General Intelligence (AGI) on education is also discussed.
+ER  - 
+
+TY  - JOUR
+T1  - Brave new procurement deals: An experimental study of how generative artificial intelligence reshapes buyer–supplier negotiations
+AU  - Herold, Silke
+AU  - Heller, Jonas
+AU  - Rozemeijer, Frank
+AU  - Mahr, Dominik
+JO  - Journal of Purchasing and Supply Management
+VL  - 31
+IS  - 4
+SP  - 101012
+PY  - 2025
+DA  - 2025/10/01/
+SN  - 1478-4092
+DO  - https://doi.org/10.1016/j.pursup.2025.101012
+UR  - https://www.sciencedirect.com/science/article/pii/S1478409225000214
+KW  - Artificial intelligence
+KW  - Chatbots
+KW  - Negotiation
+AB  - The technological breakthrough of artificial intelligence (AI) is impacting buyer-supplier negotiations, which are increasingly moving toward human-to-machine negotiations using AI-based chatbots. While the first AI-powered negotiation solutions are currently being used by procurement professionals to negotiate for non-critical spend items, which is an example of structural influence, the behavioral influence of AI-based chatbots (i.e., on negotiation approach) remains unknown. It is unclear in which behavioral settings these chatbots deliver value to the buying firm in terms of economic, psychological, and relational outcomes. To fill this gap, we conduct three experiments in buyer–supplier negotiation settings, two in a lab-setting with undergraduate business students and one online experiment with professional negotiators. In our interactive simulations, participants play the role of the supplier, while a ChatGPT-based custom-trained chatbot acts as the buyer. We find that when the chatbot deploys a competitive, as compared to a collaborative, negotiation approach, it will achieve a higher price discount, better payment terms, and a quicker negotiation. However, suppliers trust a collaboratively prompted, as compared to a competitively prompted, chatbot more and demonstrate higher outcome satisfaction, as well as a stronger desire for future interaction. A text analysis of the chat interactions indicates a higher level of similarity when a competitively prompted chatbot is employed, which implies that suppliers also use more insistent and intimidating language, thereby matching the chatbot's negotiation approach to a greater degree. While the negotiation approach is a significant influencing factor, we do not find significant evidence that item type, in our case non-critical or bottleneck, matters, which indicates that AI-based chatbots can be effective in various buyer–supplier settings.
+ER  - 
+
+TY  - JOUR
+T1  - Has generative artificial intelligence solved inverse materials design?
+AU  - Park, Hyunsoo
+AU  - Li, Zhenzhu
+AU  - Walsh, Aron
+JO  - Matter
+VL  - 7
+IS  - 7
+SP  - 2355
+EP  - 2367
+PY  - 2024
+DA  - 2024/07/03/
+SN  - 2590-2385
+DO  - https://doi.org/10.1016/j.matt.2024.05.017
+UR  - https://www.sciencedirect.com/science/article/pii/S259023852400242X
+AB  - Summary
+The directed design and discovery of compounds with pre-determined properties is a long-standing challenge in materials research. We provide a perspective on progress toward achieving this goal using generative models for chemical compositions and crystal structures based on a set of powerful statistical techniques drawn from the artificial intelligence community. We introduce the central concepts underpinning generative models of crystalline materials. Coverage is provided of early implementations for inorganic crystals based on generative adversarial networks and variational autoencoders through to ongoing progress involving autoregressive and diffusion models. The influence of the choice of chemical representation and the generative architecture is discussed, along with metrics for quantifying the quality of the hypothetical compounds produced. While further developments are required to enable realistic predictions drawn from richer structure and property datasets, generative artificial intelligence is already proving to be complementary to traditional materials design strategies.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in the metaverse era
+AU  - Lv, Zhihan
+JO  - Cognitive Robotics
+VL  - 3
+SP  - 208
+EP  - 217
+PY  - 2023
+DA  - 2023/01/01/
+SN  - 2667-2413
+DO  - https://doi.org/10.1016/j.cogr.2023.06.001
+UR  - https://www.sciencedirect.com/science/article/pii/S2667241323000198
+AB  - Generative artificial intelligence (AI) is a form of AI that can autonomously generate new content, such as text, images, audio, and video. Generative AI provides innovative approaches for content production in the metaverse, filling gaps in the development of the metaverse. Products such as ChatGPT have the potential to enhance the search experience, reshape information generation and presentation methods, and become new entry points for online traffic. This is expected to significantly impact traditional search engine products, accelerating industry innovation and upgrading. This paper presents an overview of the technologies and prospective applications of generative AI in the breakthrough of metaverse technology and offers insights for increasing the effectiveness of generative AI in creating creative content.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in ophthalmology
+AU  - Waisberg, Ethan
+AU  - Ong, Joshua
+AU  - Kamran, Sharif Amit
+AU  - Masalkhi, Mouayad
+AU  - Paladugu, Phani
+AU  - Zaman, Nasif
+AU  - Lee, Andrew G.
+AU  - Tavakkoli, Alireza
+JO  - Survey of Ophthalmology
+VL  - 70
+IS  - 1
+SP  - 1
+EP  - 11
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 0039-6257
+DO  - https://doi.org/10.1016/j.survophthal.2024.04.009
+UR  - https://www.sciencedirect.com/science/article/pii/S0039625724000444
+KW  - Generative adversarial networks
+KW  - Deep learning
+KW  - ChatGPT
+KW  - GPT4
+KW  - Artificial ophthalmic image synthesis
+KW  - AI
+KW  - Machine learning
+AB  - Generative artificial intelligence (AI) has revolutionized medicine over the past several years. A generative adversarial network (GAN) is a deep learning framework that has become a powerful technique in medicine, particularly in ophthalmology for image analysis. In this paper we review the current ophthalmic literature involving GANs, and highlight key contributions in the field. We briefly touch on ChatGPT, another application of generative AI, and its potential in ophthalmology. We also explore the potential uses for GANs in ocular imaging, with a specific emphasis on 3 primary domains: image enhancement, disease identification, and generating of synthetic data. PubMed, Ovid MEDLINE, Google Scholar were searched from inception to October 30, 2022, to identify applications of GAN in ophthalmology. A total of 40 papers were included in this review. We cover various applications of GANs in ophthalmic-related imaging including optical coherence tomography, orbital magnetic resonance imaging, fundus photography, and ultrasound; however, we also highlight several challenges that resulted in the generation of inaccurate and atypical results during certain iterations. Finally, we examine future directions and considerations for generative AI in ophthalmology.
+ER  - 
+
+TY  - JOUR
+T1  - AI in action: Changes to student perceptions when using generative artificial intelligence for the creation of a multimedia project-based assessment
+AU  - Charles, Kellie A.
+AU  - Yousuf, Arsalan
+AU  - Chua, Han Chow
+AU  - Matthews, Slade
+AU  - Harnett, Joanna
+AU  - Hinton, Tina
+JO  - European Journal of Pharmacology
+VL  - 998
+SP  - 177508
+PY  - 2025
+DA  - 2025/07/05/
+SN  - 0014-2999
+DO  - https://doi.org/10.1016/j.ejphar.2025.177508
+UR  - https://www.sciencedirect.com/science/article/pii/S0014299925002626
+KW  - Science education
+KW  - Pharmacology education
+KW  - Artificial intelligence
+KW  - AI
+KW  - ChatGPT
+AB  - Introduction
+New modes of assessments are needed to evaluate of the authenticity of student learning in an artificial intelligence (AI) world. In mid-2023, we piloted a new assessment type; a collaborative group multimedia assessment with AI allowance. The aim of the research study was to explore the experiences of students using AI in a multimedia assessment. We further aimed to determine whether these use cases changed student perceptions of the ways AI can be used in learning and assessment.
+Methods
+Students enrolled in a capstone Pharmacology interdisciplinary unit (n = 40) were included in an exploratory, qualitative case study methodology. Thematic analysis using an AI role-based conceptual framework was used to explore student perceptions of AI use prior to and during their projects from logbooks documenting the assessment process.
+Results
+AI was initially perceived by students as having a personal tutor-style role, which aligned with the taxonomy with AI acting as an Arbiter (49 %), Oracle (41 %) and Quant (10 %). In contrast to their earlier perceptions, AI was only used in a limited manner in the early stages of assessment in the idea generation in the role as an Oracle (86 %) or in data analytic purposes as a Quant (14 %), (n = 14 cases in 5 groups). No student group used AI to generate written text for the final assessment.
+Discussion
+Tension between perceived and actual use of AI is indicative of the uncertainty faced by students with the allowance of AI within assessments. Clear guidance for educators and students about how to assess the AI-supported learning process is needed to ensure the integrity of the assessment system.
+ER  - 
+
+TY  - JOUR
+T1  - Late gadolinium enhancement cardiovascular magnetic resonance with generative artificial intelligence
+AU  - Demirel, Omer Burak
+AU  - Ghanbari, Fahime
+AU  - Hoeger, Christopher W.
+AU  - Tsao, Connie W.
+AU  - Carty, Adele
+AU  - Ngo, Long H.
+AU  - Pierce, Patrick
+AU  - Johnson, Scott
+AU  - Arcand, Kathryn
+AU  - Street, Jordan
+AU  - Rodriguez, Jennifer
+AU  - Wallace, Tess E.
+AU  - Chow, Kelvin
+AU  - Manning, Warren J.
+AU  - Nezafat, Reza
+JO  - Journal of Cardiovascular Magnetic Resonance
+VL  - 27
+IS  - 1
+SP  - 101127
+PY  - 2025
+DA  - 2025/06/01/
+SN  - 1097-6647
+DO  - https://doi.org/10.1016/j.jocmr.2024.101127
+UR  - https://www.sciencedirect.com/science/article/pii/S1097664724011542
+KW  - Late gadolinium enhancement
+KW  - Highly accelerated
+KW  - Deep learning
+AB  - ABSTRACT
+Background
+Late gadolinium enhancement (LGE) cardiovascular magnetic resonance (CMR) imaging enables imaging of scar/fibrosis and is a cornerstone of most CMR imaging protocols. CMR imaging can benefit from image acceleration; however, image acceleration in LGE remains challenging due to its limited signal-to-noise ratio. In this study, we sought to evaluate a rapid two-dimensional (2D) LGE imaging protocol using a generative artificial intelligence (AI) algorithm with inline reconstruction.
+Methods
+A generative AI-based image enhancement was used to improve the sharpness of 2D LGE images acquired with low spatial resolution in the phase-encode direction. The generative AI model is an image enhancement technique built on the enhanced super-resolution generative adversarial network. The model was trained using balanced steady-state free-precession cine images, readily used for LGE without additional training. The model was implemented inline, allowing the reconstruction of images on the scanner console. We prospectively enrolled 100 patients (55 ± 14 years, 72 males) referred for clinical CMR at 3T. We collected three sets of LGE images in each subject, with in-plane spatial resolutions of 1.5 × 1.5-3-6 mm2. The generative AI model enhanced in-plane resolution to 1.5 × 1.5 mm2 from the low-resolution counterparts. Images were compared using a blur metric, quantifying the perceived image sharpness (0 = sharpest, 1 = blurriest). LGE image sharpness (using a 5-point scale) was assessed by three independent readers.
+Results
+The scan times for the three imaging sets were 15 ± 3, 9 ± 2, and 6 ± 1 s, with inline generative AI-based images reconstructed time of ∼37 ms. The generative AI-based model improved visual image sharpness, resulting in lower blur metric compared to low-resolution counterparts (AI-enhanced from 1.5 × 3 mm2 resolution: 0.3 ± 0.03 vs 0.35 ± 0.03, P < 0.01). Meanwhile, AI-enhanced images from 1.5 × 3 mm2 resolution and original LGE images showed similar blur metric (0.30 ± 0.03 vs 0.31 ± 0.03, P = 1.0) Additionally, there was an overall 18% improvement in image sharpness between AI-enhanced images from 1.5 × 3 mm2 resolution and original LGE images in the subjective blurriness score (P < 0.01).
+Conclusion
+The generative AI-based model enhances the image quality of 2D LGE images while reducing the scan time and preserving imaging sharpness. Further evaluation in a large cohort is needed to assess the clinical utility of AI-enhanced LGE images for scar evaluation, as this proof-of-concept study does not provide evidence of an impact on diagnosis.
+ER  - 
+
+TY  - JOUR
+T1  - A NOVEL WEB APPLICATION UTILIZING GENERATIVE ARTIFICIAL INTELLIGENCE TO ENHANCE ENDOSCOPY EDUCATION FOR GASTROENTEROLOGY FELLOWS
+AU  - Vasavada, Shaleen
+AU  - Nguyen, Theresa H.
+AU  - Larson, Scott
+JO  - Gastrointestinal Endoscopy
+VL  - 101
+IS  - 5, Supplement 
+SP  - S48
+PY  - 2025
+DA  - 2025/05/01/
+T2  - ASGE Abstracts - DDW 2025
+SN  - 0016-5107
+DO  - https://doi.org/10.1016/j.gie.2025.03.088
+UR  - https://www.sciencedirect.com/science/article/pii/S0016510725002573
+ER  - 
+
+TY  - JOUR
+T1  - Is generative artificial intelligence capable of clinical reasoning?
+AU  - Rodman, Adam
+AU  - Topol, Eric J
+JO  - The Lancet
+VL  - 405
+IS  - 10480
+SP  - 689
+PY  - 2025
+DA  - 2025/03/01/
+SN  - 0140-6736
+DO  - https://doi.org/10.1016/S0140-6736(25)00348-4
+UR  - https://www.sciencedirect.com/science/article/pii/S0140673625003484
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence and second language writing
+AU  - Saenkhum, Tanita
+AU  - Kim, Soo Hyon
+JO  - Journal of Second Language Writing
+VL  - 62
+SP  - 101066
+PY  - 2023
+DA  - 2023/12/01/
+SN  - 1060-3743
+DO  - https://doi.org/10.1016/j.jslw.2023.101066
+UR  - https://www.sciencedirect.com/science/article/pii/S1060374323001042
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence and its applications in materials science: Current situation and future perspectives
+AU  - Liu, Yue
+AU  - Yang, Zhengwei
+AU  - Yu, Zhenyao
+AU  - Liu, Zitu
+AU  - Liu, Dahui
+AU  - Lin, Hailong
+AU  - Li, Mingqing
+AU  - Ma, Shuchang
+AU  - Avdeev, Maxim
+AU  - Shi, Siqi
+JO  - Journal of Materiomics
+VL  - 9
+IS  - 4
+SP  - 798
+EP  - 816
+PY  - 2023
+DA  - 2023/07/01/
+SN  - 2352-8478
+DO  - https://doi.org/10.1016/j.jmat.2023.05.001
+UR  - https://www.sciencedirect.com/science/article/pii/S2352847823000771
+KW  - Machine learning
+KW  - Artificial intelligence
+KW  - Generative artificial intelligence
+KW  - Materials science
+KW  - Novel materials discovery
+KW  - Deep learning
+AB  - Generative Artificial Intelligence (GAI) is attracting the increasing attention of materials community for its excellent capability of generating required contents. With the introduction of Prompt paradigm and reinforcement learning from human feedback (RLHF), GAI shifts from the task-specific to general pattern gradually, enabling to tackle multiple complicated tasks involved in resolving the structure-activity relationships. Here, we review the development status of GAI comprehensively and analyze pros and cons of various generative models in the view of methodology. The applications of task-specific generative models involving materials inverse design and data augmentation are also dissected. Taking ChatGPT as an example, we explore the potential applications of general GAI in generating multiple materials content, solving differential equation as well as querying materials FAQs. Furthermore, we summarize six challenges encountered for the use of GAI in materials science and provide the corresponding solutions. This work paves the way for providing effective and explainable materials data generation and analysis approaches to accelerate the materials research and development.
+ER  - 
+
+TY  - JOUR
+T1  - Medical education empowered by generative artificial intelligence large language models
+AU  - Jowsey, Tanisha
+AU  - Stokes-Parish, Jessica
+AU  - Singleton, Rachelle
+AU  - Todorovic, Michael
+JO  - Trends in Molecular Medicine
+VL  - 29
+IS  - 12
+SP  - 971
+EP  - 973
+PY  - 2023
+DA  - 2023/12/01/
+SN  - 1471-4914
+DO  - https://doi.org/10.1016/j.molmed.2023.08.012
+UR  - https://www.sciencedirect.com/science/article/pii/S1471491423002113
+KW  - artificial intelligence
+KW  - large language model
+KW  - machine learning
+KW  - education
+AB  - Generative artificial intelligence (GAI) large language models (LLMs), like ChatGPT, have become the world’s fastest growing applications. Here, we provide useful strategies for educators in medical and health science (M&HS) to integrate GAI-LLMs into learning and teaching practice, ultimately enhancing students’ digital capability.
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence to Automate the Adaptation of Excel Health Economic Models and Word Technical Reports
+AU  - Rawlinson, William
+AU  - Teitsson, Siguroli
+AU  - Reason, Tim
+AU  - Malcolm, Bill
+AU  - Gimblett, Andy
+AU  - Klijn, Sven L.
+JO  - Value in Health
+PY  - 2025
+DA  - 2025/06/14/
+SN  - 1098-3015
+DO  - https://doi.org/10.1016/j.jval.2025.05.020
+UR  - https://www.sciencedirect.com/science/article/pii/S109830152502399X
+KW  - artificial intelligence
+KW  - large language models
+AB  - Objectives
+In health economics and outcomes research (HEOR), many repetitive tasks could be performed by large language models (LLMs), including adapting Excel-based health economic models and associated Word technical reports to a new setting. However, it is vital to develop robust methods so that the LLM delivers at least human-level accuracy.
+Methods
+We developed LLM-based pipelines to automate parameter value adaptations for Excel-based models and subsequent reporting of the model results. Chain-of-thought prompting, ensemble shuffling, and task decomposition were used to enhance the accuracy of the LLM-generated content. We tested the pipelines by adapting 3 Excel-based models (2 cost-effectiveness models [CEMs] and 1 budget impact model [BIM]) and their associated technical reports. The quality of reporting was evaluated by 2 expert health economists.
+Results
+The accuracy of parameter value adaptations was 100% (147 of 147), 100% (207 of 207), and 98.7% (158 of 160) for the 2 CEMs and 1 budget impact model, respectively. The parameter value adaptations were performed without human intervention in 195 seconds, 245 seconds, and 189 seconds. For parameter value adaptations, the application programming interface costs associated with running the pipeline were $13.36, $6.48, and $2.65. The accuracy of report adaptations was 94.4% (17 of 18), 100% (54 of 54), and 95.1% (39 of 41), respectively. The report adaptations were performed in 128 seconds, 336 seconds, and 286 seconds. For report adaptations, the application programming interface costs associated with running the pipeline were $1.53, $4.24, and $4.05.
+Conclusions
+LLM-based toolchains have the potential to accurately and rapidly perform routine adaptations of Excel-based CEMs and technical reports at a low cost. This could expedite health technology assessments and improve patient access to new treatments.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter 3 - Industry 5.0 era of digital supply chain: A generative artificial intelligence (GenAI) action model for workforce engagement
+AU  - Mukhuty, Sumona
+AU  - Dixon, Robert
+AU  - Upadhyay, Arvind
+A2  - Khan, Syed Abdul Rehman
+A2  - Sheikh, Adnan Ahmed
+A2  - Vilko, Jyri
+A2  - Nazir, Sajid
+A2  - Ali, Mahmood
+A2  - Torkkeli, Marko
+BT  - Technological Innovations and Industry 5.0
+PB  - Elsevier
+SP  - 37
+EP  - 53
+PY  - 2025
+DA  - 2025/01/01/
+T2  - Developments and Advances in the Supply Chain Industry
+SN  - 978-0-443-33813-7
+DO  - https://doi.org/10.1016/B978-0-443-33813-7.00003-8
+UR  - https://www.sciencedirect.com/science/article/pii/B9780443338137000038
+KW  - Generative artificial intelligence
+KW  - Industry 4.0
+KW  - Industry 5.0
+KW  - Productivity enhancement
+KW  - Supply chains
+AB  - Industry 5.0 advocates triangulating the technology-centric emphasis of Industry 4.0 with human-centricity and sustainability. The focus is on creating an inclusive work environment facilitating human-machine reconciliation leading to “sustainable social welfare.” Within this context, the advent and accessibility of generative artificial intelligence (GenAI) have been received with equal measures of excitement and existential dread. This is a major disruptive digital technology that has begun to shake the equilibrium and stability of business survival and job security. Yet, the potential of GenAI in enhancing efficiency is revolutionary, spanning all sectors, including supply chains. Organizational success within the Industry 5.0 context is heavily dependent on the appropriate skills and capabilities. However, the rapid advancement and adoption of GenAI has left organizations with severe knowledge and skills gaps. In this study, we conduct a succinct review of GenAI’s impact on supply chains. Thereafter we draw upon strategic management theories and organizational change theories to develop an organizational GenAI action model to enable supply chain organizations to transition workers from a state of “unconscious GenAI incompetence” to “conscious GenAI competence,” working through the five stages of the model: getting urgent, exploration, formulation, iteration, and embedding. We will predominantly draw upon high-impact peer-reviewed articles, complemented by relevant gray literature, including the European Commission publications, in developing this review and conceptual model. We will close by highlighting the model’s applicability and future research directions.
+ER  - 
+
+TY  - JOUR
+T1  - Evaluating a generative artificial intelligence accuracy in providing medication instructions from smartphone images
+AU  - Yassin, Yusef
+AU  - Nguyen, Thien
+AU  - Panchal, Krishna
+AU  - Getchell, Katharine
+AU  - Aungst, Timothy
+JO  - Journal of the American Pharmacists Association
+VL  - 65
+IS  - 1
+SP  - 102284
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 1544-3191
+DO  - https://doi.org/10.1016/j.japh.2024.102284
+UR  - https://www.sciencedirect.com/science/article/pii/S1544319124003157
+AB  - Background
+The Food and Drug Administration mandates patient labeling materials like the Medication Guide (MG) and Instructions for Use (IFU) to support appropriate medication use. However, challenges such as low health literacy and difficulties navigating these materials may lead to incorrect medication usage, resulting in therapy failure or adverse outcomes. The rise of generative AI, presents an opportunity to provide scalable, personalized patient education through image recognition and text generation.
+Objective
+This study aimed to evaluate the accuracy and safety of medication instructions generated by ChatGPT based on user-provided drug images, compared to the manufacturer's standard instructions.
+Methods
+Images of 12 medications requiring multiple steps for administration were uploaded to ChatGPT's image recognition function. ChatGPT's responses were compared to the official IFU and MG using text classifiers, Count Vectorization (CountVec), and Term Frequency-Inverse Document Frequency (TF-IDF). The clinical accuracy was further evaluated by independent pharmacists to determine if ChatGPT responses were valid for patient instruction.
+Results
+ChatGPT correctly identified all medications and generated patient instructions. CountVec outperformed TF-IDF in text similarity analysis, with an average similarity score of 76%. However, clinical evaluation revealed significant gaps in the instructions, particularly for complex administration routes, where ChatGPT's guidance lacked essential details, leading to lower clinical accuracy scores.
+Conclusion
+While ChatGPT shows promise in generating patient-friendly medication instructions, its effectiveness varies based on the complexity of the medication. The findings underscore the need for further refinement and clinical oversight to ensure the safety and accuracy of AI-generated medical guidance, particularly for medications with complex administration processes.
+ER  - 
+
+TY  - JOUR
+T1  - Exploring community pharmacist's psychological intentions to adopt generative artificial intelligence (GenAI) chatbots for patient information, education, and counseling
+AU  - Hidayatullah, Hafidz Ihsan
+AU  - Saifullah, Muhammad Taufiq
+AU  - Ghozali, Muhammad Thesa
+AU  - Aziz, Ayesha
+JO  - Neuroscience Informatics
+VL  - 5
+IS  - 3
+SP  - 100213
+PY  - 2025
+DA  - 2025/09/01/
+SN  - 2772-5286
+DO  - https://doi.org/10.1016/j.neuri.2025.100213
+UR  - https://www.sciencedirect.com/science/article/pii/S2772528625000287
+KW  - Artificial intelligence
+KW  - Communal pharmacy
+KW  - Social intention
+KW  - Procreative AI
+KW  - Technology acceptance
+AB  - Generative AI (GenAI) chatbots, driven by advanced machine learning algorithms, are emerging as transformative tools for enhancing patient education, information dissemination, and counseling (EIC) in healthcare. This study investigated the psychological determinants of community pharmacists' intentions to adopt GenAI chatbots using the Extended Technology Acceptance Model (ETAM). A cross-sectional survey of 240 licensed community pharmacists across several Indonesian provinces assessed key constructs, including self-efficacy (SE), perceived usefulness (PU), perceived ease of use (PEU), attitude toward technology (ATT), trust (TT), and behavioral intention (BI). Structural equation modeling revealed that SE significantly influenced PU (β=0.37) and PEU (β=0.57), indicating that confidence in using technology positively affects perceived utility and usability. PU further predicted ATT (β=0.39) and BI (β=0.236), emphasizing the motivational role of perceived benefits. Trust emerged as a crucial mediator, channeling favorable attitudes into actionable behavioral intentions (indirect β=0.148). The model demonstrated strong fit indices (χ2=263.09, RMSEA = 0.019, GFI = 0.915, CFI = 0.991), supporting the psychological framework. These findings highlight the importance of fostering trust, improving perceived usability, and enhancing self-efficacy through targeted training to promote GenAI chatbot adoption. Future research should explore longitudinal behavioral changes and contextual influences to support sustainable AI integration in pharmacy practice.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter 16 - Generative artificial intelligence for research translation in environmental toxicology and the ethical considerations∗
+AU  - Smith, Ted
+A2  - Lin, Zhoumeng
+A2  - Chou, Wei-Chun
+BT  - Machine Learning and Artificial Intelligence in Toxicology and Environmental Health
+PB  - Academic Press
+SP  - 421
+EP  - 432
+PY  - 2026
+DA  - 2026/01/01/
+SN  - 978-0-443-30010-3
+DO  - https://doi.org/10.1016/B978-0-443-30010-3.00013-1
+UR  - https://www.sciencedirect.com/science/article/pii/B9780443300103000131
+KW  - Artificial intelligence (AI)
+KW  - ChatGPT
+KW  - Environmental health
+KW  - Generative AI
+KW  - Large language model (LLM)
+KW  - Plain language summaries (PLS)
+KW  - Prompt development
+AB  - This chapter explores the potential of generative artificial intelligence (AI) for increasing the accessibility of the toxicological research published for the scientific community for nonspecialist audiences who may need this information for a wide range of important purposes. Translating and summarizing, in plain language, the specialized terminology, intricate statistical models, and interdisciplinary knowledge inherent in this field presents significant challenges which have historically been addressed with human intermediaries and their associated cost and time. Freely available chat-enabled large language models offer the ability to automatically generate a range of cost-effective plain language summaries. These capabilities are accompanied by several limitations such as oversimplification and the risk of inaccuracies which must be considered. Also considered are the ethical considerations such as the need to emphasize transparency, cultural sensitivities, and mitigation of bias in generative AI outputs. The importance of human quality assurance in maintaining scientific accuracy, context, and public trust is critical to responsible applications of this approach. By advocating for a balanced approach that leverages AI's scalability while preserving scientific rigor, this chapter promotes the thoughtful integration of AI in environmental toxicology research translation, ultimately envisioning its role in enhancing public understanding, informing policy, and fostering equitable access to scientific knowledge. An illustrative case exercise provides a step-by-step process for creating these summaries.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence usage by researchers at work: Effects of gender, career stage, type of workplace, and perceived barriers
+AU  - Dorta-González, Pablo
+AU  - López-Puig, Alexis Jorge
+AU  - Dorta-González, María Isabel
+AU  - González-Betancor, Sara M.
+JO  - Telematics and Informatics
+VL  - 94
+SP  - 102187
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 0736-5853
+DO  - https://doi.org/10.1016/j.tele.2024.102187
+UR  - https://www.sciencedirect.com/science/article/pii/S0736585324000911
+KW  - Artificial intelligence
+KW  - Use of AI by researchers in the workplace
+KW  - Challenges in implementing AI
+KW  - Gender imbalance
+AB  - The integration of generative artificial intelligence technology into research environments has become increasingly common in recent years, representing a significant shift in the way researchers approach their work. This paper seeks to explore the factors underlying the frequency of use of generative AI amongst researchers in their professional environments. As survey data may be influenced by a bias towards scientists interested in AI, potentially skewing the results towards the perspectives of these researchers, this study uses a regression model to isolate the impact of specific factors such as gender, career stage, type of workplace, and perceived barriers to using AI technology on the frequency of use of generative AI. It also controls for other relevant variables such as direct involvement in AI research or development, collaboration with AI companies, geographic location, and scientific discipline. Our results show that researchers who face barriers to AI adoption experience an 11 % increase in tool use, while those who cite insufficient training resources experience an 8 % decrease. Female researchers experience a 7 % decrease in AI tool usage compared to men, while advanced career researchers experience a significant 19 % decrease. Researchers associated with government advisory groups are 45 % more likely to use AI tools frequently than those in government roles. Researchers in for-profit companies show an increase of 19 %, while those in medical research institutions and hospitals show an increase of 16 % and 15 %, respectively. This paper contributes to a deeper understanding of the mechanisms driving the use of generative AI tools amongst researchers, with valuable implications for both academia and industry.
+ER  - 
+
+TY  - JOUR
+T1  - Opportunities, Challenges, and Future Directions of Generative Artificial Intelligence in Medical Education: Scoping Review
+AU  - Preiksaitis, Carl
+AU  - Rose, Christian
+JO  - JMIR Medical Education
+VL  - 9
+PY  - 2023
+DA  - 2023/01/01/
+SN  - 2369-3762
+DO  - https://doi.org/10.2196/48785
+UR  - https://www.sciencedirect.com/science/article/pii/S2369376223000697
+KW  - medical education
+KW  - artificial intelligence
+KW  - ChatGPT
+KW  - Bard
+KW  - AI
+KW  - educator
+KW  - scoping
+KW  - review
+KW  - learner
+KW  - generative
+AB  - Background
+Generative artificial intelligence (AI) technologies are increasingly being utilized across various fields, with considerable interest and concern regarding their potential application in medical education. These technologies, such as Chat GPT and Bard, can generate new content and have a wide range of possible applications.
+Objective
+This study aimed to synthesize the potential opportunities and limitations of generative AI in medical education. It sought to identify prevalent themes within recent literature regarding potential applications and challenges of generative AI in medical education and use these to guide future areas for exploration.
+Methods
+We conducted a scoping review, following the framework by Arksey and O'Malley, of English language articles published from 2022 onward that discussed generative AI in the context of medical education. A literature search was performed using PubMed, Web of Science, and Google Scholar databases. We screened articles for inclusion, extracted data from relevant studies, and completed a quantitative and qualitative synthesis of the data.
+Results
+Thematic analysis revealed diverse potential applications for generative AI in medical education, including self-directed learning, simulation scenarios, and writing assistance. However, the literature also highlighted significant challenges, such as issues with academic integrity, data accuracy, and potential detriments to learning. Based on these themes and the current state of the literature, we propose the following 3 key areas for investigation: developing learners’ skills to evaluate AI critically, rethinking assessment methodology, and studying human-AI interactions.
+Conclusions
+The integration of generative AI in medical education presents exciting opportunities, alongside considerable challenges. There is a need to develop new skills and competencies related to AI as well as thoughtful, nuanced approaches to examine the growing use of generative AI in medical education.
+ER  - 
+
+TY  - JOUR
+T1  - On ChatGPT and beyond: How generative artificial intelligence may affect research, teaching, and practice
+AU  - Peres, Renana
+AU  - Schreier, Martin
+AU  - Schweidel, David
+AU  - Sorescu, Alina
+JO  - International Journal of Research in Marketing
+VL  - 40
+IS  - 2
+SP  - 269
+EP  - 275
+PY  - 2023
+DA  - 2023/06/01/
+SN  - 0167-8116
+DO  - https://doi.org/10.1016/j.ijresmar.2023.03.001
+UR  - https://www.sciencedirect.com/science/article/pii/S0167811623000162
+KW  - ChatGPT
+KW  - Generative AI
+KW  - Artificial intelligence
+KW  - LLMs
+AB  - How does ChatGPT, and other forms of Generative Artificial Intelligence (GenAI) affect the way we have been conducting—and evaluating—academic research, teaching, and business practice? What are the implications for the theory and practice of marketing? What are the opportunities and threats, and what are some interesting avenues for future research? This editorial aims to kick off an initial discussion and stimulate research that will help us better understand how the marketing field can fully exploit the potential of GenAI and effectively cope with its challenges.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence for enzyme design: Recent advances in models and applications
+AU  - Wen, Shuixiu
+AU  - Zheng, Wen
+AU  - Bornscheuer, Uwe T.
+AU  - Wu, Shuke
+JO  - Current Opinion in Green and Sustainable Chemistry
+VL  - 52
+SP  - 101010
+PY  - 2025
+DA  - 2025/04/01/
+SN  - 2452-2236
+DO  - https://doi.org/10.1016/j.cogsc.2025.101010
+UR  - https://www.sciencedirect.com/science/article/pii/S2452223625000148
+KW  - artificial intelligence
+KW  - biocatalysis
+KW  - enzyme design
+KW  - generative models
+AB  - Enzyme catalysis is a key enabling technology for green and sustainable production of chemicals. Developing suitable enzymes is at the heart of this technology, which is currently changing by Artificial Intelligence (AI) such as machine learning. AI-based methods were used for enzyme discovery and design. We review the recent advances in generative AI models for enzyme design, with a particular focus on those that have been validated by experiments. Furthermore, we discuss the applications of the enzymes designed by generative AI, including artificial luciferases, non-heme iron (II)-dependent oxygenases, and P450 enzymes. We provide our opinions on several current issues encountered in computational enzyme design. With the fast development of new generative models in enzymes and the implementation of these models by the research community, we believe that the precise design of efficient enzymes with new catalytic functions and/or potential industrial applications will be a mature method in the near future.
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence Tools in Gastroenterology Training
+AU  - Ahmed, Tasnim
+AU  - Rabinowitz, Loren G.
+AU  - Rodman, Adam
+AU  - Berzin, Tyler M.
+JO  - Clinical Gastroenterology and Hepatology
+VL  - 22
+IS  - 10
+SP  - 1975
+EP  - 1978
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 1542-3565
+DO  - https://doi.org/10.1016/j.cgh.2024.05.050
+UR  - https://www.sciencedirect.com/science/article/pii/S1542356524006001
+ER  - 
+
+TY  - JOUR
+T1  - Impact of generative artificial intelligence models on the performance of citizen data scientists in retail firms
+AU  - Abumalloh, Rabab Ali
+AU  - Nilashi, Mehrbakhsh
+AU  - Ooi, Keng Boon
+AU  - Tan, Garry Wei Han
+AU  - Chan, Hing Kai
+JO  - Computers in Industry
+VL  - 161
+SP  - 104128
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 0166-3615
+DO  - https://doi.org/10.1016/j.compind.2024.104128
+UR  - https://www.sciencedirect.com/science/article/pii/S0166361524000563
+KW  - Generative AI models
+KW  - ChatGPT
+KW  - Citizen Data science
+KW  - Retail firms
+KW  - Industrial growth
+KW  - Industrial and innovation
+AB  - Generative Artificial Intelligence (AI) models serve as powerful tools for organizations aiming to integrate advanced data analysis and automation into their applications and services. Citizen data scientists—individuals without formal training but skilled in data analysis—combine domain expertise with analytical skills, making them invaluable assets in the retail sector. Generative AI models can further enhance their performance, offering a cost-effective alternative to hiring professional data scientists. However, it is unclear how AI models can effectively contribute to this development and what challenges may arise. This study explores the impact of generative AI models on citizen data scientists in retail firms. We investigate the strengths, weaknesses, opportunities, and threats of these models. Survey data from 268 retail companies is used to develop and validate a new model. Findings highlight that misinformation, lack of explainability, biased content generation, and data security and privacy concerns in generative AI models are major factors affecting citizen data scientists’ performance. Practical implications suggest that generative AI can empower retail firms by enabling advanced data science techniques and real-time decision-making. However, firms must address drawbacks and threats in generative AI models through robust policies and collaboration between domain experts and AI developers.
+ER  - 
+
+TY  - JOUR
+T1  - The Impact of Generative Artificial Intelligence in Scientific Content Synthesis for Authors
+AU  - Chauhan, Chhavi
+JO  - The American Journal of Pathology
+VL  - 194
+IS  - 8
+SP  - 1406
+EP  - 1408
+PY  - 2024
+DA  - 2024/08/01/
+SN  - 0002-9440
+DO  - https://doi.org/10.1016/j.ajpath.2024.06.002
+UR  - https://www.sciencedirect.com/science/article/pii/S0002944024002001
+ER  - 
+
+TY  - JOUR
+T1  - A0193 - Exploring the efficiency of generative artificial intelligence in rapidly and accurately producing patient information for urological malignancy treatments aligned with the latest EAU guidelines
+AU  - Rodler, S.
+AU  - Ramacciotti, L.S.
+AU  - Checcucci, E.
+AU  - De Backer, P.
+AU  - Belenchon, I.R.
+AU  - Taraktin, M.
+AU  - Pulliatti, S.
+AU  - Veccia, A.
+AU  - Piazza, P.
+AU  - Baekelandt, L.
+AU  - Kowalewski, K-F.
+AU  - Rivas, J.G.
+AU  - Abreu, A.L.
+AU  - Gill, I.S.
+AU  - Cacciamani, G.E.
+JO  - European Urology
+VL  - 85
+SP  - S947
+EP  - S948
+PY  - 2024
+DA  - 2024/03/01/
+T2  - Abstracts EAU24 - 39th Annual EAU Congress
+SN  - 0302-2838
+DO  - https://doi.org/10.1016/S0302-2838(24)00773-5
+UR  - https://www.sciencedirect.com/science/article/pii/S0302283824007735
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence in Academic Surgery: Ethical Implications and Transformative Potential
+AU  - Robinson, Jamie R.
+AU  - Stey, Anne
+AU  - Schneider, David F.
+AU  - Kothari, Anai N.
+AU  - Lindeman, Brenessa
+AU  - Kaafarani, Haytham M.
+AU  - Haines, Krista L.
+JO  - Journal of Surgical Research
+VL  - 307
+SP  - 212
+EP  - 220
+PY  - 2025
+DA  - 2025/03/01/
+SN  - 0022-4804
+DO  - https://doi.org/10.1016/j.jss.2024.12.059
+UR  - https://www.sciencedirect.com/science/article/pii/S0022480425000216
+KW  - AI
+KW  - Artificial intelligence
+KW  - ChatGPT
+KW  - Generative AI
+KW  - Large language models
+AB  - Artificial intelligence (AI) is rapidly being used in medicine due to its advanced capabilities in image and video recognition, clinical decision support, surgical education, and administrative task automation. Large language models such as OpenAI’s Generative Pretrained Transformer (GPT)-4 and Google’s Bard have particularly revolutionized text generation, offering substantial benefits for the academic surgeon, including aiding in manuscript and grant writing. However, integrating AI into academic surgery necessitates addressing ethical concerns such as bias, transparency, and intellectual property. This paper provides guidelines and recommendations based on current literature around the opportunities and ethical challenges of AI in academic surgery. We discuss the underlying mechanisms of large language models, their potential biases, and the importance of responsible usage. Furthermore, we explore the ethical implications of AI in clinical documentation, highlighting improved efficiency and necessary privacy concerns. This review also addresses the critical issue of intellectual property dilemmas posed by AI-generated innovations in university settings. Finally, we propose guidelines for the responsible adoption of AI in academic and clinical environments, stressing the need for transparency, ethical training, and robust governance frameworks to ensure AI enhances, rather than undermines, academic integrity and patient care.
+ER  - 
+
+TY  - JOUR
+T1  - Reinforcement learning-based generative artificial intelligence for novel pesticide design
+AU  - Yang, Ruoqi
+AU  - Li, Biao
+AU  - Dong, Jin
+AU  - Cai, Zhuomei
+AU  - Lin, Hongyan
+AU  - Wang, Fan
+AU  - Yang, Guangfu
+JO  - Journal of Advanced Research
+PY  - 2025
+DA  - 2025/03/01/
+SN  - 2090-1232
+DO  - https://doi.org/10.1016/j.jare.2025.02.030
+UR  - https://www.sciencedirect.com/science/article/pii/S2090123225001286
+KW  - Generative model
+KW  - Reinforcement learning
+KW  - Pesticide design
+KW  - 4-hydroxyphenylpyruvate dioxygenase
+AB  - Introduction
+Pesticides play a pivotal role in ensuring food security, and the development of green pesticides is an inevitable trend in global agricultural progress. Although deep learning-based generative models have revolutionized de novo drug design in pharmaceutical research, their application in pesticide research and development remains unexplored.
+Objectives
+This study aims to pioneer the application of generative artificial intelligence to pesticide design by proposing a reinforcement learning-based framework for obtaining pesticide-like molecules with high binding affinity.
+Methods
+This framework comprises two key components: PestiGen-G, which systematically explores the pesticide-like chemical space using a character-based generative model coupled with the REINFORCE algorithm; and PestiGen-S, which combines a fragment-based generative model with the Monte Carlo Tree Search algorithm to generate molecules that stably bind to the specific target protein.
+Results
+Experimental results show that the molecules generated by PestiGen have superior pesticide-likeness and binding affinity compared to those generated by existing methods. In addition, we employ an active learning strategy to reduce the false-positive rate of the generated molecules. Finally, through collaboration with domain experts, we successfully designed a novel 4-hydroxyphenylpyruvate dioxygenase inhibitor (YH23768) with favorable enzyme inhibition and herbicidal potency.
+Conclusion
+This proof-of-concept study highlights the utility of PestiGen as a valuable tool for pesticide design. The web server based on the model is freely available at https://dpai.ccnu.edu.cn/PestiGen/.
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence, Large Language Models, and JID Innovations
+AU  - Hall, Russell P.
+JO  - JID Innovations
+VL  - 4
+IS  - 2
+SP  - 100256
+PY  - 2024
+DA  - 2024/03/01/
+SN  - 2667-0267
+DO  - https://doi.org/10.1016/j.xjidi.2024.100256
+UR  - https://www.sciencedirect.com/science/article/pii/S2667026724000018
+ER  - 
+
+TY  - JOUR
+T1  - Comparing expert tutor evaluation of reflective essays with marking by generative artificial intelligence (AI) tool
+AU  - Awidi, Isaiah T.
+JO  - Computers and Education: Artificial Intelligence
+VL  - 6
+SP  - 100226
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 2666-920X
+DO  - https://doi.org/10.1016/j.caeai.2024.100226
+UR  - https://www.sciencedirect.com/science/article/pii/S2666920X24000274
+ER  - 
+
+TY  - JOUR
+T1  - Ionic Cell Microscopy: A new modality for visualizing cells using microfluidic impedance cytometry and generative artificial intelligence
+AU  - Kokabi, Mahtab
+AU  - Rather, Gulam M.
+AU  - Javanmard, Mehdi
+JO  - Biosensors and Bioelectronics: X
+VL  - 24
+SP  - 100619
+PY  - 2025
+DA  - 2025/08/01/
+SN  - 2590-1370
+DO  - https://doi.org/10.1016/j.biosx.2025.100619
+UR  - https://www.sciencedirect.com/science/article/pii/S2590137025000469
+KW  - Cancer imaging
+KW  - Impedance cytometry
+KW  - Microfluidic device
+KW  - Label-free diagnostics
+KW  - Generative AI
+AB  - This study introduces a novel approach to cancer cell imaging by integrating microfluidic sensor technology with artificial intelligence (AI). We developed a custom microfluidic device with polydimethylsiloxane (PDMS) microchannels and integrated electrodes to capture electrical impedance data. The device was fabricated using photolithography, electron beam evaporation, and lift-off techniques. Instead of traditional imaging methods, electrical impedance signals were used to reconstruct cell images. A generative AI model with eight hidden layers processed 191 impedance values to accurately reconstruct the shapes of cancer cells and control beads. Our approach successfully reconstructed images of MDA-MB-231 breast cancer cells, HeLa cells, and beads, achieving 91 % accuracy on the test dataset. Validation using the Structural Similarity Index (SSI) and Mean Structural Similarity Index (MSSIM) produced scores of 0.97 for breast cancer cells and 0.93 for beads, confirming the high precision of this method. This label-free, impedance-based imaging offers a promising solution for cancer diagnostics by accurately reconstructing cell shapes and distinguishing cell types, particularly in point-of-care applications.
+ER  - 
+
+TY  - JOUR
+T1  - Can Generative Artificial Intelligence (AI) Reliably Score Open-Ended Questions (OEQs) in the Assessment of Medical Knowledge
+AU  - Kruidering, Marieke
+AU  - Truongb, Bao Bao
+AU  - Endo, Kumiko
+AU  - Olvet, Doreen M.
+AU  - Fulton, Tracy B.
+AU  - Bird, Jeffrey B.
+AU  - Brenner, Judith
+AU  - Willey, Joanne M.
+JO  - The Journal of Pharmacology and Experimental Therapeutics
+VL  - 389
+SP  - 224
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 0022-3565
+DO  - https://doi.org/10.1124/jpet.224.126248
+UR  - https://www.sciencedirect.com/science/article/pii/S002235652417454X
+AB  - Abstract ID 126248 Poster Board 224 Purpose: The objective of this study is to establish the accuracy of generative artificial intelligence (AI) when scoring medical student exam questions in an open-ended format (OEQ) compared to a faculty content expert. Background: Despite the numerous benefits to including OEQs in assessment of medical knowledge1,2, only 39% of US allopathic medical schools use them3. Faculty report that the biggest barrier is the time it takes to grade student responses1,2. Natural language processing has been explored to automate scoring of clinical reasoning4, but no study has evaluated the use of generative AI to score OEQ responses in the pre-clerkship curriculum. Methods: OEQ responses from two questions administered at the Zucker School of Medicine (ZSOM) and the University of California at San Francisco School of Medicine (UCSF) were used for the current study5. Responses from 54 students per site were analyzed. Content experts scored the responses using an analytic (ZSOM) or holistic rubric (UCSF). Questions, rubrics, and student responses were fed into the GPT-4 model via the Med2Lab platform. Once finalized, scores for each student’s response were generated. Cohen’s weighted kappa (kw) was used to evaluate inter-rater reliability (IRR) between the content expert and generative AI scores, with kw scores between 0.60 and 0.80 being considered substantial6. Prompt engineering was employed for question 1 (analytic rubric) to evaluate its impact on IRR. Results: IRR between the content expert and generative AI scores was substantial using the analytic rubric (question 1: kw = 0.71; question 2: kw = 0.63) and the holistic rubric (question 1: kw = 0.66; question 2: kw = 0.68). IRR for question 1 (analytic rubric) was initially kw = 0.61 but was increased to kw = 0.71 after adjustments with prompt engineering and re-run in GPT-4. Conclusions: Generative AI can score OEQs with substantial reliability. With the potential to alleviate grading burden, AI scoring will allow medical schools to broadly implement OEQs for assessment.
+ER  - 
+
+TY  - JOUR
+T1  - Assessing generative artificial intelligence for mental health
+AU  - Torous, John
+AU  - Topol, Eric J
+JO  - The Lancet
+VL  - 406
+IS  - 10504
+SP  - 683
+PY  - 2025
+DA  - 2025/08/16/
+SN  - 0140-6736
+DO  - https://doi.org/10.1016/S0140-6736(25)01237-1
+UR  - https://www.sciencedirect.com/science/article/pii/S0140673625012371
+ER  - 
+
+TY  - JOUR
+T1  - Employees’ perception of generative artificial intelligence and the dark side of work outcomes
+AU  - Zhao, Hairong
+AU  - Yuan, Bocong
+AU  - Song, Yang
+JO  - Journal of Hospitality and Tourism Management
+VL  - 61
+SP  - 191
+EP  - 199
+PY  - 2024
+DA  - 2024/12/01/
+SN  - 1447-6770
+DO  - https://doi.org/10.1016/j.jhtm.2024.10.007
+UR  - https://www.sciencedirect.com/science/article/pii/S1447677024001207
+KW  - 
+KW  - 
+KW  - 
+AB  - Artificial intelligence (as well as generative AI) has been increasingly applied in the tourism and hospitality industry and has an important impact on the work behavior of practitioners. Drawing from the transactional theory of stress and coping, this study is to clarify the mechanism of potential negative impact of AI on the work outcomes of tourism and hospitality practitioners who use generative AI (GenAI) to assist their work. This study conducts in-depth interviews and thematic analysis to explore how the use of GenAI affects negative work behaviors among tourism and hospitality practitioners. The results show that employees’ technical fear towards AI is negatively associated with their sense of realism, self-investment, and habitual perception, but positively associated with the perceived threat of job intelligence to employment. Moreover, the technical fear towards AI can be positively associated with their transgression behavior. The findings of this study can be illuminating for helping tourism and hospitality organizations develop sustainable and healthy workplace guidelines.
+ER  - 
+
+TY  - JOUR
+T1  - Exploring international students' perceptions of adopting generative artificial intelligence (GenAI) technologies in learning
+AU  - Cho, Changwhan
+AU  - Ofosu-Anim, Duke
+JO  - Social Sciences & Humanities Open
+VL  - 11
+SP  - 101418
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 2590-2911
+DO  - https://doi.org/10.1016/j.ssaho.2025.101418
+UR  - https://www.sciencedirect.com/science/article/pii/S2590291125001457
+AB  - This study explores international students' perceptions of GenAI technologies in higher education, focusing on how gender and age influence their willingness to adopt. A survey of 122 international graduate students from a private university in South Korea showed that the students are generally familiar with GenAI and its uses in learning. However, its usage varied in frequency. The study also finds that male students are more likely to use GenAI than female students. Additionally, the study revealed age-related differences in the willingness of international students to adopt GenAI, with younger students showing more interest and willingness than older students. However, despite the differences in interest levels in adopting GenAI among genders and ages, the study revealed that overall, there is a general willingness among international students to learn and apply GenAI technologies to their studies. The South Korean education system can be reformed to accommodate the emerging and growing relevance of GenAI in education by developing ethical capacities that will enhance learning while addressing students’ concerns.
+ER  - 
+
+TY  - JOUR
+T1  - Validation of a generative artificial intelligence tool for the critical appraisal of articles on the epidemiology of mental health: Its application in the Middle East and North Africa
+AU  - Moussa, Cheima
+AU  - Altayyar, Sarah
+AU  - Vergonjeanne, Marion
+AU  - Gelle, Thibaut
+AU  - Preux, Pierre-Marie
+JO  - Journal of Epidemiology and Population Health
+VL  - 73
+IS  - 2
+SP  - 202990
+PY  - 2025
+DA  - 2025/04/01/
+SN  - 2950-4333
+DO  - https://doi.org/10.1016/j.jeph.2025.202990
+UR  - https://www.sciencedirect.com/science/article/pii/S2950433325001843
+KW  - Artificial intelligence
+KW  - ChatGPT
+KW  - Critical appraisal
+KW  - Mental health
+KW  - MENA
+AB  - Mental health disorders have a high disability-adjusted life years in the Middle East and North Africa. This rise has led to a surge in related publications, prompting researchers to use AI tools like ChatGPT to reduce time spent on routine tasks. Our study aimed to validate an AI-assisted critical appraisal (CA) tool by comparing it with human raters. We developed customized GPT models using ChatGPT-4. These models were tailored to evaluate studies using the Newcastle-Ottawa Scale (NOS) or the Jadad Scale in one model, while another model evaluated STROBE or CONSORT guidelines. Our results showed a moderate to good agreement between human CA and our GPTs for the NOS for cohort, case control and cross-sectional studies and for the Jadad scale, with an ICC of 0.68 [95 %CI: 0.24–0.82], 0.69 [95 %CI: 0.31–0.88], 0.76 [95 %CI: 0.47–0.90] and 0.84 [95 %CI: 0.57–0.94] respectively. There was also a moderate to substantial agreement between the two methods for STROBE in cross sectional, cohort, case control studies, and for CONSORT in trial design, with a K of 0.63 [95 %CI: 0.56–0.70], 0.57 [95 %CI: 0.47–0.66], 0.48 [95 %CI: 0.38–0.50] and 0.70 [95 %CI: 0.63–0.77] respectively. Our custom GPT models produced hallucinations in 6.5 % and 4.9 % of cases, respectively. Human raters took an average of 19.6 ± 4.3 min per article, whereas our customized GPTs took only 1.4. ChatGPT could be a useful tool for handling repetitive tasks yet its effective application relies on the critical expertise of researchers.
+ER  - 
+
+TY  - JOUR
+T1  - MSR184 Leveraging Generative Artificial Intelligence for Assessing the Quality of Network Meta-Analysis: Methodological Considerations and Early Findings
+AU  - Nevière, A
+AU  - Friedrich, G
+AU  - Papadimitropoulou, K
+AU  - Le Nouveau, P
+AU  - Gauthier, A
+JO  - Value in Health
+VL  - 27
+IS  - 12, Supplement 
+SP  - S474
+EP  - S475
+PY  - 2024
+DA  - 2024/12/01/
+T2  - ISPOR Europe 2024
+SN  - 1098-3015
+DO  - https://doi.org/10.1016/j.jval.2024.10.2418
+UR  - https://www.sciencedirect.com/science/article/pii/S1098301524052811
+ER  - 
+
+TY  - CHAP
+T1  - Chapter 16 - Acceptance and commitment training in applied behavior analysis: Competency-based training with generative artificial intelligence
+AU  - Szabo, Thomas G.
+AU  - Cameron, Michael J.
+AU  - Ma, Zimeng
+AU  - Yang, Ziyao
+AU  - Yao, Zhixin
+A2  - Roane, Henry S.
+A2  - Ringdahl, Joel E.
+A2  - Falcomata, Terry S.
+A2  - Sullivan, William E.
+BT  - Clinical and Organizational Applications of Applied Behavior Analysis (Second Edition)
+PB  - Academic Press
+SP  - 239
+EP  - 253
+PY  - 2025
+DA  - 2025/01/01/
+T2  - Practical Resources for the Mental Health Professional
+SN  - 978-0-443-22365-5
+DO  - https://doi.org/10.1016/B978-0-443-22365-5.00027-5
+UR  - https://www.sciencedirect.com/science/article/pii/B9780443223655000275
+KW  - Acceptance and commitment training
+KW  - Applied behavior analysis
+KW  - Artificial intelligence
+KW  - Autism
+KW  - Genertive AI
+AB  - Many have returned to a question that Skinner asked toward the end of his career, why are we not acting to save the world (Skinner, 1987). At least two recent papers (Dixon et al., 2018; Rehfeldt & Tyndall, 2021) have posited that we can make substantial progress by furthering research on derived stimulus relations and making use of acceptance and commitment training (ACTr; Szabo, 2023; Szabo et al., 2019b; Tarbox et al., 2020). We enthusiastically endorse these recommendations, but we offer (a) a caveat and (b) solutions that are not at not new in principle but which we propose can be accomplished with surprisingly novel approaches. In this chapter, we offer a brief outline of ACTr in ABA, caveats to using ACTr, and strategies for training BCBAs to the level of competence and sensitivity to scope of practice required. Specifically, we introduce the concept of programmed instruction in ACTr using generative artificial intelligence (GenAI) and provide examples of GenAI as it is used in medical research. Finally, we offer a list of recommendations to researchers and practitioners interested in pursuing this approach to realizing Skinner’s dream.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence: A hot topic to face with
+AU  - Cosci, Fiammetta
+AU  - Mikocka-Walus, Antonina
+JO  - Journal of Psychosomatic Research
+VL  - 192
+SP  - 112113
+PY  - 2025
+DA  - 2025/05/01/
+SN  - 0022-3999
+DO  - https://doi.org/10.1016/j.jpsychores.2025.112113
+UR  - https://www.sciencedirect.com/science/article/pii/S0022399925000777
+ER  - 
+
+TY  - JOUR
+T1  - Search Engines and Generative Artificial Intelligence Integration: Public Health Risks and Recommendations to Safeguard Consumers Online
+AU  - Ashraf, Amir Reza
+AU  - Mackey, Tim Ken
+AU  - Fittler, András
+JO  - JMIR Public Health and Surveillance
+VL  - 10
+PY  - 2024
+DA  - 2024/01/01/
+SN  - 2369-2960
+DO  - https://doi.org/10.2196/53086
+UR  - https://www.sciencedirect.com/science/article/pii/S2369296024000504
+KW  - generative artificial intelligence
+KW  - artificial intelligence
+KW  - comparative assessment
+KW  - search engines
+KW  - online pharmacies
+KW  - patient safety
+KW  - generative
+KW  - safety
+KW  - search engine
+KW  - search
+KW  - searches
+KW  - searching
+KW  - website
+KW  - websites
+KW  - Google
+KW  - Bing
+KW  - retrieval
+KW  - information seeking
+KW  - illegal
+KW  - pharmacy
+KW  - pharmacies
+KW  - risk
+KW  - risks
+KW  - consumer
+KW  - consumers
+KW  - customer
+KW  - customers
+KW  - recommendation
+KW  - recommendations
+KW  - vendor
+KW  - vendors
+KW  - substance use
+KW  - substance abuse
+KW  - controlled substances
+KW  - controlled substance
+KW  - drug
+KW  - drugs
+KW  - pharmaceutic
+KW  - pharmaceutics
+KW  - pharmaceuticals
+KW  - pharmaceutical
+KW  - medication
+KW  - medications
+AB  - Background
+The online pharmacy market is growing, with legitimate online pharmacies offering advantages such as convenience and accessibility. However, this increased demand has attracted malicious actors into this space, leading to the proliferation of illegal vendors that use deceptive techniques to rank higher in search results and pose serious public health risks by dispensing substandard or falsified medicines. Search engine providers have started integrating generative artificial intelligence (AI) into search engine interfaces, which could revolutionize search by delivering more personalized results through a user-friendly experience. However, improper integration of these new technologies carries potential risks and could further exacerbate the risks posed by illicit online pharmacies by inadvertently directing users to illegal vendors.
+Objective
+The role of generative AI integration in reshaping search engine results, particularly related to online pharmacies, has not yet been studied. Our objective was to identify, determine the prevalence of, and characterize illegal online pharmacy recommendations within the AI-generated search results and recommendations.
+Methods
+We conducted a comparative assessment of AI-generated recommendations from Google’s Search Generative Experience (SGE) and Microsoft Bing’s Chat, focusing on popular and well-known medicines representing multiple therapeutic categories including controlled substances. Websites were individually examined to determine legitimacy, and known illegal vendors were identified by cross-referencing with the National Association of Boards of Pharmacy and LegitScript databases.
+Results
+Of the 262 websites recommended in the AI-generated search results, 47.33% (124/262) belonged to active online pharmacies, with 31.29% (82/262) leading to legitimate ones. However, 19.04% (24/126) of Bing Chat’s and 13.23% (18/136) of Google SGE’s recommendations directed users to illegal vendors, including for controlled substances. The proportion of illegal pharmacies varied by drug and search engine. A significant difference was observed in the distribution of illegal websites between search engines. The prevalence of links leading to illegal online pharmacies selling prescription medications was significantly higher (P=.001) in Bing Chat (21/86, 24%) compared to Google SGE (6/92, 6%). Regarding the suggestions for controlled substances, suggestions generated by Google led to a significantly higher number of rogue sellers (12/44, 27%; P=.02) compared to Bing (3/40, 7%).
+Conclusions
+While the integration of generative AI into search engines offers promising potential, it also poses significant risks. This is the first study to shed light on the vulnerabilities within these platforms while highlighting the potential public health implications associated with their inadvertent promotion of illegal pharmacies. We found a concerning proportion of AI-generated recommendations that led to illegal online pharmacies, which could not only potentially increase their traffic but also further exacerbate existing public health risks. Rigorous oversight and proper safeguards are urgently needed in generative search to mitigate consumer risks, making sure to actively guide users to verified pharmacies and prioritize legitimate sources while excluding illegal vendors from recommendations.
+ER  - 
+
+TY  - JOUR
+T1  - Application of generative artificial intelligence to utilize unstructured clinical data for acceleration of inflammatory bowel disease research
+AU  - Kadhim, Alex Z.
+AU  - Green, Zachary
+AU  - Nazari, Iman
+AU  - Baker, Jonathan
+AU  - George, Michael
+AU  - Heinson, Ashley
+AU  - Vadgama, Bhumita
+AU  - Stammers, Matt
+AU  - Kipps, Christopher M.
+AU  - Beattie, R. Mark
+AU  - Ashton, James J.
+AU  - Ennis, Sarah
+JO  - Med
+SP  - 100895
+PY  - 2025
+DA  - 2025/10/31/
+SN  - 2666-6340
+DO  - https://doi.org/10.1016/j.medj.2025.100895
+UR  - https://www.sciencedirect.com/science/article/pii/S2666634025003228
+KW  - inflammatory bowel disease
+KW  - Crohn’s disease
+KW  - ulcerative colitis
+KW  - AI
+KW  - large language models
+KW  - electronic health records
+KW  - histology
+KW  - imaging
+KW  - FAIR data
+AB  - Summary
+Background
+Inflammatory bowel disease (IBD) research is a dynamic field. However, the growing volume of electronic health records (EHRs) and research data presents significant challenges. Traditional methods for structuring unstructured EHRs are labor-intensive and lack scalability. Large language models (LLMs) may present a solution, however, their usefulness in data standardization in the context of IBD remains unknown. We sought to evaluate LLMs in structuring free-text histology and radiology reports from IBD patients (n = 32,041), compare their performance to manual clinician curation, and assess the usefulness of fine-tuning and retrieval-augmented generation (RAG).
+Methods
+We developed an IBD-specialized LLM-based framework utilizing structured prompt engineering and fine-tuning. Free-text reports from two independent sites were manually curated and processed using various LLMs (n = 120).
+Findings
+Overall, Llama 3.3 achieved the highest F1 scores for histology and imaging (1.00 ± 0 and 0.85 ± 0.29, respectively) in extracting findings and anatomical regions, surpassing other models in structured data generation. Fine-tuning improved the performance of the smaller Llama 3.1 8B model for imaging reports (0.70 ± 0.46 vs. 0.82 ± 0.35), enabling better extraction with reduced computational requirements.
+Conclusions
+Our findings demonstrate the feasibility of LLM-based automated structuring of IBD-related medical records. Unstructured data from free-text reports can be reliably converted into standardized ontologies with location, severity, and qualifiers. These advancements enable scalable, privacy-compliant AI-driven solutions for data standardization.
+Funding
+The Institute for Life Sciences, University of Southampton, the NIHR Southampton BRC, and EPSRC (EP/Y01720X/1).
+ER  - 
+
+TY  - JOUR
+T1  - Enhancing digital rock analysis through generative artificial intelligence: Diffusion models
+AU  - Esmaeili, Mohammad
+JO  - Neurocomputing
+VL  - 587
+SP  - 127676
+PY  - 2024
+DA  - 2024/06/28/
+SN  - 0925-2312
+DO  - https://doi.org/10.1016/j.neucom.2024.127676
+UR  - https://www.sciencedirect.com/science/article/pii/S0925231224004478
+KW  - Diffusion Models
+KW  - Generative Artificial Intelligence
+KW  - Computer Vision
+KW  - Digital Rock Analysis
+KW  - Single Image Super-Resolution
+AB  - Within the realm of computer vision, the landscape has been significantly reshaped by the abundance of extensive and diverse datasets, leading to remarkable breakthroughs in image processing. These advancements have reverberated across a wide spectrum of applications, catalyzing transformative outcomes. However, in stark contrast, the field of digital rock analysis finds itself grappling with a conspicuous dearth of data, a challenge that casts a formidable shadow over the effective deployment of computer vision techniques for rock image analysis. In response to this pressing issue, this paper presents a pioneering methodology designed to surmount the hurdles posed by data limitation in the realm of digital rock analysis. At the core of this innovative approach lies the fusion of artificially generated digital rock images, created using a state-of-the-art diffusion model, with their authentic counterparts. This fusion is guided by the overarching objective of augmenting the efficacy of various digital rock analysis applications. This integration endeavors to bridge the gap between the limited available data and the substantial demands of the digital rock analysis domain. The practical significance and potential of this integrated approach are vividly demonstrated through a series of concrete implementations. These include, but are by no means limited to, enhancing image quality to facilitate clearer visualization of intricate rock structures and refining the estimation of petrophysical properties with increased accuracy.
+ER  - 
+
+TY  - JOUR
+T1  - “Positive” or “Threatened”? The impact of the features in generative artificial intelligence on continued behavior
+AU  - Zhao, Li
+AU  - Xu, Yun
+AU  - Zhou, Sheng-kai
+JO  - Computers in Human Behavior
+VL  - 168
+SP  - 108654
+PY  - 2025
+DA  - 2025/07/01/
+SN  - 0747-5632
+DO  - https://doi.org/10.1016/j.chb.2025.108654
+UR  - https://www.sciencedirect.com/science/article/pii/S0747563225001013
+KW  - Artificial intelligence generated content (AIGC)
+KW  - Positive awe
+KW  - Threatened awe
+KW  - Continued usage intention
+AB  - Artificial intelligence technologies have empowered marketers with advanced tools and insights, fostering unparalleled efficiency and personalization decision-making. To provide marketers with targeted and actionable guidance, this study investigated the behavioral mechanisms underlying the adoption of artificial intelligence-generated content (AIGC) technology. Specifically, it examined the influence of AIGC features (accuracy, competence, anthropomorphism, and interactivity) and the distinct psychological mechanisms of awe on users' behavioral intentions. A mixed-methods approach was employed, combining quantitative data (N = 860) with qualitative research (user reviews). The analysis revealed that the awe experience significantly influences AIGC users' preferences to continue using the technology. Positive awe had a significant positive effect, while threatened awe had a comparatively weaker negative effect. The four features (accuracy, competence, anthropomorphism, and interactivity) of AIGC contribute significantly to its users' continued usage intention. Notably, positive awe induced by competence, anthropomorphism, and interactivity significantly outweighed threatened awe, with the exception of accuracy. The findings reveal that the unique features of AIGC not only evoke users’ perceived awe but also strengthen their intentions to continue using the technology.
+ER  - 
+
+TY  - JOUR
+T1  - Real-World Evidence Synthesis of Digital Scribes Using Ambient Listening and Generative Artificial Intelligence for Clinician Documentation Workflows: Rapid Review
+AU  - Kanaparthy, Naga Sasidhar
+AU  - Villuendas-Rey, Yenny
+AU  - Bakare, Tolulope
+AU  - Diao, Zihan
+AU  - Iscoe, Mark
+AU  - Loza, Andrew
+AU  - Wright, Donald
+AU  - Safranek, Conrad
+AU  - Faustino, Isaac V
+AU  - Brackett, Alexandria
+AU  - Melnick, Edward R
+AU  - Taylor, R Andrew
+JO  - JMIR AI
+VL  - 4
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 2817-1705
+DO  - https://doi.org/10.2196/76743
+UR  - https://www.sciencedirect.com/science/article/pii/S2817170525000808
+KW  - digital scribes
+KW  - artificial intelligence in medicine
+KW  - clinical documentation
+KW  - speech recognition software
+KW  - patient-clinician communication
+AB  - Background
+As physicians spend up to twice as much time on electronic health record tasks as on direct patient care, digital scribes have emerged as a promising solution to restore patient-clinician communication and reduce documentation burden—making it essential to study their real-world impact on clinical workflows, efficiency, and satisfaction.
+Objective
+This study aimed to synthesize evidence on clinician efficiency, user satisfaction, quality, and practical barriers associated with the use of digital scribes using ambient listening and generative artificial intelligence (AI) in real-world clinical settings.
+Methods
+A rapid review was conducted to evaluate the real-world evidence of digital scribes using ambient listening and generative AI in clinical practice from 2014 to 2024. Data were collected from Ovid MEDLINE, Embase, Web of Science–Core Collection, Cochrane CENTRAL and Reviews, and PubMed Central. Predefined eligibility criteria focused on studies addressing clinical implementation, excluding those centered solely on technical development or model validation. The findings of each study were synthesized and analyzed through the QUEST human evaluation framework for quality and safety and the Systems Engineering Initiative for Patient Safety (SEIPS) 3.0 model to assess integration into clinicians’ workflows and experience.
+Results
+Of the 1450 studies identified, 6 met the inclusion criteria. These studies included an observational study, a case report, a peer-matched cohort study, and survey-based assessments conducted across academic health systems, community settings, and outpatient practices. The major themes noted were as follows: (1) they decreased self-reported documentation times, with associated increased length of notes; (2) physician burnout measured using standardized scales was unaffected, but physician engagement improved; (3) physician productivity, assessed via billing metrics, was unchanged; and (4) the studies fell short when compared to standardized frameworks.
+Conclusions
+Digital scribes show promise in reducing documentation burden and enhancing clinician satisfaction, thereby supporting workflow efficiency. However, the currently available evidence is sparse. Future real-world, multifaceted studies are needed before AI scribes can be recommended unequivocally.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in publishing - Reflection and discussion
+AU  - Dien, Joseph
+AU  - Ritz, Thomas
+JO  - Biological Psychology
+VL  - 181
+SP  - 108595
+PY  - 2023
+DA  - 2023/07/01/
+SN  - 0301-0511
+DO  - https://doi.org/10.1016/j.biopsycho.2023.108595
+UR  - https://www.sciencedirect.com/science/article/pii/S0301051123001126
+KW  - Plagiarism
+KW  - Large Language Models
+KW  - ChatGPT
+KW  - Artificial Intelligence
+KW  - Academic Misconduct
+ER  - 
+
+TY  - JOUR
+T1  - Editorial: Generative artificial intelligence as a plagiarism problem
+AU  - Dien, Joseph
+JO  - Biological Psychology
+VL  - 181
+SP  - 108621
+PY  - 2023
+DA  - 2023/07/01/
+SN  - 0301-0511
+DO  - https://doi.org/10.1016/j.biopsycho.2023.108621
+UR  - https://www.sciencedirect.com/science/article/pii/S0301051123001382
+KW  - Plagiarism
+KW  - Large language models
+KW  - ChatGPT
+KW  - Artificial intelligence
+KW  - Academic misconduct
+AB  - There is increasing concern and consternation about generative artificial intelligence (AI) programs and its potential impact on academia. This editorial addresses the potential impact of such programs on scientific publishing as it relates to the journal Biological Psychology. Using chatGPT as an example, it makes the case that a prime concern is its implications for facilitating plagiarism. It briefly outlines what is known about the algorithm of the GPT text model, and also the implications of its chatGPT front end, on being able to establish appropriate credit for ideas in text that it outputs. It is concluded that, at least for Biological Psychology, the expectation is that authors will be transparent about AI usage, will declare when AI is the source of an idea, and will redouble efforts to seek out and cite prior claims to ideas in the published literature when AI is involved.
+ER  - 
+
+TY  - JOUR
+T1  - Designing a Multimodal and Culturally Relevant Alzheimer Disease and Related Dementia Generative Artificial Intelligence Tool for Black American Informal Caregivers: Cognitive Walk-Through Usability Study
+AU  - Bosco, Cristina
+AU  - Otenen, Ege
+AU  - Osorio Torres, John
+AU  - Nguyen, Vivian
+AU  - Chheda, Darshil
+AU  - Peng, Xinran
+AU  - Jessup, Nenette M
+AU  - Himes, Anna K
+AU  - Cureton, Bianca
+AU  - Lu, Yvonne
+AU  - Hill, Carl V
+AU  - Hendrie, Hugh C
+AU  - Barnes, Priscilla A
+AU  - Shih, Patrick C
+JO  - JMIR Aging
+VL  - 8
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 2561-7605
+DO  - https://doi.org/10.2196/60566
+UR  - https://www.sciencedirect.com/science/article/pii/S2561760525000027
+KW  - multimodality
+KW  - artificial intelligence
+KW  - AI
+KW  - generative AI
+KW  - usability
+KW  - black
+KW  - African American
+KW  - cultural
+KW  - Alzheimer's
+KW  - dementia
+KW  - caregivers
+KW  - mobile app
+KW  - interaction
+KW  - cognition
+KW  - user opinion
+KW  - geriatrics
+KW  - smartphone
+KW  - mHealth
+KW  - digital health
+KW  - aging
+AB  - Background
+Many members of Black American communities, faced with the high prevalence of Alzheimer disease and related dementias (ADRD) within their demographic, find themselves taking on the role of informal caregivers. Despite being the primary individuals responsible for the care of individuals with ADRD, these caregivers often lack sufficient knowledge about ADRD-related health literacy and feel ill-prepared for their caregiving responsibilities. Generative AI has become a new promising technological innovation in the health care domain, particularly for improving health literacy; however, some generative AI developments might lead to increased bias and potential harm toward Black American communities. Therefore, rigorous development of generative AI tools to support the Black American community is needed.
+Objective
+The goal of this study is to test Lola, a multimodal mobile app, which, by relying on generative AI, facilitates access to ADRD-related health information by enabling speech and text as inputs and providing auditory, textual, and visual outputs.
+Methods
+To test our mobile app, we used the cognitive walk-through methodology, and we recruited 15 informal ADRD caregivers who were older than 50 years and part of the Black American community living within the region. We asked them to perform 3 tasks on the mobile app (ie, searching for an article on brain health, searching for local events, and finally, searching for opportunities to participate in scientific research in their area), then we recorded their opinions and impressions. The main aspects to be evaluated were the mobile app’s usability, accessibility, cultural relevance, and adoption.
+Results
+Our findings highlight the users’ need for a system that enables interaction with different modalities, the need for a system that can provide personalized and culturally and contextually relevant information, and the role of community and physical spaces in increasing the use of Lola.
+Conclusions
+Our study shows that, when designing for Black American older adults, a multimodal interaction with the generative AI system can allow individuals to choose their own interaction way and style based upon their interaction preferences and external constraints. This flexibility of interaction modes can guarantee an inclusive and engaging generative AI experience.
+ER  - 
+
+TY  - JOUR
+T1  - Co-creating art with generative artificial intelligence: Implications for artworks and artists
+AU  - Messer, Uwe
+JO  - Computers in Human Behavior: Artificial Humans
+VL  - 2
+IS  - 1
+SP  - 100056
+PY  - 2024
+DA  - 2024/01/01/
+SN  - 2949-8821
+DO  - https://doi.org/10.1016/j.chbah.2024.100056
+UR  - https://www.sciencedirect.com/science/article/pii/S2949882124000161
+KW  - Art
+KW  - Authenticity
+KW  - Generative AI
+KW  - Human-AI-Collaboration
+AB  - Synthetic visual art is becoming a commodity due to generative artificial intelligence (AI). The trend of using AI for co-creation will not spare artists’ creative processes, and it is important to understand how the use of generative AI at different stages of the creative process affects both the evaluation of the artist and the result of the human-machine collaboration (i.e., the visual artifact). In three experiments (N = 560), this research explores how the evaluation of artworks is transformed by the revelation that the artist collaborated with AI at different stages of the creative process. The results show that co-created art is less liked and recognized, especially when AI was used in the implementation stage. While co-created art is perceived as more novel, it lacks creative authenticity, which exerts a dominant influence. The results also show that artists’ perceptions suffer from the co-creation process, and that artists who co-create are less admired because they are perceived as less authentic. Two boundary conditions are identified. The negative effect can be mitigated by disclosing the level of artist involvement in co-creation with AI (e.g., by training the algorithm on a curated set of images vs. simply prompting an off-the-shelf AI image generator). In the context of art that is perceived as commercially motivated (e.g., stock images), the effect is also diminished. This research has important implications for the literature on human-AI-collaboration, research on authenticity, and the ongoing policy debate regarding the transparency of algorithmic presence.
+ER  - 
+
+TY  - JOUR
+T1  - Letter Regarding: Generative Artificial Intelligence in Academic Surgery: Ethical Implications and Transformative Potential
+AU  - Sterpetti, Antonio V.
+JO  - Journal of Surgical Research
+VL  - 310
+SP  - 388
+EP  - 389
+PY  - 2025
+DA  - 2025/06/01/
+SN  - 0022-4804
+DO  - https://doi.org/10.1016/j.jss.2025.02.046
+UR  - https://www.sciencedirect.com/science/article/pii/S0022480425001325
+ER  - 
+
+TY  - JOUR
+T1  - MSR201 Optimising Performance of Generative Artificial Intelligence (GenAI) in Systematic Literature Review (SLR) Screening Using PICOS Criteria
+AU  - Miles, G
+AU  - Giles, L
+AU  - Kerr, B.C.
+AU  - Norman, B
+AU  - Sibbring, GC
+JO  - Value in Health
+VL  - 27
+IS  - 12, Supplement 
+SP  - S478
+PY  - 2024
+DA  - 2024/12/01/
+T2  - ISPOR Europe 2024
+SN  - 1098-3015
+DO  - https://doi.org/10.1016/j.jval.2024.10.2435
+UR  - https://www.sciencedirect.com/science/article/pii/S1098301524052987
+ER  - 
+
+TY  - JOUR
+T1  - Exploring the role of generative artificial intelligence (ChatGPT) adoption in digital social entrepreneurship: a serial mediation model
+AU  - Duong, Cong Doanh
+AU  - Nguyen, Thanh Hieu
+AU  - Nguyen, Minh Hoa
+AU  - Dang, Ngoc Su
+AU  - Vu, Anh Trong
+AU  - Do, Ngoc Diep
+JO  - Social Enterprise Journal
+VL  - 21
+IS  - 5
+SP  - 910
+EP  - 936
+PY  - 2025
+DA  - 2025/04/24/
+SN  - 1750-8614
+DO  - https://doi.org/10.1108/SEJ-03-2024-0029
+UR  - https://www.sciencedirect.com/science/article/pii/S1750861425000106
+KW  - GenAI (ChatGPT) adoption in social entrepreneurship
+KW  - Perceived feasibility
+KW  - Perceived desirability
+KW  - Intention toward digital social entrepreneurship
+AB  - Purpose
+Using an integrated framework of the Entrepreneurial Event Model and the Stimulus–Organism–Response theory, this study aims to investigate how artificial intelligence (AI)-driven stimulus [Generative AI (ChatGPT) adoption in digital social entrepreneurship] affects individuals’ cognitive processes (perceived feasibility and perceived desirability), which subsequently influence their behavioral intentions (digital social entrepreneurial intention).
+Design/methodology/approach
+This research used a stratified sampling method to survey 986 higher education students in Vietnam. Hypotheses were tested using structural equation modeling.
+Findings
+The results indicate that GenAI (ChatGPT) adoption in digital social entrepreneurship significantly enhances both perceived feasibility and perceived desirability. These cognitive perceptions are positively associated with intentions to engage in digital social entrepreneurship. In addition, this study finds that GenAI (ChatGPT) adoption in digital social entrepreneurship poses a serial indirect effect on digital social entrepreneurial intention through a perceived feasibility–perceived desirability path.
+Practical implications
+The findings provide actionable recommendations for aspiring students (potential future entrepreneurs), educators and policymakers to foster the use of AI technologies in promoting digital social entrepreneurship.
+Originality/value
+This study offers substantial theoretical contributions by merging the Entrepreneurial Event Model and the Stimulus–Organism–Response framework. Thus, it advances the extant understanding of the cognitive mechanisms driving digital social entrepreneurial decision-making in the context of AI adoption. This research addresses a critical gap and establishes a foundation for future theoretical advancements in digital social entrepreneurship and AI integration.
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence
+AU  - Lee, Christoph I.
+AU  - Chen, Jonathan H.
+AU  - Kohli, Marc D.
+AU  - Smith, Andrew D.
+AU  - Liao, Joshua M.
+JO  - Journal of the American College of Radiology
+VL  - 21
+IS  - 8
+SP  - 1318
+EP  - 1320
+PY  - 2024
+DA  - 2024/08/01/
+T2  - Focus on Global Radiology
+SN  - 1546-1440
+DO  - https://doi.org/10.1016/j.jacr.2024.01.020
+UR  - https://www.sciencedirect.com/science/article/pii/S1546144024001303
+ER  - 
+
+TY  - JOUR
+T1  - The memory systems of the human brain and generative artificial intelligence
+AU  - Rolls, Edmund T.
+JO  - Heliyon
+VL  - 10
+IS  - 11
+SP  - e31965
+PY  - 2024
+DA  - 2024/06/15/
+SN  - 2405-8440
+DO  - https://doi.org/10.1016/j.heliyon.2024.e31965
+UR  - https://www.sciencedirect.com/science/article/pii/S2405844024079969
+KW  - The brain and AI
+KW  - Generative Pre-trained Transformer
+KW  - Generative artificial intelligence
+KW  - Episodic memory
+KW  - Semantic memory
+KW  - Hippocampal memory system
+KW  - Chat-GPT
+AB  - Generative Artificial Intelligence foundation models (for example Generative Pre-trained Transformer – GPT – models) can generate the next token given a sequence of tokens. How can this ‘generative AI’ be compared with the ‘real’ intelligence of the human brain, when for example a human generates a whole memory in response to an incomplete retrieval cue, and then generates further prospective thoughts? Here these two types of generative intelligence, artificial in machines and real in the human brain are compared, and it is shown how when whole memories are generated by hippocampal recall in response to an incomplete retrieval cue, what the human brain computes, and how it computes it, are very different from generative AI. Key differences are the use of local associative learning rules in the hippocampal memory system, and of non-local backpropagation of error learning in AI. Indeed, it is argued that the whole operation of the human brain is performed computationally very differently to what is implemented in generative AI. Moreover, it is emphasized that the primate including human hippocampal system includes computations about spatial view and where objects and people are in scenes, whereas in rodents the emphasis is on place cells and path integration by movements between places. This comparison with generative memory and processing in the human brain has interesting implications for the further development of generative AI and for neuroscience research.
+ER  - 
+
+TY  - JOUR
+T1  - The Impact of Generative Artificial Intelligence on the External Review of Scientific Manuscripts and Editorial Peer Review Processes
+AU  - Chauhan, Chhavi
+AU  - Currie, George
+JO  - The American Journal of Pathology
+VL  - 194
+IS  - 10
+SP  - 1802
+EP  - 1806
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 0002-9440
+DO  - https://doi.org/10.1016/j.ajpath.2024.08.002
+UR  - https://www.sciencedirect.com/science/article/pii/S0002944024002864
+ER  - 
+
+TY  - JOUR
+T1  - The ChatGPT (Generative Artificial Intelligence) Revolution Has Made Artificial Intelligence Approachable for Medical Professionals
+AU  - Mesko, Bertalan
+JO  - Journal of Medical Internet Research
+VL  - 25
+PY  - 2023
+DA  - 2023/01/01/
+SN  - 1438-8871
+DO  - https://doi.org/10.2196/48392
+UR  - https://www.sciencedirect.com/science/article/pii/S143888712300465X
+KW  - artificial intelligence
+KW  - digital health
+KW  - future
+KW  - technology
+KW  - ChatGPT
+KW  - medical practice
+KW  - large language model
+KW  - language model
+KW  - generative
+KW  - conversational agent
+KW  - conversation agents
+KW  - chatbot
+KW  - generated text
+KW  - computer generated
+KW  - medical education
+KW  - continuing education
+KW  - professional development
+KW  - curriculum
+KW  - curricula
+AB  - In November 2022, OpenAI publicly launched its large language model (LLM), ChatGPT, and reached the milestone of having over 100 million users in only 2 months. LLMs have been shown to be useful in a myriad of health care–related tasks and processes. In this paper, I argue that attention to, public access to, and debate about LLMs have initiated a wave of products and services using generative artificial intelligence (AI), which had previously found it hard to attract physicians. This paper describes what AI tools have become available since the beginning of the ChatGPT revolution and contemplates how it they might change physicians’ perceptions about this breakthrough technology.
+ER  - 
+
+TY  - JOUR
+T1  - 1376 Virtual H&E Staining Using Generative Artificial Intelligence: A Novel Technique for Digital Transformation of Unstained Pathology Slides
+AU  - Na, Sei
+AU  - Na, Dawoon
+AU  - Park, Kyoungsook
+AU  - Song, SangYong
+AU  - Park, Byullee
+AU  - Kim, Hyung Kyung
+JO  - Laboratory Investigation
+VL  - 105
+IS  - 3, Supplement 
+SP  - 103614
+PY  - 2025
+DA  - 2025/03/01/
+T2  - USCAP 114th Annual Meeting: See the Light
+SN  - 0023-6837
+DO  - https://doi.org/10.1016/j.labinv.2024.103614
+UR  - https://www.sciencedirect.com/science/article/pii/S0023683724032926
+ER  - 
+
+TY  - JOUR
+T1  - Readability, quality and accuracy of generative artificial intelligence chatbots for commonly asked questions about labor epidurals: a comparison of ChatGPT and Bard
+AU  - Lee, D.
+AU  - Brown, M.
+AU  - Hammond, J.
+AU  - Zakowski, M.
+JO  - International Journal of Obstetric Anesthesia
+VL  - 61
+SP  - 104317
+PY  - 2025
+DA  - 2025/02/01/
+SN  - 0959-289X
+DO  - https://doi.org/10.1016/j.ijoa.2024.104317
+UR  - https://www.sciencedirect.com/science/article/pii/S0959289X24003297
+KW  - Labor analgesia
+KW  - Epidural
+KW  - Pregnancy
+KW  - Generative Artificial Intelligence
+KW  - Patient educational materials
+AB  - Introduction
+Over 90% of pregnant women and 76% expectant fathers search for pregnancy health information. We examined readability, accuracy and quality of answers to common obstetric anesthesia questions from the popular generative artificial intelligence (AI) chatbots ChatGPT and Bard.
+Methods
+Twenty questions for generative AI chatbots were derived from frequently asked questions based on professional society, hospital and consumer websites. ChatGPT and Bard were queried in November 2023. Answers were graded for accuracy by four obstetric anesthesiologists. Quality was measured using Patient Education Materials Assessment Tool for Print (PEMAT). Readability was measured using six readability indices. Accuracy, quality and readability were compared using independent t-test.
+Results
+Bard readability scores were high school level, significantly easier than ChatGPT’s college level by all scoring metrics (P <0.001). Bard had significantly longer answers (P <0.001), yet with similar accuracy of Bard (85% ± 10) and ChatGPT (87% ± 14) (P=0.5). PEMAT understandability scores were no statistically significantly different (P=0.06). Actionability by PEMAT scores for Bard was significantly higher (22% vs. 9%) than ChatGPT (P=0.007)
+Conclusion
+Answers to questions about “labor epidurals” should be accurate, high quality, and easy to read. Bard at high school reading level, was well above the goal 4th to 6th grade level suggested for patient materials. Consumers, health care providers, hospitals and governmental agencies should be aware of the quality of information generated by chatbots. Chatbots should meet the standards for readability and understandability of health-related questions, to aid public understanding and enhance shared decision-making.
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence in Dental Licensing Examinations: Comment
+AU  - Daungsupawong, Hinpetch
+AU  - Wiwanitkit, Viroj
+JO  - International Dental Journal
+VL  - 74
+IS  - 2
+SP  - 361
+PY  - 2024
+DA  - 2024/04/01/
+SN  - 0020-6539
+DO  - https://doi.org/10.1016/j.identj.2024.01.021
+UR  - https://www.sciencedirect.com/science/article/pii/S0020653924000431
+ER  - 
+
+TY  - JOUR
+T1  - Using generative artificial intelligence in bibliometric analysis: 10 years of research trends from the European Resuscitation Congresses
+AU  - Fijačko, Nino
+AU  - Creber, Ruth Masterson
+AU  - Abella, Benjamin S.
+AU  - Kocbek, Primož
+AU  - Metličar, Špela
+AU  - Greif, Robert
+AU  - Štiglic, Gregor
+JO  - Resuscitation Plus
+VL  - 18
+SP  - 100584
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 2666-5204
+DO  - https://doi.org/10.1016/j.resplu.2024.100584
+UR  - https://www.sciencedirect.com/science/article/pii/S2666520424000353
+KW  - Emergency medicine
+KW  - European Resuscitation Council
+KW  - Congress
+KW  - Bibliometrics analysis
+KW  - Generative artificial intelligence
+AB  - Aims
+The aim of this study is to use generative artificial intelligence to perform bibliometric analysis on abstracts published at European Resuscitation Council (ERC) annual scientific congress and define trends in ERC guidelines topics over the last decade.
+Methods
+In this bibliometric analysis, the WebHarvy software (SysNucleus, India) was used to download data from the Resuscitation journal's website through the technique of web scraping. Next, the Chat Generative Pre-trained Transformer 4 (ChatGPT-4) application programming interface (Open AI, USA) was used to implement the multinomial classification of abstract titles following the ERC 2021 guidelines topics.
+Results
+From 2012 to 2022 a total of 2491 abstracts have been published at ERC congresses. Published abstracts ranged from 88 (in 2020) to 368 (in 2015). On average, the most common ERC guidelines topics were Adult basic life support (50.1%), followed by Adult advanced life support (41.5%), while Newborn resuscitation and support of transition of infants at birth (2.1%) was the least common topic. The findings also highlight that the Basic Life Support and Adult Advanced Life Support ERC guidelines topics have the strongest co-occurrence to all ERC guidelines topics, where the Newborn resuscitation and support of transition of infants at birth (2.1%; 52/2491) ERC guidelines topic has the weakest co-occurrence.
+Conclusion
+This study demonstrates the capabilities of generative artificial intelligence in the bibliometric analysis of abstract titles using the example of resuscitation medicine research over the last decade at ERC conferences using large language models.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter 13 - Exploring the convergence of Internet of things and big data technologies in the age of generative artificial intelligence
+AU  - Beheshti, Amin
+AU  - Mansoor, Wathiq
+A2  - Serhani, Mohamed Adel
+A2  - Xu, Yang
+A2  - Maamar, Zakaria
+BT  - Empowering IoT with Big Data Analytics
+PB  - Academic Press
+SP  - 333
+EP  - 354
+PY  - 2025
+DA  - 2025/01/01/
+T2  - Intelligent Data-Centric Systems
+SN  - 978-0-443-21640-4
+DO  - https://doi.org/10.1016/B978-0-443-21640-4.00004-1
+UR  - https://www.sciencedirect.com/science/article/pii/B9780443216404000041
+KW  - Internet of things (IoT)
+KW  - Big data analytics
+KW  - Generative artificial intelligence (AI)
+KW  - Data curation
+AB  - The Internet of things (IoT) has transformed the way we interact with the physical world, generating an unprecedented volume of data. In modern enterprises, the convergence of IoT, big data, and generative artificial intelligence (GAI) is reshaping the landscape of digital solutions. This chapter explores this convergence, shedding light on emerging solutions, software architectures, and challenges and opportunities in the age of GAI. We explore the complexities of effectively using IoT-generated data, emphasizing the challenges of gathering, organizing, curating, and processing these data for meaningful insights. We highlight the importance of linking analytical, cognitive, and GAI to enable the development of self-evolving systems capable of learning from extensive data streams and making instant data-driven decisions and predictions. This synergy between IoT, big data, and AI can transform various industries by enhancing automation, augmentation, and improvement of their processes.
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence Accuracy in Interpreting Forest Plots in Pediatric Surgery Meta-analyses: A Perspective From Pediatric Surgery Meta-analysis Study Group (PESMA)
+AU  - Azizoglu, Mustafa
+AU  - Escolino, Maria
+AU  - Kamci, Tahsin Onat
+AU  - Klyuev, Sergey
+AU  - Perez Bertolez, Sonia
+AU  - Risteski, Toni
+AU  - Elhalaby, Ismael
+AU  - Borkar, Nitinkumar
+AU  - Esposito, Ciro
+AU  - Okur, Mehmet Hanifi
+AU  - Lacher, Martin
+AU  - Mutanen, Annika
+AU  - Shehata, Sameh
+AU  - Chiarenza, Fabio
+AU  - Davenport, Mark
+JO  - Journal of Pediatric Surgery
+VL  - 60
+IS  - 7
+SP  - 162359
+PY  - 2025
+DA  - 2025/07/01/
+SN  - 0022-3468
+DO  - https://doi.org/10.1016/j.jpedsurg.2025.162359
+UR  - https://www.sciencedirect.com/science/article/pii/S0022346825002040
+ER  - 
+
+TY  - JOUR
+T1  - Generative Artificial Intelligence (AI) and Medical Ethics: A Symbiotic Dance for the Future
+AU  - Ray, Partha Pratim
+JO  - Journal of Oral and Maxillofacial Surgery
+VL  - 81
+IS  - 12
+SP  - 1457
+EP  - 1459
+PY  - 2023
+DA  - 2023/12/01/
+SN  - 0278-2391
+DO  - https://doi.org/10.1016/j.joms.2023.09.015
+UR  - https://www.sciencedirect.com/science/article/pii/S0278239123011588
+ER  - 
+
+TY  - JOUR
+T1  - Comparing generative artificial intelligence tools to voice assistants using reference interactions
+AU  - Wheatley, Amanda
+AU  - Hervieux, Sandy
+JO  - The Journal of Academic Librarianship
+VL  - 50
+IS  - 5
+SP  - 102942
+PY  - 2024
+DA  - 2024/09/01/
+SN  - 0099-1333
+DO  - https://doi.org/10.1016/j.acalib.2024.102942
+UR  - https://www.sciencedirect.com/science/article/pii/S0099133324001034
+KW  - Artificial intelligence
+KW  - Voice assistants
+KW  - Generative AI
+KW  - Reference
+AB  - This study investigates the ability of voice assistants and generative AI tools to respond to reference questions traditionally received by academic librarians. The authors created a sample of 25 questions based on queries received on the virtual reference service at their institution. They then created a rubric to evaluate the quality of the answers that the AI powered tools provided. The authors determined that the tools understand reference questions well and provide relevant answers but that the quality of the references provided, and the accuracy of the answers can be lacking. They suggest that more research needs to be done to understand the place of AI powered tools in reference services.
+ER  - 
+
+TY  - JOUR
+T1  - How do people experience the images created by generative artificial intelligence? An exploration of people's perceptions, appraisals, and emotions related to a Gen-AI text-to-image model and its creations
+AU  - Rapp, Amon
+AU  - Di Lodovico, Chiara
+AU  - Torrielli, Federico
+AU  - Di Caro, Luigi
+JO  - International Journal of Human-Computer Studies
+VL  - 193
+SP  - 103375
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 1071-5819
+DO  - https://doi.org/10.1016/j.ijhcs.2024.103375
+UR  - https://www.sciencedirect.com/science/article/pii/S1071581924001587
+KW  - AI
+KW  - Generative AI
+KW  - Stable diffusion
+KW  - User experience
+KW  - Anthropomorphising
+KW  - Humanness
+KW  - Uncanny valley
+AB  - Generative Artificial Intelligence (Gen-AI) has rapidly advanced in recent years, potentially producing enormous impacts on industries, societies, and individuals in the near future. In particular, Gen-AI text-to-image models allow people to easily create high-quality images possibly revolutionizing human creative practices. Despite their increasing use, however, the broader population's perceptions and understandings of Gen-AI-generated images remain understudied in the Human-Computer Interaction (HCI) community. This study investigates how individuals, including those unfamiliar with Gen-AI, perceive Gen-AI text-to-image (Stable Diffusion) outputs. Study findings reveal that participants appraise Gen-AI images based on their technical quality and fidelity in representing a subject, often experiencing them as either prototypical or strange: these experiences may raise awareness of societal biases and evoke unsettling feelings that extend to the Gen-AI itself. The study also uncovers several “relational” strategies that participants employ to cope with concerns related to Gen-AI, contributing to the understanding of reactions to uncanny technology and the (de)humanization of intelligent agents. Moreover, the study offers design suggestions on how to use the anthropomorphizing of the text-to-image model as design material, and the Gen-AI images as support for critical design sessions.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence and optimisation framework for concrete mixture design with low cost and embodied carbon dioxide
+AU  - Le Nguyen, Khuong
+AU  - Uddin, Minhaz
+AU  - Pham, Thong M.
+JO  - Construction and Building Materials
+VL  - 451
+SP  - 138836
+PY  - 2024
+DA  - 2024/11/15/
+SN  - 0950-0618
+DO  - https://doi.org/10.1016/j.conbuildmat.2024.138836
+UR  - https://www.sciencedirect.com/science/article/pii/S0950061824039783
+KW  - Concrete mixture design
+KW  - Machine learning approach
+KW  - Generative AI
+KW  - Compressive strength prediction
+KW  - Multi-objective optimisation
+AB  - This research presents a generative Artificial Intelligence (AI) and design framework that integrates machine learning (ML) and optimisation methodologies to discover new concrete mixture designs. Unlike traditional ML models that predict based on existing data, this framework innovatively generates new concrete mix designs that meet specific requirements such as strength, cost-efficiency, and reduced embodied CO2. To propose a powerful and reliable generative AI model, several advanced ML algorithms were considered, e.g., CatBoost, XGBoost, and LGBM. These models were trained on a unique dataset consisting of 4,936 data points collected from five different batching plants and have not been published yet. Bayesian Optimisation was employed to fine-tune model hyperparameters, resulting in the most effective models attaining R2 values of 0.94 and 0.89 for raw and grouped data, respectively. To verify the trained generative AI model, a case study was conducted, in which the model was requested to provide designs of a mix with pre-determined strength and optimised cost and embodied CO2. The mix designs generated by the framework were successfully validated through experimental tests, corroborating the predictive outcomes. The research culminated in the development of a web application, a tool crafted to streamline the concrete mixture design and optimisation process. This generative AI design framework can be applied to many other aspects of material design and engineering problems.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence tools in scientific writing: entering a brave new world?
+AU  - Vlachopoulos, Charalambos
+AU  - Antonopoulos, Alexios
+AU  - Terentes-Printzios, Dimitrios
+JO  - Hellenic Journal of Cardiology
+VL  - 77
+SP  - 120
+EP  - 121
+PY  - 2024
+DA  - 2024/05/01/
+SN  - 1109-9666
+DO  - https://doi.org/10.1016/j.hjc.2024.05.014
+UR  - https://www.sciencedirect.com/science/article/pii/S1109966624001180
+ER  - 
+
+TY  - JOUR
+T1  - Assessing political bias and value misalignment in generative artificial intelligence
+AU  - Motoki, Fabio Y.S.
+AU  - Pinho Neto, Valdemar
+AU  - Rangel, Victor
+JO  - Journal of Economic Behavior & Organization
+VL  - 234
+SP  - 106904
+PY  - 2025
+DA  - 2025/06/01/
+SN  - 0167-2681
+DO  - https://doi.org/10.1016/j.jebo.2025.106904
+UR  - https://www.sciencedirect.com/science/article/pii/S0167268125000241
+KW  - Generative AI
+KW  - Societal values
+KW  - Large language models
+KW  - Multimodal
+KW  - AI governance
+AB  - Our analysis reveals a concerning misalignment of values between ChatGPT and the average American. We also show that ChatGPT displays political leanings when generating text and images, but the degree and direction of skew depend on the theme. Notably, ChatGPT repeatedly refused to generate content representing certain mainstream perspectives, citing concerns over misinformation and bias. As generative AI systems like ChatGPT become ubiquitous, such misalignment with societal norms poses risks of distorting public discourse. Without proper safeguards, these systems threaten to exacerbate societal divides and depart from principles that underpin free societies.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence and data augmentation for prognostic and health management: Taxonomy, progress, and prospects
+AU  - Liu, Shen
+AU  - Chen, Jinglong
+AU  - Feng, Yong
+AU  - Xie, Zongliang
+AU  - Pan, Tongyang
+AU  - Xie, Jingsong
+JO  - Expert Systems with Applications
+VL  - 255
+SP  - 124511
+PY  - 2024
+DA  - 2024/12/01/
+SN  - 0957-4174
+DO  - https://doi.org/10.1016/j.eswa.2024.124511
+UR  - https://www.sciencedirect.com/science/article/pii/S0957417424013782
+KW  - Fault diagnosis
+KW  - Generative artificial intelligence
+KW  - Data augmentation
+KW  - Data generation
+KW  - Prognostics and health management
+AB  - Intelligent fault diagnosis, detection, and prognostics (DDP) for complex equipment prognostics and health management (PHM) have achieved remarkable breakthroughs. Equipment in industrial scenarios often operates in normal conditions, resulting in missing anomalies, limited failures, and incomplete degradation paths. Thus the limited information on the state of the equipment collected from sensor readings severely hinders the cognitive capabilities of discriminative artificial intelligence (AI) for PHM. Data augmentation and generation (DA&G) techniques, represented by generative AI, have shown great promise in overcoming the limitations of PHM application scenarios. Research on DA&G has yielded significant achievements, but a comprehensive review in the mechanical field is still lacking. To this end, this paper provides a comprehensive review of DA&G techniques aimed at solving the DDP problems, which are divided into three categories insights of data, mechanism, and features. The data-based randomized approach applies controlled randomness for augmentation. The mechanism-based domain-specific techniques advocate for exploring relationships between the physical entity and monitoring data for generating by reasoned inference. The feature-based generative model aims to identify the latent space of data and subsequently resample it. Finally, the paper explores strategies for evaluating DA&G and provides a deep insight into the challenges and opportunities of DA&G techniques.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence, integrative bioinformatics, and single-cell analysis reveal Alzheimer’s genetic and immune landscape
+AU  - Das, Arpita
+AU  - Bhattacharya, Manojit
+AU  - Abdelhameed, Ali Saber
+AU  - Lee, Sang-Soo
+AU  - Chakraborty, Chiranjib
+JO  - Molecular Therapy Nucleic Acids
+VL  - 36
+IS  - 2
+SP  - 102546
+PY  - 2025
+DA  - 2025/06/10/
+SN  - 2162-2531
+DO  - https://doi.org/10.1016/j.omtn.2025.102546
+UR  - https://www.sciencedirect.com/science/article/pii/S2162253125001003
+KW  - Bioinformatics
+KW  - GenAI
+KW  - single-cell analysis
+KW  - Alzheimer’s disease
+KW  - genetic and immune landscape
+AB  - The research aims to understand Alzheimer’s genetic and immune landscapes using the amalgamation of three technologies: artificial intelligence (GenAI), integrative bioinformatics, and single-cell analysis. First, the study aims to identify and characterize the significant genes associated with Alzheimer’s disease (AD) using three GenAI models (GPT‑4o, Gemini model, and DeepSeek). After the genes were accumulated from GenAI models, 27 genes associated with AD were recoded. Furthermore, they were analyzed using integrative bioinformatics methods. Similarly, the immune landscape of AD using single-cell analysis was also explored, which reveals a high percentage of effector CD8+ T cells (33.42%) and naive T cells (45.95%). The single-cell study found that effector memory T cells have two subsets. It also found that the macrophage population has started to spread and dendritic cells have decreased in Alzheimer’s patients. The single-cell gene expression study reveals the top ten highly expressed genes (NDUFV2, CAT, MRPS34, PBX3, THOC2, CCDC57, PBXIP1, SDHAF3, PPP4C, and MAP3K8). The clonal frequency indicates that CD8+ T and naive T cell populations show the highest clonal frequency in healthy and AD individuals and are further noted them in the clonotype cell proportion study. Following our GenAI and single-cell profiling strategy, future studies will help in quickly understanding the genetic and immune basis of many diseases.
+ER  - 
+
+TY  - JOUR
+T1  - New generative artificial intelligence model: ScholarGPT’s performance on dental avulsion
+AU  - Kaplan, Taibe Tokgöz
+JO  - International Journal of Medical Informatics
+VL  - 204
+SP  - 106080
+PY  - 2025
+DA  - 2025/12/01/
+SN  - 1386-5056
+DO  - https://doi.org/10.1016/j.ijmedinf.2025.106080
+UR  - https://www.sciencedirect.com/science/article/pii/S1386505625002977
+KW  - Artificial intelligence
+KW  - ChatGPT
+KW  - Dental avulsion
+KW  - Gemini
+KW  - Large Language Models
+KW  - ScholarGPT
+AB  - Background
+This study aims to evaluate the performance of ScholarGPT, a Large Language Model (LLM) developed for academic purposes, on questions related to dental avulsion. In addition, to analyze and compare it with the results of the previous study evaluating the performance of ChatGPT and Gemini.
+Method
+A total of 22 technical questions (11 multiple-choice questions (MCQs), 11 true/false (T/F)) were posed to the ScholarGPT. ScholarGPT responses were assessed using a modified Global Quality Scale (GQS). Responses were randomized using an online randomizer (www.randomizer.org) before scoring. A single researcher carried out the assessments at three different times, two weeks apart, and a new randomization was performed before each scoring.
+Results
+When the answers given by ScholarGPT according to the question groups were analyzed by the Mann-Whitney U test, the mean value was found to be 4.64 for MCQ questions and 4.82 for T/F questions. ScholarGPT provided similarly high-quality and consistent answers in both question types (p = 0.590). When the performance of ScholarGPT was compared with Gemini and ChatGPT via the Friedman test, the mean score of ScholarGPT responses was significantly higher than both ChatGPT and Gemini (mean difference with Gemini = 0.75; mean difference with ChatGPT = 1.62, p < 0.001). ScholarGPT produced statistically significantly more consistent and higher-quality responses than ChatGPT and Gemini.
+Conclusion
+ScholarGPT showed high performance on technical questions related to dental avulsion and produced more consistent and higher-quality answers than ChatGPT and Gemini. According to the findings, LLMs based on academic databases can provide more accurate and reliable information. In the future, through the development of LLMs specific to the branches of dentistry, artificial intelligence systems can produce higher quality and consistent information.
+ER  - 
+
+TY  - JOUR
+T1  - POS0311 SARCOIDOSIS AS A SYSTEMIC DISEASE: IDENTIFYING PATTERNS OF MULTIORGAN-SPECIFIC INVOLVEMENT AND EPIDEMIOLOGICAL PROFILING THROUGH GENERATIVE ARTIFICIAL INTELLIGENCE-DRIVEN CLUSTERING
+AU  - Brito-Zerón, P.
+AU  - Flores-Chávez, A.
+AU  - Feijoo-Masso, C.
+AU  - Policarpo-Torres, G.
+AU  - Gómez de la Torre, R.
+AU  - Escalante, B.
+AU  - Lopez-Dupla, J.M.
+AU  - Soler-i-Ferrer, C.
+AU  - Fonseca-Aizpuru, E.
+AU  - González-García, A.
+AU  - Herranz-Pérez, J.C.
+AU  - GARCÍA MORILLO, S.
+AU  - Alguacil, A.
+AU  - Robles Marhuenda, Á.
+AU  - Bonet, M.
+AU  - Villalba-García, M.V.
+AU  - Chamorro, A.J.
+AU  - De Miguel-Campo, B.
+AU  - CRUZ CAPARROS, M.G.
+AU  - Akasbi Montalvo, M.
+AU  - Mayer-Fuentes, A.
+AU  - Ramos-Casals, M.
+JO  - Annals of the Rheumatic Diseases
+VL  - 84
+SP  - 570
+EP  - 571
+PY  - 2025
+DA  - 2025/06/01/
+T2  - EULAR 2025: European Congress of Rheumatology
+SN  - 0003-4967
+DO  - https://doi.org/10.1016/j.ard.2025.05.698
+UR  - https://www.sciencedirect.com/science/article/pii/S0003496725017315
+KW  - Registries
+KW  - Artificial Intelligence
+KW  - Prognostic factors
+KW  - Epidemiology
+KW  - Comorbidities
+AB  - Background:
+Sarcoidosis is a heterogeneous granulomatous disease characterized by a wide range of clinical manifestations stemming from multiple organ involvement. While clustering techniques offer a robust method for uncovering these patterns, traditional approaches may fail to fully capture the complexity of multisystem diseases like sarcoidosis. Leveraging generative artificial intelligence (AI) offers a unique opportunity to improve data analysis and interpretation in complex systemic settings, providing novel insights into multifaceted disease patterns and guiding both hypothesis generation and clinical decision-making.
+Objectives:
+This study aimed to identify distinct clusters of organ involvement in patients with sarcoidosis, assess their corresponding epidemiological characteristics, and highlight the benefits of AI-driven methodologies in handling complex multisystem data—underscoring the feasibility and advantages of advanced AI-based approaches for systemic phenotypes in this heterogeneous disease.
+Methods:
+We conducted an AI-assisted analysis to identify organ-involvement clusters in a dataset of 2,187 anonymized sarcoidosis patients (Spanish National Registry SarcoGEAS, all fulfilling the 1999 ATS/ERS/WASOG criteria). Organ involvement was retrospectively determined in each patient at the time of diagnosis using the 2014 WASOG organ assessment instrument. Clustering was carried out via the k-means algorithm in Python's scikit-learn library (version 1.0.2). The optimal number of clusters was determined using the elbow method, supported by silhouette scores to evaluate cluster quality. Statistical comparisons (ANOVA, Kruskal-Wallis, and Chi-square tests—using exact tests for low-frequency data) were applied to characterize cluster differences. Significance was set at p < 0.05, ensuring rigorous evaluation of epidemiological and clinical distinctions. The analysis was conducted in a secure computational environment using generative AI (via OpenAI's GPT-4 model) using Python (version 3.9) with essential libraries including pandas (1.4.3) for data manipulation, numpy (1.21.5) for numerical computations, and matplotlib (3.5.1) and seaborn (0.11.2) for visualizations. Data processing and analysis workflows adhered to GDPR standards to ensure patient privacy. All patient data were anonymized prior to analysis, and no identifiable information was accessed at any point. Code modularity and reproducibility were prioritized, with all scripts managed in version control systems (e.g., Git) to enable transparency.
+Results:
+The cohort comprised 2,187 patients, with a female predominance (61.4%), a mean age at diagnosis of 48.6 years (range: 5-95), and a majority identifying as White (88%). Cluster quality analysis identified 5 as the optimal number of clusters potential; an additional clinically significant cluster (hepatic-splenic) was manually identified and confirmed post hoc through statistical validation. Ultimately, we defined six distinct clusters of systemic involvement: the lymphadenopathic cluster (Cluster 1, characterized by 100% lymphadenopathy), the pulmonary cluster (Cluster 2, characterized by 100% lung involvement and co-occurring 100% lymphadenopathy), the cutaneous cluster (Cluster 3, 100% of cutaneous involvement), the ocular cluster (Cluster 4, 100% ocular involvement), the hepato-splenic cluster (Cluster 5, defined by 100% hepatic and splenic involvement), and the multisystemic cluster (Cluster 6, exhibiting generalized, but not predominant, organ involvement). Each cluster demonstrated statistically significant epidemiological differences (Figure 1). For age, the lymphadenopathic cluster had the highest mean (51.7 years), whereas the cutaneous cluster had the lowest (42.9 years) (p = 0.00056). For sex, the proportion of females ranged from 49.0% in the hepato-splenic cluster to 65.9% in the ocular cluster (p = 0.000017). For ethnicity, the proportion of White patients ranged from 81.4% in the ocular cluster to 94.6% in the lymphadenopathic cluster (p = 0.00135).
+Conclusion:
+This generative AI-driven clustering study successfully identified six distinct patterns of systemic involvement in sarcoidosis, offering a deeper understanding of the disease's heterogeneity. Each cluster exhibited specific epidemiological profiles: cutaneous cluster was associated with the youngest age at sarcoidosis diagnosis, lymphadenopathic cluster with the oldest age and the highest frequency of White patients, ocular cluster with the highest frequency of women and highest frequency of non-White patients, and the hepato-splenic cluster with the highest rate of men. The significant epidemiological disparities among clusters underscore the disease's variability and offer a framework for refined patient stratification.
+REFERENCES:
+NIL. 
+Acknowledgements:
+NIL.
+Disclosure of Interests:
+None declared. © The Authors 2025. This abstract is an open access article published in Annals of Rheumatic Diseases under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/). Neither EULAR nor the publisher make any representation as to the accuracy of the content. The authors are solely responsible for the content in their abstract including accuracy of the facts, statements, results, conclusion, citing resources etc.
+ER  - 
+
+TY  - JOUR
+T1  - Generating TRIZ-inspired guidelines for eco-design using Generative Artificial Intelligence
+AU  - Lee, C.K.M.
+AU  - Liang, Jingying
+AU  - Yung, K.L.
+AU  - Keung, K.L.
+JO  - Advanced Engineering Informatics
+VL  - 62
+SP  - 102846
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 1474-0346
+DO  - https://doi.org/10.1016/j.aei.2024.102846
+UR  - https://www.sciencedirect.com/science/article/pii/S1474034624004944
+KW  - Eco-design
+KW  - TRIZ
+KW  - Large Language Models
+KW  - Generative AI
+AB  - Environmental considerations are emerging as stimuli for innovation during the eco-design ideation process. Integrating TRIZ (Teoriya Resheniya Izobretatelskikh Zadatch─Theory of Inventive Problem Solving) methodology into eco-design offers a structured problem-solving approach to address sustainability challenges. However, developing innovative designs requires expertise in TRIZ concepts and access to resources, which makes it a time-consuming process and can limit its application for eco-design innovation quickly. This study leverages the analytical and generative capabilities of large language models (LLMs) to enhance the TRIZ methodology and automate the ideation process in eco-design. An intelligent tool, “Eco-innovate Assistant,” is designed to provide users with eco-innovative solutions with design sketches. Its effectiveness is validated and evaluated through comparative studies. The findings demonstrate the potential of LLMs in automating design processes, catalyzing a transformation in AI-driven innovation and ideation in eco-design.
+ER  - 
+
+TY  - JOUR
+T1  - ABS0885 COMPLEMENT CONSUMPTION PATTERNS AS AN EARLY PREDICTOR OF SYSTEMIC SJÖGREN DISEASE: GENERATIVE ARTIFICIAL INTELLIGENCE-ASSISTED ANALYSIS USING STRATIFIED CROSS-VALIDATION GENERALIZABILITY MODELS
+AU  - Brito-Zerón, P.
+AU  - Flores-Chávez, A.
+AU  - Delgado Garcia, L.T.
+AU  - Horváth, I.F.
+AU  - Priori, R.
+AU  - Bootsma, H.
+AU  - Armagan, B.
+AU  - Manfrè, V.
+AU  - Praprotnik, S.
+AU  - Hernandez-Molina, G.
+AU  - Pereira da Costa, R.
+AU  - Gerli, R.
+AU  - Rischmueller, M.
+AU  - Suzuki, Y.
+AU  - Solans-Laqué, R.
+AU  - Pasoto, S.
+AU  - Skoglund, E.
+AU  - Sanchez-Berna, I.
+AU  - Alunno, A.
+AU  - Fernandes Moça Trevisani, V.
+AU  - Valim, V.
+AU  - Melchor Díaz, S.
+AU  - Maure Noia, B.
+AU  - Fonseca-Aizpuru, E.
+AU  - Nakamura, H.
+AU  - Miguel, L.D.
+AU  - Vázquez, M.
+AU  - Akasbi Montalvo, M.
+AU  - Policarpo-Torres, G.
+AU  - De Miguel-Campo, B.
+AU  - Szántó, A.
+AU  - Gattamelata, A.
+AU  - Vissink, A.
+AU  - Quartuccio, L.
+AU  - Kiliç, L.
+AU  - Perdan-Pirkmajer, K.
+AU  - Romão, V.C.
+AU  - Bartoloni, E.
+AU  - Downie-Doyle, S.
+AU  - Fujisawa, Y.
+AU  - Ramos-Casals, M.
+JO  - Annals of the Rheumatic Diseases
+VL  - 84
+SP  - 2097
+EP  - 2098
+PY  - 2025
+DA  - 2025/06/01/
+T2  - EULAR 2025: European Congress of Rheumatology
+SN  - 0003-4967
+DO  - https://doi.org/10.1016/j.ard.2025.06.1702
+UR  - https://www.sciencedirect.com/science/article/pii/S0003496725037550
+KW  - Validation
+KW  - Artificial Intelligence
+AB  - Background:
+Complement consumption, characterized by decreased C3 and/or C4 levels, is a hallmark of immune complex-mediated inflammation and vascular involvement in patients with systemic autoimmune diseases. In patients with Sjögren Disease (SjD), hypocomplementemia at diagnosis has been mainly linked to an increased risk of lymphoma. By analysing the relationship between complement consumption profiles and systemic activity in the largest international cohort, we aim to refine early prognostic paradigms and inform tailored clinical surveillance strategies in SjD, thereby addressing a critical gap in precision medicine for this complex autoimmune disease.
+Objectives:
+The objectives of this study were to identify and classify complement consumption patterns, investigate their association with an early phenotype consisting of systemic activity across ESSDAI domains while adjusting for age and gender, and explore how cross-validation techniques may validate the predictive accuracy and generalizability of developed models.
+Methods:
+This study analyzed data from the International Sjögren Big Data Registry. Patients were categorized into four distinct groups according to their complement consumption patterns (isolated low C3, isolated low C4, combined low C3 and C4, and normal C3 and C4 levels). We used Chi-square tests to evaluate univariate associations, and Kruskal-Wallis H-test and Mann-Whitney U test to investigate significant differences with respect to systemic activity (mean ESSDAI score and DAS categories). Multivariable logistic regression models were developed to analyze associations between complement patterns and ESSDAI domains, adjusting for age and gender. Odds ratios (ORs) and 95% confidence intervals (CIs) were calculated. A five-fold stratified cross-validation was carried out to rigorously evaluate the models' generalizability, with the Area Under the Curve (AUC) serving as the primary performance metric. Generative Artificial Intelligence (AI) (ChatGPT-4o model) was used within a secure offline environment to automate anonymized data recoding and statistical scripting. Python libraries, including pandas, statsmodels, and scikit-learn, were integral for data processing, model development, and cross-validation.
+Results:
+Complement values determined at diagnosis were available in 13,710 patients. Stratification according to the 4 complement consumption patterns identified that 79.58% of patients had normal levels of C3 and C4, 7.42% exhibited isolated low C3, 6.90% showed isolated low C4, and 6.09% presented combined low C3 and C4 levels. Combined low C3-C4 levels exhibited the highest mean ESSDAI score (11.41), follwed by isolated low C3, isolated low C4 and normocomplementemia (mean ESSDAI score of 9.26, 7.39, and 5.66, respectively) (Figure 1); Kruskal-Wallis H-test revealed a highly significant difference between the groups (p<0.001), as well as pairwise comparisons using the Mann-Whitney U test (p<0.001). The Chi-square test revealed significant differences in the distribution of DAS categories across the C3-C4 combined groups (χ2=476.41, p<0.001) (Figure 2). However, multivariate logistic regression confirmed significant associations in only three domains. For the pulmonary domain, combined low C3 and C4 levels were associated with the highest odds of activity (OR: 3.12, 95% CI: 2.50–3.91, p < 0.001; AUC: 0.591). In the biological domain, isolated low C3 strongly correlated with activity (OR: 2.45, 95% CI: 1.98–3.03, p < 0.001; AUC: 0.580). For constitutional symptoms, isolated low C3 was associated with the highest activity frequency (18.54%), whereas normal complement levels showed the lowest frequency (11.06%, OR: 0.56, 95% CI: 0.48–0.67, p < 0.001; AUC: 0.563). After adjusting for epidemiological factors, sex and age emerged as influential variables: men had higher odds of constitutional activity (OR 1.24, 95% CI: 1.02–1.52, p = 0.03), while older age had a protective effect, reducing systemic activity by about 1% per year (OR: 0.99, 95% CI: 0.99–1.00, p = 0.0003). The AUC values obtained after running the five-fold stratified cross-validation generalizability models ranged between 0.56 and 0.59, indicating modest ability to discriminate between active and inactive states.
+Conclusion:
+This study demonstrates that complement consumption patterns are strongly associated with baseline systemic activity in SjD, highlighting their potential as early prognostic markers. While complement patterns provide valuable insights for risk stratification, the current predictive models exhibit modest discriminatory ability (AUC values between 0.5 and 0.6), suggesting that complement patterns are relevant but insufficient alone as predictors to improve clinical applicability. The nuanced influence of epidemiological factors—such as the protective effect of age and the increased susceptibility of men to systemic disease—adds complexity to our understanding of early systemic Sjögren.
+REFERENCES:
+NIL. 
+Acknowledgements:
+NIL.
+Disclosure of Interests:
+None declared. © The Authors 2025. This abstract is an open access article published in Annals of Rheumatic Diseases under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/). Neither EULAR nor the publisher make any representation as to the accuracy of the content. The authors are solely responsible for the content in their abstract including accuracy of the facts, statements, results, conclusion, citing resources etc.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence and scientific publishing: urgent questions, difficult answers
+AU  - Bagenal, Jessamy
+JO  - The Lancet
+VL  - 403
+IS  - 10432
+SP  - 1118
+EP  - 1120
+PY  - 2024
+DA  - 2024/03/23/
+SN  - 0140-6736
+DO  - https://doi.org/10.1016/S0140-6736(24)00416-1
+UR  - https://www.sciencedirect.com/science/article/pii/S0140673624004161
+ER  - 
+
+TY  - JOUR
+T1  - Using generative artificial intelligence to enhance the performance of disadvantaged students in secondary education
+AU  - Brunton, Ryan J.
+AU  - Rhazzafe, Soukaina
+AU  - Moodley, Raymond
+AU  - Kuhn, Stefan
+AU  - Caraffini, Fabio
+AU  - Wilford, Sara
+AU  - Higginbottom, Rachel
+AU  - Colreavy-Donnelly, Simon
+AU  - Gongora, Mario
+JO  - Social Sciences & Humanities Open
+VL  - 12
+SP  - 102110
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 2590-2911
+DO  - https://doi.org/10.1016/j.ssaho.2025.102110
+UR  - https://www.sciencedirect.com/science/article/pii/S259029112500840X
+KW  - Disadvantaged pupils
+KW  - Pupil premium
+KW  - Feedback
+KW  - Education
+KW  - Large language models
+KW  - Artificial intelligence
+KW  - Generative AI
+AB  - We show that generative AI can support disadvantaged students, improve grades, and help close the attainment gap between pupil premium (PP) and students with special education needs (SEN). It can also alleviate teacher workload, especially for PP and SEN students, by minimising marking and feedback time, enabling better lesson planning and interventions, which can enhance teacher retention and staffing. We focus on disadvantaged students with SEN and low-income families and use AI for personalised feedback and lesson planning in arts and humanities. This enables school leaders and parents to view the qualitative and quantitative student progress. The results of this study demonstrate the potential of using AI-based systems to help close the attainment gap between disadvantaged students and their peers. The intervention given to these pupils would have been an unreasonable demand on the current teacher workload in the UK.
+ER  - 
+
+TY  - JOUR
+T1  - Suspected undeclared use of generative artificial intelligence
+AU  - Glynn, Alex
+JO  - Intelligent Pharmacy
+VL  - 2
+IS  - 5
+SP  - 596
+EP  - 597
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 2949-866X
+DO  - https://doi.org/10.1016/j.ipha.2024.03.003
+UR  - https://www.sciencedirect.com/science/article/pii/S2949866X24000492
+KW  - Generative artificial intelligence
+KW  - Transparency
+KW  - Accountability
+AB  - In a recent article in Intelligent Pharmacy, a portion of the text appears to have been generated by a generative artificial intelligence (AI) system. The usage of AI is not documented in the article. If AI was used, therefore, the article is in violation of the journal's policy on generative AI use and declaration.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in surgery: balancing innovation with ethical challenges
+AU  - Dhawan, Ravi
+AU  - Nair, Akshay
+AU  - Shay, Denys
+JO  - Journal of Plastic, Reconstructive & Aesthetic Surgery
+VL  - 90
+SP  - 47
+EP  - 48
+PY  - 2024
+DA  - 2024/03/01/
+SN  - 1748-6815
+DO  - https://doi.org/10.1016/j.bjps.2024.02.007
+UR  - https://www.sciencedirect.com/science/article/pii/S1748681524000731
+ER  - 
+
+TY  - JOUR
+T1  - Is ChatGPT scary good? How user motivations affect creepiness and trust in generative artificial intelligence
+AU  - Hyun Baek, Tae
+AU  - Kim, Minseong
+JO  - Telematics and Informatics
+VL  - 83
+SP  - 102030
+PY  - 2023
+DA  - 2023/09/01/
+SN  - 0736-5853
+DO  - https://doi.org/10.1016/j.tele.2023.102030
+UR  - https://www.sciencedirect.com/science/article/pii/S0736585323000941
+KW  - ChatGPT
+KW  - Generative artificial intelligence (AI)
+KW  - Uses and gratifications theory
+KW  - Creepiness
+KW  - Trust
+KW  - Continuance intention
+AB  - Few studies have examined user motivations to use generative artificial intelligence (AI). This research aims to address this gap by examining how user motivations for ChatGPT usage affect perceived creepiness, trust, and the intention to continue using AI chatbot technology. The findings of an online survey (N = 421) reveal a negative relationship between personalization and creepiness, while task efficiency and social interaction are positively associated with creepiness. Increased levels of creepiness, in turn, result in decreased continuance intention. Furthermore, task efficiency and personalization have a positive impact on trust, leading to increased continuance intention. The results contribute to the field of human–computer interaction by investigating the motivations for utilizing generative AI chatbots and advancing our comprehension of AI creepiness, trust, and continuance intention. The practical ramifications of this research can inform the design of user interfaces and the development of features for generative AI chatbots.
+ER  - 
+
+TY  - JOUR
+T1  - Utility of Generative Artificial Intelligence for Japanese Medical Interview Training: Randomized Crossover Pilot Study
+AU  - Hirosawa, Takanobu
+AU  - Yokose, Masashi
+AU  - Sakamoto, Tetsu
+AU  - Harada, Yukinori
+AU  - Tokumasu, Kazuki
+AU  - Mizuta, Kazuya
+AU  - Shimizu, Taro
+JO  - JMIR Medical Education
+VL  - 11
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 2369-3762
+DO  - https://doi.org/10.2196/77332
+UR  - https://www.sciencedirect.com/science/article/pii/S2369376225000996
+KW  - artificial intelligence
+KW  - generative artificial intelligence
+KW  - medical interview training
+KW  - mock patient
+KW  - simulation education
+AB  - Background
+The medical interview remains a cornerstone of clinical training. There is growing interest in applying generative artificial intelligence (AI) in medical education, including medical interview training. However, its utility in culturally and linguistically specific contexts, including Japanese, remains underexplored. This study investigated the utility of generative AI for Japanese medical interview training.
+Objective
+This pilot study aimed to evaluate the utility of generative AI as a tool for medical interview training by comparing its performance with that of traditional face-to-face training methods using a simulated patient.
+Methods
+We conducted a randomized crossover pilot study involving 20 postgraduate year 1‐2 physicians from a university hospital. Participants were randomly allocated into 2 groups. Group A began with an AI-based station on a case involving abdominal pain, followed by a traditional station with a standardized patient presenting chest pain. Group B followed the reverse order, starting with the traditional station for abdominal pain and subsequently within the AI-based station for the chest pain scenario. In the AI-based stations, participants interacted with a GPT-configured platform that simulated patient behaviors. GPTs are customizable versions of ChatGPT adapted for specific purposes. The traditional stations involved face-to-face interviews with a simulated patient. Both groups used identical, standardized case scenarios to ensure uniformity. Two independent evaluators, blinded to the study conditions, assessed participants’ performances using 6 defined metrics: patient care and communication, history taking, physical examination, accuracy and clarity of transcription, clinical reasoning, and patient management. A 6-point Likert scale was used for scoring. The discrepancy between the evaluators was resolved through discussion. To ensure cultural and linguistic authenticity, all interviews and evaluations were conducted in Japanese.
+Results
+AI-based stations scored lower across most categories, particularly in patient care and communication, than traditional stations (4.48 vs 4.95; P=.009). However, AI-based stations demonstrated comparable performance in clinical reasoning, with a nonsignificant difference (4.43 vs 4.85; P=.10).
+Conclusions
+The comparable performance of generative AI in clinical reasoning highlights its potential as a complementary tool in medical interview training. One of its main advantages lies in enabling self-learning, allowing trainees to independently practice interviews without the need for simulated patients. Nonetheless, the lower scores in patient care and communication underline the importance of maintaining traditional methods that capture the nuances of human interaction. These findings support the adoption of hybrid training models that combine generative AI with conventional approaches to enhance the overall effectiveness of medical interview training in Japan.
+Trial Registration
+UMIN-CTR UMIN000053747; https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000061336
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence versus clinicians: Who diagnoses multiple sclerosis faster and with greater accuracy?
+AU  - Patel, Mahi A.
+AU  - Villalobos, Francisco
+AU  - Shan, Kevin
+AU  - Tardo, Lauren M.
+AU  - Horton, Lindsay A.
+AU  - Sguigna, Peter V.
+AU  - Blackburn, Kyle M.
+AU  - Munoz, Shanan B.
+AU  - Moog, Tatum M.
+AU  - Smith, Alexander D.
+AU  - Burgess, Katy W.
+AU  - McCreary, Morgan
+AU  - Okuda, Darin T.
+JO  - Multiple Sclerosis and Related Disorders
+VL  - 90
+SP  - 105791
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 2211-0348
+DO  - https://doi.org/10.1016/j.msard.2024.105791
+UR  - https://www.sciencedirect.com/science/article/pii/S2211034824003687
+KW  - Multiple sclerosis
+KW  - Artificial intelligence
+KW  - ChatGPT
+KW  - Diagnosis
+KW  - Generative AI
+AB  - Background
+Those receiving the diagnosis of multiple sclerosis (MS) over the next ten years will predominantly be part of Generation Z (Gen Z). Recent observations within our clinic suggest that younger people with MS utilize online generative artificial intelligence (AI) platforms for personalized medical advice prior to their first visit with a specialist in neuroimmunology. The use of such platforms is anticipated to increase given the technology driven nature, desire for instant communication, and cost-conscious nature of Gen Z. Our objective was to determine if ChatGPT (Generative Pre-trained Transformer) could diagnose MS in individuals earlier than their clinical timeline, and to assess if the accuracy differed based on age, sex, and race/ethnicity.
+Methods
+People with MS between 18 and 59 years of age were studied. The clinical timeline for people diagnosed with MS was retrospectively identified and simulated using ChatGPT-3.5 (GPT-3.5). Chats were conducted using both actual and derivatives of their age, sex, and race/ethnicity to test diagnostic accuracy. A Kaplan-Meier survival curve was estimated for time to diagnosis, clustered by subject. The p-value testing for differences in time to diagnosis was accomplished using a general Wilcoxon test. Logistic regression (subject-specific intercept) was used to capture intra-subject correlation to test the accuracy prior to and after the inclusion of MRI data.
+Results
+The study cohort included 100 unique people with MS. Of those, 50 were members of Gen Z (38 female; 22 White; mean age at first symptom was 20.6 years (y) (standard deviation (SD)=2.2y)), and 50 were non-Gen Z (34 female; 27 White; mean age at first symptom was 37.0y (SD=10.4y)). In addition, a total of 529 people that represented digital simulations of the original cohort of 100 people (333 female; 166 White; 136 Black/African American; 107 Asian; 120 Hispanic, mean age at first symptom was 31.6y (SD=12.4y)) were generated allowing for 629 scripted conversations to be analyzed. The estimated median time to diagnosis in clinic was significantly longer at 0.35y (95% CI=[0.28, 0.48]) versus that by ChatGPT at 0.08y (95% CI=[0.04, 0.24]) (p<0.0001). There was no difference in the diagnostic accuracy between ages and by race/ethnicity prior to the inclusion of MRI data. However, prior to including the MRI data, males had a 47% less likely chance of a correct diagnosis relative to females (p=0.05). Post-MRI data inclusion within GPT-3.5, the odds of an accurate diagnosis was 4.0-fold greater for Gen Z participants, relative to non-Gen Z participants (p=0.01) with the diagnostic accuracy being 68% less in males relative to females (p=0.009), and 75% less for White subjects, relative to non-White subjects (p=0.0004).
+Conclusion
+Although generative AI platforms enable rapid information access and are not principally designed for use in healthcare, an increase in use by Gen Z is anticipated. However, the obtained responses may not be generalizable to all users and bias may exist in select groups.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence for de novo protein design
+AU  - Winnifrith, Adam
+AU  - Outeiral, Carlos
+AU  - Hie, Brian L.
+JO  - Current Opinion in Structural Biology
+VL  - 86
+SP  - 102794
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 0959-440X
+DO  - https://doi.org/10.1016/j.sbi.2024.102794
+UR  - https://www.sciencedirect.com/science/article/pii/S0959440X24000216
+AB  - Engineering new molecules with desirable functions and properties has the potential to extend our ability to engineer proteins beyond what nature has so far evolved. Advances in the so-called ‘de novo’ design problem have recently been brought forward by developments in artificial intelligence. Generative architectures, such as language models and diffusion processes, seem adept at generating novel, yet realistic proteins that display desirable properties and perform specified functions. State-of-the-art design protocols now achieve experimental success rates nearing 20%, thus widening the access to de novo designed proteins. Despite extensive progress, there are clear field-wide challenges, for example, in determining the best in silico metrics to prioritise designs for experimental testing, and in designing proteins that can undergo large conformational changes or be regulated by post-translational modifications. With an increase in the number of models being developed, this review provides a framework to understand how these tools fit into the overall process of de novo protein design. Throughout, we highlight the power of incorporating biochemical knowledge to improve performance and interpretability.
+ER  - 
+
+TY  - JOUR
+T1  - Research misconduct: Use of generative artificial intelligence in writing may lower the threshold
+AU  - Matsubara, Shigeki
+AU  - Matsubara, Daisuke
+JO  - European Journal of Obstetrics & Gynecology and Reproductive Biology
+VL  - 304
+SP  - 172
+EP  - 173
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 0301-2115
+DO  - https://doi.org/10.1016/j.ejogrb.2024.11.038
+UR  - https://www.sciencedirect.com/science/article/pii/S030121152400650X
+ER  - 
+
+TY  - JOUR
+T1  - 1871: Generative artificial intelligence for toxicity detection in radiotherapy
+AU  - Dinapoli, Nicola
+AU  - Esposito, Francesco
+AU  - D'Antoni, Martina
+AU  - Lanzotti, Vito
+AU  - Tagliaferri, Luca
+AU  - Massaccesi, Mariangela
+AU  - Miccichè, Francesco
+AU  - Valentini, Vincenzo
+AU  - Gambacorta, Maria Antonietta
+JO  - Radiotherapy and Oncology
+VL  - 194
+SP  - S2935
+EP  - S2936
+PY  - 2024
+DA  - 2024/05/01/
+T2  - ESTRO 2024, 3-7 May 2024, Glasgow, UK
+SN  - 0167-8140
+DO  - https://doi.org/10.1016/S0167-8140(24)02186-8
+UR  - https://www.sciencedirect.com/science/article/pii/S0167814024021868
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in a VUCA world: the ‘Lived Experiences’ of Southeast Asian teachers’ use of AI in higher education
+AU  - Chan, Nee Nee
+AU  - Bailey, Richard Peter
+AU  - Tan, Mabel Hwee Joo
+AU  - Dipolog, Genevieve Flores
+AU  - Tan, Garry Wei Han
+AU  - Motevalli, Saeid
+AU  - Samsudin, Nadia
+AU  - Ang, Chin Siang
+JO  - International Journal of Educational Research
+VL  - 133
+SP  - 102733
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 0883-0355
+DO  - https://doi.org/10.1016/j.ijer.2025.102733
+UR  - https://www.sciencedirect.com/science/article/pii/S088303552500206X
+KW  - ChatGPT
+KW  - Hermeneutic phenomenology
+KW  - VUCA model
+KW  - Educational quality
+KW  - AI policy guidelines
+AB  - This study explores how generative intelligence (GenAI) is used in teaching and learning, assessments, and research at Southeast Asian (SEA) universities. Using hermeneutic phenomenology as the philosophical underpinning and research methodology, SEA teachers’ ‘lived experiences’ of using ChatGPT and other GenAI tools were uncovered. 38 teachers from 10 SEA countries participated in 11 focus group interviews over five months. Three themes emerged: Learning Anew; Disequilibrium and Lack of Rootedness; and Ambiguity about New Norms, New Practices. It was found that teachers work with GenAI in deeply personal, fragmented, and continuously evolving ways. GenAI took the form of novel work companions, enhancing the efficiency and effectiveness of some work practices. It also was a disruptor to old habits of thinking, behaviour and practices. Teachers were in a state of disequilibrium in this new world beset by VUCA (volatility, uncertainty, complexity, and ambiguity). Some felt overwhelmed and ‘at breaking point’. A lack of rootedness in teachers’ beliefs and practices emerged. Teachers were generally against the notions of plagiarism and academic integrity held by students who believed the ends justified the means. However, with new ways of teaching, learning and assessment, many teachers recognised their beliefs and practices would have to change. Thus, in the absence of detailed AI guidelines, they called for the urgent need to establish boundaries and teach AI literacy to promote innovative and responsible use. In this VUCA world, more targeted change management training for teachers and students was strongly needed.
+ER  - 
+
+TY  - JOUR
+T1  - Pharmacy meets AI: Effect of a drug information activity on student perceptions of generative artificial intelligence
+AU  - Munir, Faria
+AU  - Ipema, Heather
+AU  - Nohria, Rahul
+AU  - Singh, Divita
+JO  - Currents in Pharmacy Teaching and Learning
+VL  - 17
+IS  - 10
+SP  - 102439
+PY  - 2025
+DA  - 2025/10/01/
+SN  - 1877-1297
+DO  - https://doi.org/10.1016/j.cptl.2025.102439
+UR  - https://www.sciencedirect.com/science/article/pii/S1877129725001601
+KW  - ChatGPT
+KW  - Artificial intelligence
+KW  - Drug information
+KW  - Student perceptions
+KW  - Generative artificial intelligence
+KW  - Large language model
+KW  - Health professional student
+KW  - Health professional education
+AB  - Objective
+The current study assessed pharmacy students' perceptions about generative AI before and after participation in a ChatGPT-based drug information activity.
+Methods
+In 2024, students at three colleges of pharmacy completed a baseline and post-activity survey on their perceptions of ChatGPT including its reliability, usefulness, and impact on academic performance and critical thinking. The survey was modified from the TAME-ChatGPT assessment and used a 5-point Likert scale. After the baseline survey, students answered clinically relevant drug information questions on their own using primary or tertiary resources and compared their answers with ChatGPT responses. Independent t-test samples were used to compare baseline and post-activity surveys.
+Results
+A total of 227 students completed the pre-survey and 203 students completed the post-survey. Students' concerns about the reliability of ChatGPT increased after completing the drug information activity (pre-survey: 3.57 ± 0.96; post-survey: 3.88 ± 1.11; p = 0.002). Students' concerns about reliance on ChatGPT and prevention of critical thinking increased (pre-survey: 3.30 ± 1.34; post-survey: 3.57 ± 1.21; p = 0.031). The following areas decreased after the activity: enthusiasm about ChatGPT as learning and research tool (pre-survey: 3.60 ± 1.02; post-survey: 3.32 ± 1.18; p = 0.008), viewing ChatGPT as an important tool for academic success (pre-survey: 3.40 ± 1.13; post-survey: 3.12 ± 1.23; p = 0.015), and concern regarding being accused of plagiarism when using ChatGPT(pre-survey: 4.12 ± 0.96; post-survey: 3.91 ± 1.10; p = 0.031). Open-ended responses revealed that students largely perceived ChatGPT as unreliable for drug information, citing concerns about accuracy and outdated content. However, some students noted its potential usefulness for non-clinical tasks such as generating ideas, organizing content, or providing general overviews.
+Conclusion
+After a hands-on ChatGPT-based drug information activity, pharmacy students reported increased concerns about reliability and over-reliance on artificial intelligence-based technology. The results of this study may encourage pharmacy educators to implement classroom activities for active exploration of the benefits and challenges of generative AI.
+Contribution to literature
+Limited published data describes pharmacy student perceptions of artificial intelligence platforms as a drug information source. There is even less literature with pre- and post-data after implementing an activity in which students gain hands-on experience critiquing an artificial intelligence platform response. Therefore, this study was conducted to evaluate student perceptions after using ChatGPT in the classroom and comparing its performance to their own responses based on information from primary and tertiary literature. The results demonstrate that despite enthusiasm before using ChatGPT, concerns for reliability and hindering thinking increased after a observing the limitations of its performance in answering drug information questions.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence-based framework for bridging lifecycle gaps in semiconductor HVAC systems
+AU  - Li, Yanlin
+AU  - Liu, Chi-Yun
+AU  - Ni, Hsiao-Ping
+AU  - Paul, Fermodelie
+AU  - Chong, Wai Oswald
+AU  - Chou, Jui-Sheng
+JO  - Journal of Building Engineering
+VL  - 105
+SP  - 112349
+PY  - 2025
+DA  - 2025/07/01/
+SN  - 2352-7102
+DO  - https://doi.org/10.1016/j.jobe.2025.112349
+UR  - https://www.sciencedirect.com/science/article/pii/S2352710225005868
+KW  - HVAC system performance
+KW  - Semiconductor manufacturing facility
+KW  - HVAC equipment degradation prediction
+KW  - AI-Driven models
+KW  - Advanced building systems
+AB  - The production of modern semiconductor chips is susceptible to variations in air temperature, humidity, and quality, mainly as chip dimensions shrink to smaller than atmospheric dust particles. Heating, ventilation, and air-conditioning (HVAC) systems are critical in this context, given their role in stabilizing these environmental factors. Gaps in Design and Construction (D&C) can critically undermine the reliability, performance, quality, and lifespan of HVAC systems during their Operation and Maintenance (O&M) stages. Current studies illustrate how existing models predicted performance degradation and how the Design, Construction, Operations, and Maintenance (DCOM) gap arises. Despite the substantial implications for Semiconductor Manufacturing Facilities (SMFs), research on HVAC performance degradation remains limited, particularly in capturing and quantifying degradation-related patterns. Compared to other types of buildings, the renovation and transformation of high-end manufacturing facilities are more frequent, and customized design and equipment also lead to model application issues, such as data limitations and incompatibility. This paper aims to propose a novel HVAC system degradation prediction model utilizing Generative Adversarial Networks (GAN) and Informer algorithms based on the building characteristics and operation mode of semiconductor facilities to overcome the limitations of data scarcity and long-term prediction, evaluate the comprehensive impact of the gap between D&C and O&M stages on HVAC systems. By integrating data augmentation, this model reduces data dependency and can handle incomplete, inconsistent, or discrete data for early prediction in operation, bridging the gap between D&C and O&M stages, and improving the overall efficiency and effectiveness of facility operation and maintenance. In addition to SMFs, the proposed model exhibits considerable application potential in other high-precision building types due to the structural variability.
+ER  - 
+
+TY  - JOUR
+T1  - Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers
+AU  - Lim, Jieun
+AU  - Lee, Unggi
+AU  - Koh, Junbo
+AU  - Jeong, Yeil
+AU  - Lee, Yunseo
+AU  - Byun, Gyuri
+AU  - Jung, Haewon
+AU  - Jang, Yoonsun
+AU  - Lee, Sanghyeok
+AU  - Moon, Jewoong
+JO  - Computers & Education
+VL  - 232
+SP  - 105306
+PY  - 2025
+DA  - 2025/07/01/
+SN  - 0360-1315
+DO  - https://doi.org/10.1016/j.compedu.2025.105306
+UR  - https://www.sciencedirect.com/science/article/pii/S0360131525000740
+KW  - Generative AI
+KW  - Virtual simulation
+KW  - Teacher education
+KW  - Problem-based learning
+KW  - Design-based research
+AB  - Effective teachers should be equipped to solve complex problems across diverse instructional and learning contexts. However, many teacher training programs struggle to bridge the gap between theoretical knowledge to real-world applications. The current study tackles this challenge by developing a generative artificial intelligence (GenAI)-enhanced simulation to improve preservice teachers’ problem-solving abilities. Using design-based research (DBR), we created a virtual environment that integrates problem-based learning (PBL) with GenAI technology. The simulation was rigorously refined through expert review and usability testing before being implemented in a teacher training program. We evaluated its effectiveness by comparing three groups: (1) a text-based scenario, (2) a rule-based simulation, and (3) a GenAI-enhanced simulation. Pre- and post-test results showed significant improvements in problem-solving skills for both the rule-based and GenAI-enhanced simulation groups compared to the text-based scenario group. Notably, qualitative findings revealed that students reported heightened realism and immersion in the GenAI-enhanced simulation, attributing this to more dynamic interactions with AI agents that helped them better contextualize PBL and increased their motivation. Our study findings contribute design principles for developing GenAI-enhanced simulations in teacher education, offering promising insights into leveraging AI technology to create more engaging and effective training experiences.
+ER  - 
+
+TY  - JOUR
+T1  - The academic industry’s response to generative artificial intelligence: An institutional analysis of large language models
+AU  - Kshetri, Nir
+JO  - Telecommunications Policy
+VL  - 48
+IS  - 5
+SP  - 102760
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 0308-5961
+DO  - https://doi.org/10.1016/j.telpol.2024.102760
+UR  - https://www.sciencedirect.com/science/article/pii/S0308596124000570
+KW  - Academic industry
+KW  - ChatGPT
+KW  - Generative artificial intelligence
+KW  - Institutional theory
+KW  - Large language models
+KW  - Theorization
+AB  - This paper examines academic institutions' heterogeneous initial responses to generative AI (GAI) tools like ChatGPT and factors influencing increased acceptance over time. GAI's disruptive nature coupled with uncertainty about impacts poses adoption challenges. However, external pressures from stakeholders seeking GAI integration contribute to changing attitudes. Actions of institutional change agents also drive growing acceptance by increasing awareness of GAI advantages. They challenge prevailing logics emphasizing assessments, proposing new values around employability and job performance. Additionally, academic institutions reevaluating GAI's value creation potential through applications and evolving business models contributes to favorable responses. The paper proposes an institutional theory framework explaining dynamics underpinning academic institutions' assimilation of GAI. It highlights how various mechanisms like external pressures, institutional entrepreneurs' theorization efforts justifying technology use, and internal sensemaking shape institutional norms and values, enabling academic systems' adaptation. The study informs policy and practice while directing future research toward validating propositions empirically and examining contextual dimensions including industry characteristics affecting GAI adoption.
+ER  - 
+
+TY  - JOUR
+T1  - Would Uro_Chat, a Newly Developed Generative Artificial Intelligence Large Language Model, Have Successfully Passed the In-Service Assessment Questions of the European Board of Urology in 2022?
+AU  - May, Matthias
+AU  - Körner-Riffard, Katharina
+AU  - Marszalek, Martin
+AU  - Eredics, Klaus
+JO  - European Urology Oncology
+VL  - 7
+IS  - 1
+SP  - 155
+EP  - 156
+PY  - 2024
+DA  - 2024/02/01/
+SN  - 2588-9311
+DO  - https://doi.org/10.1016/j.euo.2023.08.013
+UR  - https://www.sciencedirect.com/science/article/pii/S2588931123001785
+ER  - 
+
+TY  - JOUR
+T1  - Is Generative Artificial Intelligence the Next Step Toward a Personalized Hemodialysis?
+AU  - Hueso, Miguel
+AU  - Álvarez, Rafael
+AU  - Marí, David
+AU  - Ribas-Ripoll, Vicent
+AU  - Lekadir, Karim
+AU  - Vellido, Alfredo
+JO  - Revista de Investigación Clínica
+VL  - 75
+IS  - 6
+SP  - 309
+EP  - 317
+PY  - 2023
+DA  - 2023/11/01/
+SN  - 0034-8376
+DO  - https://doi.org/10.24875/RIC.23000162
+UR  - https://www.sciencedirect.com/science/article/pii/S0034837625001597
+KW  - Personalized hemodialysis
+KW  - Artificial intelligence
+KW  - Natural language processing
+KW  - Large Language Models
+AB  - ABSTRACT
+Artificial intelligence (AI) generative models driven by the integration of AI and natural language processing technologies, such as OpenAI’s chatbot generative pre-trained transformer large language model (LLM), are receiving much public attention and have the potential to transform personalized medicine. Dialysis patients are highly dependent on technology and their treatment generates a challenging large volume of data that has to be analyzed for knowledge extraction. We argue that, by integrating the data acquired from hemodialysis treatments with the powerful conversational capabilities of LLMs, nephrologists could personalize treatments adapted to patients’ lifestyles and preferences. We also argue that this new conversational AI integrated with a personalized patient-computer interface will enhance patients’ engagement and self-care by providing them with a more personalized experience. However, generative AI models require continuous and accurate updates of data, and expert supervision and must address potential biases and limitations. Dialysis patients can also benefit from other new emerging technologies such as Digital Twins with which patients’ care can also be addressed from a personalized medicine perspective. In this paper, we will revise LLMs potential strengths in terms of their contribution to personalized medicine, and, in particular, their potential impact, and limitations in nephrology. Nephrologists’ collaboration with AI academia and companies, to develop algorithms and models that are more transparent, understandable, and trustworthy, will be crucial for the next generation of dialysis patients. The combination of technology, patient-specific data, and AI should contribute to create a more personalized and interactive dialysis process, improving patients’ quality of life. (REV INVEST CLIN. 2023;75(6):309-17)
+ER  - 
+
+TY  - JOUR
+T1  - Principles and challenges of generative artificial intelligence detection
+AU  - Cheng, Kunming
+AU  - Li, Wanqing
+AU  - Zhang, Nan
+AU  - Liu, Xiaojun
+AU  - Wu, Haiyang
+JO  - British Journal of Anaesthesia
+VL  - 133
+IS  - 4
+SP  - 899
+EP  - 901
+PY  - 2024
+DA  - 2024/10/01/
+SN  - 0007-0912
+DO  - https://doi.org/10.1016/j.bja.2024.06.037
+UR  - https://www.sciencedirect.com/science/article/pii/S000709122400415X
+KW  - academic publishing
+KW  - artificial intelligence
+KW  - ChatGPT
+KW  - detection
+KW  - generative AI
+KW  - peer review
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in healthcare from the perspective of digital media: Applications, opportunities and challenges
+AU  - Xu, Rui
+AU  - Wang, Zhong
+JO  - Heliyon
+VL  - 10
+IS  - 12
+SP  - e32364
+PY  - 2024
+DA  - 2024/06/30/
+SN  - 2405-8440
+DO  - https://doi.org/10.1016/j.heliyon.2024.e32364
+UR  - https://www.sciencedirect.com/science/article/pii/S2405844024083956
+KW  - ChatGPT
+KW  - Healthcare
+KW  - Digital media
+KW  - Applications
+KW  - Opportunities
+KW  - Challenges
+KW  - Digital health
+KW  - Generative artificial intelligence
+KW  - Large language models
+KW  - Artificial intelligence generated content
+AB  - Introduction
+The emergence and application of generative artificial intelligence/large language models (hereafter GenAI LLMs) have the potential for significant impact on the healthcare industry. However, there is currently a lack of systematic research on GenAI LLMs in healthcare based on reliable data. This article aims to conduct an exploratory study of the application of GenAI LLMs (i.e., ChatGPT) in healthcare from the perspective of digital media (i.e., online news), including the application scenarios, potential opportunities, and challenges.
+Methods
+This research used thematic qualitative text analysis in five steps: firstly, developing main topical categories based on relevant articles; secondly, encoding the search keywords using these categories; thirdly, conducting searches for news articles via Google ; fourthly, encoding the sub-categories using the elaborate category system; and finally, conducting category-based analysis and presenting the results. Natural language processing techniques, including the TermRaider and AntConc tool, were applied in the aforementioned steps to assist in text qualitative analysis. Additionally, this study built a framework, using for analyzing the above three topics, from the perspective of five different stakeholders, including healthcare demanders and providers.
+Results
+This study summarizes 26 applications (e.g., provide medical advice, provide diagnosis and triage recommendations, provide mental health support, etc.), 21 opportunities (e.g., make healthcare more accessible, reduce healthcare costs, improve patients care, etc.), and 17 challenges (e.g., generate inaccurate/misleading/wrong answers, raise privacy concerns, lack of transparency, etc.), and analyzes the reasons for the formation of these key items and the links between the three research topics.
+Conclusions
+The application of GenAI LLMs in healthcare is primarily focused on transforming the way healthcare demanders access medical services (i.e., making it more intelligent, refined, and humane) and optimizing the processes through which healthcare providers offer medical services (i.e., simplifying, ensuring timeliness, and reducing errors). As the application becomes more widespread and deepens, GenAI LLMs is expected to have a revolutionary impact on traditional healthcare service models, but it also inevitably raises ethical and security concerns. Furthermore, GenAI LLMs applied in healthcare is still in the initial stage, which can be accelerated from a specific healthcare field (e.g., mental health) or a specific mechanism (e.g., GenAI LLMs’ economic benefits allocation mechanism applied to healthcare) with empirical or clinical research.
+ER  - 
+
+TY  - JOUR
+T1  - Avoiding algorithm errors in textual analysis: A guide to selecting software, and a research agenda toward generative artificial intelligence
+AU  - Wobst, Janice
+AU  - Lueg, Rainer
+JO  - Journal of Business Research
+VL  - 199
+SP  - 115571
+PY  - 2025
+DA  - 2025/10/01/
+SN  - 0148-2963
+DO  - https://doi.org/10.1016/j.jbusres.2025.115571
+UR  - https://www.sciencedirect.com/science/article/pii/S0148296325003947
+KW  - Generative AI
+KW  - Large language models
+KW  - Textual analysis
+KW  - Software selection
+KW  - Algorithm error
+KW  - Validity
+KW  - Reliability
+KW  - Value-based management
+AB  - The use of textual analysis is expanding in organizational research, yet software packages vary in their compatibility with complex constructs. This study helps researchers select suitable tools by focusing on phrase-based dictionary methods. We empirically evaluate four software packages—LIWC, DICTION, CAT Scanner, and a custom Python tool—using the complex construct of value-based management as a test case. The analysis shows that software from the same methodological family produces highly consistent results, while popular but mismatched tools yield significant errors such as miscounted phrases. Based on this, we develop a structured selection guideline that links construct features with software capabilities. The framework enhances construct validity, supports methodological transparency, and is applicable across disciplines. Finally, we position the approach as a bridge to AI-enabled textual analysis, including prompt-based workflows, reinforcing the continued need for theory-grounded construct design.
+ER  - 
+
+TY  - JOUR
+T1  - Visual narratives in nursing education: A generative artificial intelligence approach
+AU  - Tran, Linh Duc
+AU  - Tung, Neo
+AU  - Macalinga, Eugene Tordecilla
+AU  - Tang, Arthur
+AU  - Woo, Brigitte
+AU  - Tam, Wilson
+JO  - Nurse Education in Practice
+VL  - 79
+SP  - 104079
+PY  - 2024
+DA  - 2024/08/01/
+SN  - 1471-5953
+DO  - https://doi.org/10.1016/j.nepr.2024.104079
+UR  - https://www.sciencedirect.com/science/article/pii/S1471595324002087
+KW  - Nursing education
+KW  - Visual narrative
+KW  - Generative artificial intelligence
+KW  - DALL-E
+AB  - Aim
+The aim of this paper is to investigate the incorporation of visual narratives, such as comics and graphics, into nursing education using Generative Artificial Intelligence (GAI) models like DALL-E.
+Background
+Visual narratives serve as a powerful method for communicating intricate concepts in nursing education. Despite their advantages, challenges in creating effective educational comics persist due to the need for expertise in graphic design and the associated time and resource constraints.
+Design
+This study examines existing literature that highlights the efficacy of visual narratives in education and demonstrates the potential of GAI models, specifically DALL-E, in creating visual narratives for nursing education.
+Methods
+We analyze the potential of GAI models, specifically DALL-E, to create visual narratives for educational purposes. This was demonstrated through illustrative examples addressing sensitive topics, illustrating research methodology and designing recruitment posters for clinical trials. Additionally, we discussed the necessity of reviewing and editing the text generated by DALL-E to ensure its accuracy and relevance in educational contexts. The method also considered legal concerns related to copyright and ownership of the generated content, highlighting the evolving legal landscape in this domain.
+Results
+The study found that GAI, specifically DALL-E, has significant potential to bridge the gap in creating visual narratives for nursing education. While offering cost-effectiveness and accessibility, GAI tools require careful consideration of challenges such as text-related errors, misinterpretation of user prompts and legal concerns.
+Conclusions
+GAI models like DALL-E offer promising solutions for enhancing visual storytelling in nursing education. However, their effective integration requires a collaborative approach, where educators engage with these tools as co-pilots, leveraging their capabilities while mitigating potential drawbacks. By doing so, educators can harness the full potential of GAI to enrich the educational experience for learners through compelling visual narratives.
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in Journal of Biological Chemistry
+AU  - Colbran, Roger J.
+AU  - Toker, Alex
+JO  - Journal of Biological Chemistry
+VL  - 299
+IS  - 8
+SP  - 105008
+PY  - 2023
+DA  - 2023/08/01/
+SN  - 0021-9258
+DO  - https://doi.org/10.1016/j.jbc.2023.105008
+UR  - https://www.sciencedirect.com/science/article/pii/S0021925823020367
+ER  - 
+
+TY  - JOUR
+T1  - Generative artificial intelligence in marketing: Applications, opportunities, challenges, and research agenda
+AU  - Kshetri, Nir
+AU  - Dwivedi, Yogesh K.
+AU  - Davenport, Thomas H.
+AU  - Panteli, Niki
+JO  - International Journal of Information Management
+VL  - 75
+SP  - 102716
+PY  - 2024
+DA  - 2024/04/01/
+SN  - 0268-4012
+DO  - https://doi.org/10.1016/j.ijinfomgt.2023.102716
+UR  - https://www.sciencedirect.com/science/article/pii/S026840122300097X
+KW  - ChatGPT
+KW  - Customer engagement
+KW  - Customer experience
+KW  - Generative AI
+KW  - Personalization
+AB  - While all functional areas in organizations are benefiting from the recent development in generative artificial intelligence (GAI), marketing has been particularly affected positively by this breakthrough innovation. However, scholars have not paid attention to the transformative impacts GAI has on marketing activities. This editorial article aims to fill this void. It outlines the current state of generative artificial intelligence in marketing. The article discusses the facilitators and barriers for the use of generative artificial intelligence in marketing. It highlights the effectiveness of insights generated by GAI in personalizing content and offerings and argues that marketing content generated by GAI is likely to be more personally relevant than that produced by earlier generations of digital technologies. The article explains how higher efficiency and productivity of marketing activities can be achieved by using GAI to create marketing content. It also describes the roles of insights and marketing content generated by GAI to improve the sales lead generation process. Implications for research, practice and policy are also discussed.
+ER  - 
+
+TY  - JOUR
+T1  - Letter to the editor “A review of top cardiology and cardiovascular medicine journal guidelines regarding the use of generative artificial intelligence tools in scientific writing”
+AU  - Guo, Dongke
+AU  - Fu, Yonghua
+AU  - Zhu, Zhongxin
+JO  - Current Problems in Cardiology
+VL  - 49
+IS  - 3
+SP  - 102408
+PY  - 2024
+DA  - 2024/03/01/
+SN  - 0146-2806
+DO  - https://doi.org/10.1016/j.cpcardiol.2024.102408
+UR  - https://www.sciencedirect.com/science/article/pii/S0146280624000471
+ER  - 
+
+TY  - JOUR
+T1  - Potential application of generative artificial intelligence and machine learning algorithm in oil and gas sector: Benefits and future prospects
+AU  - Ochieng, Edward G.
+AU  - Ominde, Diana
+AU  - Zuofa, Tarila
+JO  - Technology in Society
+VL  - 79
+SP  - 102710
+PY  - 2024
+DA  - 2024/12/01/
+SN  - 0160-791X
+DO  - https://doi.org/10.1016/j.techsoc.2024.102710
+UR  - https://www.sciencedirect.com/science/article/pii/S0160791X24002586
+KW  - Generative artificial intelligence
+KW  - Machine learning algorithm
+KW  - Value chain operations
+KW  - Oil and gas
+KW  - Productivity performance
+KW  - Risk management
+AB  - With the rapid advancement of technology and societies, the global energy sector now acknowledges that by integrating contemporary digital technologies into their operations and capabilities, can improve their competitive advantage and innovation performance and processes. Moreover, energy operators are also facing a significant undertaking: how to best use and secure large amounts of data that promote sustainable productivity performance and minimise potential threats in the oil and gas value chain and project operations. In view of the foregoing, various facets like Generative Artificial Intelligence (GAI) and Machine Learning Algorithms (MLA) are increasingly gaining popularity within oil and gas sector operations. Thus, we explored how GAI and ML algorithms can enhance oil and gas value chain productivity performance. The Principal Component Analysis (PCA) was employed to identify significant GAI and MLA variables influencing performance in the oil and gas value chain, while Structural Equation Modelling (SEM) was used to test regression equations related to their application. The study found that risk portfolios and profiles can be appraised throughout the value chain by effectively utilising GAI and ML algorithms in upstream, midstream and downstream undertakings. While these findings are noteworthy and have significant implications for current practice, the paper advocates that an array of digital technologies beyond GAI and ML can still be examined during future studies to demonstrate a holistic perspective on how digital transformation can be achieved across the energy sector value and project operations.
+ER  - 
+
+TY  - JOUR
+T1  - Teaching mathematical concepts in management with generative artificial intelligence: The power of human oversight in AI-driven learning
+AU  - Trindade, Maria A.M.
+AU  - Edirisinghe, Gihan S.
+AU  - Luo, Lan
+JO  - The International Journal of Management Education
+VL  - 23
+IS  - 2
+SP  - 101104
+PY  - 2025
+DA  - 2025/07/01/
+SN  - 1472-8117
+DO  - https://doi.org/10.1016/j.ijme.2024.101104
+UR  - https://www.sciencedirect.com/science/article/pii/S1472811724001757
+KW  - Generative artificial intelligence in education
+KW  - Generative AI-Driven learning
+KW  - Mathematics in management education
+KW  - Operations management
+KW  - Economic order quantity
+KW  - Generative AI in management education
+AB  - This study demonstrates a successful use of Generative Artificial Intelligence (AI) in teaching mathematical material to management students. We herein introduce the EOQ World Tour game, which substantially improves understanding of inventory-related concepts and long-term knowledge retention compared with traditional methods. Generative AI is revolutionizing management education, by offering innovative methods for teaching and learning. The integration of AI into quantitative business disciplines through novel learning mechanisms provides significant benefits, including enhanced data analysis, improved decision-making models, and sophisticated simulations for hands-on experience. This study introduces the EOQ World Tour game, specifically designed to teach the Economic Order Quantity concept in Operations Management. The game addresses challenges in integrating Generative AI into mathematics in management education by combining human oversight and instructor control through three innovative features: (1) a Generative AI-based simulation, (2) a macropowered Excel worksheet for validating the calculations of an AI chatbot, and (3) a Google Sheets dashboard for centralizing team-generated AI data for postgame analysis. Our study included 41 students divided into experimental and control groups. Pretest results indicated no significant differences in baseline knowledge. However, the post-test results showed that the experimental group achieved a better understanding of inventory-related concepts and practical applications, along with higher engagement, excitement, confidence, and long-term knowledge retention.
+ER  - 
+
+TY  - JOUR
+T1  - SA62 Evaluating Generative Artificial Intelligence (GenAI) in Health Technology Assessment (HTA) Content Generation: A Proof-of-Concept Using Canadian Agency for Drugs and Technologies in Health (CADTH) Reimbursement Dossier Forms
+AU  - Walters, J.
+AU  - Guerra, I.
+AU  - Rtveladze, K.
+AU  - Joseph, J.
+AU  - Shankar, R.
+AU  - Wiemken, T.
+AU  - Dubé, P.A.
+AU  - Woodward, T.C.
+JO  - Value in Health
+VL  - 27
+IS  - 12, Supplement 
+SP  - S626
+PY  - 2024
+DA  - 2024/12/01/
+T2  - ISPOR Europe 2024
+SN  - 1098-3015
+DO  - https://doi.org/10.1016/j.jval.2024.10.3143
+UR  - https://www.sciencedirect.com/science/article/pii/S1098301524060066
+ER  - 
+
+TY  - JOUR
+T1  - Exploring generative artificial intelligence preparedness among university language instructors: A case study
+AU  - Kohnke, Lucas
+AU  - Moorhouse, Benjamin Luke
+AU  - Zou, Di
+JO  - Computers and Education: Artificial Intelligence
+VL  - 5
+SP  - 100156
+PY  - 2023
+DA  - 2023/01/01/
+SN  - 2666-920X
+DO  - https://doi.org/10.1016/j.caeai.2023.100156
+UR  - https://www.sciencedirect.com/science/article/pii/S2666920X23000358
+KW  - Artificial intelligence
+KW  - AI
+KW  - Generative AI
+KW  - University language instructors
+KW  - Higher education
+KW  - English
+AB  - The integration of generative artificial intelligence (AI) in English language teaching presents opportunities and challenges for instructors. This study explores the attitudes of higher education English language instructors towards generative AI tools, their intentions to use them and the institutional support and professional development necessary to teach and learn with them. As the field continues to evolve rapidly, it is essential to comprehend the readiness of front-line language instructors. This qualitative interpretive study seeks to identify the digital competencies and pedagogical knowledge required to implement generative AI in education and provide guidance for the design of professional development programmes that address the challenges and concerns associated with adopting AI. Drawing on semi-structured interviews with twelve instructors at a higher education institution in Hong Kong, the findings reveal the significance of familiarity and confidence with using AI-driven teaching tools, the challenges and concerns language instructors face and the need for tailored support and professional development. The study offers ten practical implications to cultivate language instructors’ digital competencies, pedagogical knowledge and positive attitudes towards integrating AI to enhance their students’ learning experiences.
+ER  - 
