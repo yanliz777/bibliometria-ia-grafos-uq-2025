@@ -10,8 +10,7 @@ Cumple:
  2️⃣ Cálculo de grado de cada nodo.
  3️⃣ Detección de grupos temáticos (componentes conexas).
 
-Dependencias:
-    pip install networkx pandas matplotlib numpy pyvis
+
 """
 
 import os

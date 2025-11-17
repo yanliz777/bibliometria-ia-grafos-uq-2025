@@ -322,8 +322,8 @@ def _sd_next(driver, timeout=20):
 
 def run_pipeline(
     query="generative artificial intelligence",
-    paginas_sage=30,
-    paginas_sd=30,
+    paginas_sage=1,
+    paginas_sd=1,
     sd_per_page=100
 ):
     """
